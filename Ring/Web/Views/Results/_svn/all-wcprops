@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/repos/!svn/ver/2775/OTP/Ring/Application/trunk/Ring/Web/Views/Results
+END
+SummaryStatusSelector.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repos/!svn/ver/2363/OTP/Ring/Application/trunk/Ring/Web/Views/Results/SummaryStatusSelector.ascx
+END
+ResultStatusSelector.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/!svn/ver/2643/OTP/Ring/Application/trunk/Ring/Web/Views/Results/ResultStatusSelector.ascx
+END
+Index.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/2393/OTP/Ring/Application/trunk/Ring/Web/Views/Results/Index.aspx
+END
+ResultsStrings.fr-CA.resx
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/!svn/ver/2626/OTP/Ring/Application/trunk/Ring/Web/Views/Results/ResultsStrings.fr-CA.resx
+END
+ManageResults.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/!svn/ver/2775/OTP/Ring/Application/trunk/Ring/Web/Views/Results/ManageResults.aspx
+END
+ResultsStrings.fr-CA.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repos/!svn/ver/2363/OTP/Ring/Application/trunk/Ring/Web/Views/Results/ResultsStrings.fr-CA.Designer.cs
+END
+Summary.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/2775/OTP/Ring/Application/trunk/Ring/Web/Views/Results/Summary.aspx
+END
+LoadTemplates.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/!svn/ver/2674/OTP/Ring/Application/trunk/Ring/Web/Views/Results/LoadTemplates.aspx
+END
+LoadResults.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/!svn/ver/2674/OTP/Ring/Application/trunk/Ring/Web/Views/Results/LoadResults.aspx
+END
+ResultsStrings.resx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/2626/OTP/Ring/Application/trunk/Ring/Web/Views/Results/ResultsStrings.resx
+END
+Maintenance.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/!svn/ver/2393/OTP/Ring/Application/trunk/Ring/Web/Views/Results/Maintenance.aspx
+END
+ResultsStrings.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repos/!svn/ver/2626/OTP/Ring/Application/trunk/Ring/Web/Views/Results/ResultsStrings.Designer.cs
+END

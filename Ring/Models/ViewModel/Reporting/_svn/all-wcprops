@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting
+END
+ReportingReportDataViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingReportDataViewModel.cs
+END
+ReportingIndexViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingIndexViewModel.cs
+END
+ReportingEditableViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingEditableViewModel.cs
+END
+ReportingDesignAnalysisTestReportViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingDesignAnalysisTestReportViewModel.cs
+END
+ReportingLocalization.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repos/!svn/ver/2529/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingLocalization.Designer.cs
+END
+ReportingDesignAnalysisSecurityGridViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingDesignAnalysisSecurityGridViewModel.cs
+END
+ReportingDesignAnalysisFiltersGridViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingDesignAnalysisFiltersGridViewModel.cs
+END
+ReportingDesignAnalysisViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingDesignAnalysisViewModel.cs
+END
+ReportingStandardReportsViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingStandardReportsViewModel.cs
+END
+ReportingLocalization.fr-CA.resx
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repos/!svn/ver/2558/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingLocalization.fr-CA.resx
+END
+ReportingDesignAnalysisReportGridViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingDesignAnalysisReportGridViewModel.cs
+END
+ReportingDesignAnalysisGroupingsGridViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingDesignAnalysisGroupingsGridViewModel.cs
+END
+ReportingLocalization.resx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/!svn/ver/2558/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingLocalization.resx
+END
+ReportingReportParametersViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingReportParametersViewModel.cs
+END
+ReportingDesignAnalysisGroupingColumnsGridViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingDesignAnalysisGroupingColumnsGridViewModel.cs
+END
+ReportingLocalization.fr-CA.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repos/!svn/ver/2411/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Reporting/ReportingLocalization.fr-CA.Designer.cs
+END

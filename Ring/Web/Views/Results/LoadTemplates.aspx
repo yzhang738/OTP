@@ -1,0 +1,331 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<ResultsLoadTemplatesViewModel>" %>
+
+<asp:Content ID="Content5" ContentPlaceHolderID="HeadContent" runat="server">
+    <% Html.RenderPartial("~/Views/Shared/JavaScriptCheck.ascx"); %>
+</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+    <%: Shared.ResultsStrings.LoadTemplates_Title %>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MenuContent" runat="server">
+    <% Html.RenderPartial("~/Views/Shared/NavMenu.ascx", Model.Menu); %>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="InfoBar" runat="server">
+    <% Html.RenderPartial("~/Views/Shared/LanguageSelector.ascx", Model.CurrentLanguageCode); %> &nbsp;|&nbsp;
+    <% Html.RenderPartial("~/Views/Shared/CurrentUserName.ascx", Model.CurrentUserName); %>
+</asp:Content>
+
+<asp:Content ID="Content6" ContentPlaceHolderID="HeaderImage" runat="server">
+    <%= RingHTMLHelper.GetRandomHeaderImage() %>
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+
+    <div id="container">
+        <input type="hidden" id="downloadTemplateId" value="<%= ViewData["downloadTemplateId"] %>" />
+        <input type="hidden" id="teamSport" value="<%= ViewData["teamSport"].ToString().ToLower() %>" />
+
+        <% Html.RenderPartial("~/Views/Shared/CommentEditor.ascx"); %>
+
+        <div>
+            <% Html.Telerik().Grid<ResultsLoadTemplateDownloadTemplateGridViewModel>((IEnumerable<ResultsLoadTemplateDownloadTemplateGridViewModel>)ViewData["templates"])
+                .Name("Templates")
+                .TableHtmlAttributes(new { style = "font-size:8pt" })
+                .HtmlAttributes(new { style = "height:340px" })
+                .DataKeys(keys => keys.Add(a => a.DownloadTemplateId))
+                .DataBinding(dataBinding => dataBinding.Ajax()
+                    .Select("LoadTemplateDownloadTemplateGridAjax", "Results")
+                    .Insert("InsertDownloadTemplate", "Results")
+                    .Update("UpdateDownloadTemplate", "Results")
+                    .Delete("DeleteDownloadTemplate", "Results")
+                )
+                .Pageable(paging => paging.PageSize(5))
+                .Scrollable(scrolling => scrolling.Height(281))
+                .Sortable()
+                .Selectable()
+                .Filterable()
+                .Resizable(resize => resize.Columns(true))
+                .ToolBar(t =>
+                    {
+                        if (Model.Editable) t.Insert().ButtonType(GridButtonType.ImageAndText);
+                    })
+                .ClientEvents(events => events.OnRowSelect("onTemplateGridRowSelect")
+                                              .OnError("grid_OnError")
+                                              .OnEdit("onTemplateGridEdit"))
+                .RowAction(row =>
+                {
+                    row.Selected = row.DataItem.DownloadTemplateId.Equals(ViewData["downloadTemplateId"]);
+                })
+                .Columns(columns =>
+                {
+                    columns.Bound(a => a.Name_EN)
+                        .Width(140);
+                    columns.Bound(a => a.Name_FR)
+                        .Width(140);
+                    columns.Bound(a => a.Instructions);
+                    columns.Bound(a => a.URL)
+                        .ClientTemplate("<a href='<#= URL #>' target='_blank'><#= URL #></a>")
+                        .Template(o =>
+                            { %>
+                                <a href="<%= o.URL %>" target='_blank'><%= o.URL%></a>
+                            <%
+                            })
+                        .Width(175);
+                    columns.Bound(a => a.TeamSport)
+                        .ClientTemplate("<span <#= TeamSport ? \"class='t-icon t-update'\" : \"\" #>></span>")
+                        .Template(o =>
+                            { %>
+                                <span <%= (bool)o.TeamSport ? "class='t-icon t-update'" : "" %>></span>
+                            <% })
+                        .Width(75);
+                    columns.Bound(a => a.ResourceTracking)
+                        .ClientTemplate("<span <#= ResourceTracking ? \"class='t-icon t-update'\" : \"\" #>></span>")
+                        .Template(o =>
+                            { %>
+                                <span <%= (bool)o.ResourceTracking ? "class='t-icon t-update'" : "" %>></span>
+                            <% })
+                        .Width(75);
+                    columns.Bound(a => a.HasComments)
+                            .ClientTemplate("<span onclick=\"openCommentWindow('DownloadTemplate', '<#= DownloadTemplateId #>', '<#= Name #>', 'Templates', '" + Model.Editable + "', 'true');\" class=\"comment sprite sprite-<#= HasComments ? \"note\" : \"note_none\" #>\"></span>")
+                            .Template(o =>
+                                { %>
+                                    <span onclick="openCommentWindow('DownloadTemplate', '<%= o.DownloadTemplateId %>', '<%= o.Name %>', 'Templates', '<%= Model.Editable %>', 'true');" class="comment sprite sprite-<%= o.HasComments ? "note" : "note_none" %>"></span>
+                                <%
+                                })
+                            .Width(37)
+                            .Title("")
+                            .Filterable(false);
+                    columns.Command(commands =>
+                    {
+                        if (Model.Editable)
+                        {
+                            commands.Edit().ButtonType(GridButtonType.ImageAndText).HtmlAttributes(new { style = "float:left" });
+                            commands.Delete().ButtonType(GridButtonType.ImageAndText).HtmlAttributes(new { style = "float:left" });
+                        }
+                    })
+                    .Width(95);
+                    columns.Bound(a => a.DownloadTemplateId).Hidden(true);
+                }).Render();
+            %>
+        </div>
+
+        <div class="clear"></div>
+
+        <div style="margin-top:40px">
+            <div style="margin:0px 10px 0px 0px; float:left; width:48%"><h2><span id="downloadTemplateName"><%= ViewData["downloadTemplateName"]%></span> <%: Shared.ResultsStrings.LoadTemplates_Mappings %></h2></div>
+            <div style="margin:-20px 10px 5px 10px; float:right; width:48%; color:Red; text-align:right" id="SoftErrorTarget"></div>
+        </div>
+
+        <div class="clear"></div>
+        <div>
+            <% Html.Telerik().Grid<ResultsLoadTemplateDownloadTemplateMappingsGridViewModel>((IEnumerable<ResultsLoadTemplateDownloadTemplateMappingsGridViewModel>)ViewData["templateMappings"])
+                .Name("Mappings")
+                .TableHtmlAttributes(new { style = "font-size:8pt;height:30px" })
+                .HtmlAttributes(new { style = "height:360px" })
+                .DataKeys(keys => 
+                    {
+                        keys.Add(a => a.DownloadTemplateMappingId);
+                        keys.Add(a => a.DownloadTemplateId).RouteKey("downloadTemplateId");
+                    })
+                .Editable(e => e.Mode(GridEditMode.InLine).Enabled(true))
+                .DataBinding(dataBinding => dataBinding.Ajax()
+                    .Select("LoadTemplateDownloadTemplateMappingsGridAjax", "Results")
+                    .Update("UpdateDownloadTemplateMapping", "Results")
+                    .Insert("InsertDownloadTemplateMapping", "Results")
+                    .Delete("DeleteDownloadTemplateMapping", "Results")
+                )
+                .ToolBar(t =>
+                {
+                    if (Model.Editable) t.Insert().ButtonType(GridButtonType.ImageAndText).HtmlAttributes(new { id = "AddMappingButton" });
+                })
+                .Scrollable(scrolling => scrolling.Height(295))
+                .Resizable(resize => resize.Columns(true))
+                .ClientEvents(events => events
+                    .OnError("grid_OnError")
+                    .OnLoad("onMappingGridLoad")
+                    .OnSave("onMappingGridSave")
+                    .OnEdit("onMappingGridEdit"))
+                .Columns(columns =>
+                {
+                    columns.Bound(a => a.FieldName);
+                    columns.Bound(a => a.Required)
+                        .ClientTemplate("<span <#= Required ? \"class='t-icon t-update'\" : \"\" #>></span>")
+                        .Template(o =>
+                            { %>
+                                <span <%= o.Required ? "class='t-icon t-update'" : "" %>></span>
+                            <%
+                            })
+                        .Width(40)
+                        .HtmlAttributes(new { style = "text-align:center" });
+                    columns.Bound(a => a.TeamMember)
+                        .Width(80);
+                    columns.Bound(a => a.SourceRowOffset)
+                        .Width(70);
+                    columns.Bound(a => a.SourceColumn)
+                        .Width(80);
+                    columns.Bound(a => a.SourceColumnName)
+                        .Width(110);
+                    columns.Bound(a => a.SourceDefault)
+                        .Width(100);
+                    columns.Bound(a => a.ColumnFormat)
+                        .Width(150);
+                    columns.Bound(a => a.HasComments)
+                            .ClientTemplate("<span onclick=\"openCommentWindow('DownloadTemplateMapping', '<#= DownloadTemplateMappingId #>', '<#= FieldName #>', 'Mappings', '" + Model.Editable + "', 'true');\" class=\"comment sprite sprite-<#= HasComments ? \"note\" : \"note_none\" #>\"></span>")
+                            .Template(o =>
+                                { %>
+                                    <span onclick="openCommentWindow('DownloadTemplateMapping', '<%= o.DownloadTemplateMappingId %>', '<%= o.FieldName %>', 'Mappings', '<%= Model.Editable %>', 'true');" class="comment sprite sprite-<%= o.HasComments ? "note" : "note_none" %>"></span>
+                                <%
+                                })
+                            .Width(37)
+                            .Title("")
+                            .Filterable(false);
+                    columns.Command(commands =>
+                    {
+                        if (Model.Editable) commands.Edit().ButtonType(GridButtonType.ImageAndText).HtmlAttributes(new { style = "float:left" });
+                        if (Model.Editable) commands.Delete().ButtonType(GridButtonType.ImageAndText).HtmlAttributes(new { style = "float:left" });
+                    })
+                    .Width(95);
+                    columns.Bound(a => a.Detail).Hidden(true);
+                    columns.Bound(a => a.RequiredFormatType).Hidden(true);
+                }).Render();
+                
+            %>
+        </div>
+
+        <br />
+        <br />
+
+    </div>
+</asp:Content>
+
+<asp:Content ID="Content7" ContentPlaceHolderID="ScriptContent" runat="server">
+    <script type="text/javascript">
+        function onMappingGridLoad(e)
+        {
+            if ($("#downloadTemplateId").val() == 0)
+            {
+                $('#AddMappingButton').hide();
+            }
+        }
+
+        function onTemplateGridEdit(e)
+        {
+            if (e.mode == 'edit')
+            {
+                if (e.dataItem.TeamSport)
+                {
+                    $('#TeamSport').replaceWith("<span class='t-icon t-update'></span>");
+                }
+                else
+                {
+                    $('#TeamSport').replaceWith('');
+                }
+
+                if (e.dataItem.ResourceTracking)
+                {
+                    $('#ResourceTracking').replaceWith("<span class='t-icon t-update'></span>");
+                }
+                else
+                {
+                    $('#ResourceTracking').replaceWith('');
+                }
+            }
+        }
+
+        function onTemplateGridRowSelect(e)
+        {
+            var mappingsGrid = $('#Mappings').data('tGrid');
+            var downloadTemplateId = e.row.cells[e.row.cells.length - 1].innerHTML;
+
+            $("#downloadTemplateId").val(downloadTemplateId);
+            $('#downloadTemplateName').text(e.row.cells[1].innerHTML);
+
+            var teamSport = e.row.cells[5].innerHTML.indexOf("t-update") != -1;
+            $('#teamSport').val(teamSport);
+
+            // rebind the related grid
+            mappingsGrid.rebind({
+                downloadTemplateId: downloadTemplateId
+            });
+
+            $('#AddMappingButton').show();
+        }
+
+        function onMappingGridSave(e)
+        {
+            var values = e.values;
+            values.DownloadTemplateId = $("#downloadTemplateId").val();
+        }
+
+        function onMappingGridEdit(e)
+        {
+            //Must be a team sport to change source row
+            if ($('#teamSport').val() == 'false')
+            {
+                $('#SourceRowOffset').data('tDropDownList').disable();
+            }
+
+            if (e.mode != 'edit')
+            {
+                $('#TeamMember').val(1);
+            }
+        }
+
+        function onSourceColumnComboBinding(e)
+        {
+            var downloadTemplateId = $("#downloadTemplateId").val();
+
+            var tr = $(this).closest('tr:has(form)');
+            var dataItem = tr.closest('.t-grid').data('tGrid').dataItem(tr);
+
+            var curval = "";
+            var srcRow = $(e.currentTarget).closest('.t-edit-form tr td').eq(0).prev().find('input,select').val();
+
+            if (dataItem)
+            {
+                curval = dataItem.SourceColumn;
+            }
+
+            e.data = $.extend({}, e.data, { sourceColumn: curval, sourceRowOffset: srcRow, downloadTemplateId: downloadTemplateId });
+        }
+
+        function onSourceColumnComboBound()
+        {
+            var editor = $(this).data('tDropDownList');
+            var tr = $(this).closest('tr:has(form)');
+            var dataItem = tr.closest('.t-grid').data('tGrid').dataItem(tr);
+
+            if (dataItem)
+            {
+                var isNewRow = ($(this).closest('.t-grid-new-row').length == 1);
+                if (!isNewRow)
+                {
+                    editor.value(dataItem.SourceColumn);
+                    if (dataItem.SourceColumn)
+                    {
+                        $('#SourceDefault').attr("disabled", true).val('');
+                        $('#SourceColumnName').removeAttr("disabled");
+                    }
+                }
+            }
+        }
+
+        function onSourceColumnComboChange()
+        {
+            var editor = $(this).data('tDropDownList');
+
+            if (editor.value())
+            {
+                $('#SourceDefault').attr("disabled", true).val('');
+                $('#SourceColumnName').removeAttr("disabled");
+            }
+            else
+            {
+                $('#SourceDefault').removeAttr("disabled");
+                $('#SourceColumnName').attr("disabled", true).val('');
+            }
+        }
+    </script>
+</asp:Content>

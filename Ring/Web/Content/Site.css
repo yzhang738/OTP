@@ -1,0 +1,559 @@
+﻿/* CSS Document */
+
+body
+{
+	background:url(Images/bg_tile.jpg) top center repeat-y #264268;
+	margin:0;
+	padding:0;
+	color:#6b6b6b;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+
+body a
+{
+	outline:none;
+	color:#d5a34f;
+}
+
+body a:hover
+{
+	outline:none;
+	color: #8e8e8e;
+}
+
+img
+{
+	border:none;
+}
+
+hr
+{
+	border:thin solid #dbdfe3;
+	height:1px;
+}
+
+#bg_image
+{
+	background:url(Images/bg_image.jpg) top center no-repeat;
+	padding-top:20px;
+	overflow:visible;
+}
+
+#content
+{
+	border: 4px solid #dce5ee;
+	background: url(Images/btm_mosaic.jpg) right bottom no-repeat #f8f8f8;
+	margin: auto;
+	width: 1340px;
+}
+
+#inner_content
+{
+	background: url(Images/top_tile.gif) top left repeat-x;
+	width: 1340px;
+	margin: auto;
+}
+
+#top_nav
+{
+	margin: 5px 0 0 0;
+	float: left;
+	width: 100%;
+	vertical-align: middle;
+	color: #ffffff;
+	position: relative;
+	height: 2em;
+}
+
+#sub_nav
+{
+	text-align: right;
+	margin: 0 5px 0 0;
+	font-family: MyriadProRegular;
+	font-size: 11px;
+	color: #ffffff;
+	float: right;
+	line-height: 2em;
+	height: 22px;
+	width: 318px;
+}
+
+#sub_nav a
+{
+	text-decoration:underline;
+	color: #ffffff;
+}
+
+#sub_nav a:hover
+{
+	text-decoration:underline;
+	color: #8e8e8e;
+}
+
+#main_nav
+{
+	width:703px;
+	height:50px;
+}
+
+#header
+{
+	margin-top: 22px;
+	float: left;
+}
+
+#header_graphic
+{
+	height: 83px;
+	width: 341px;
+	margin-left: 50px;
+}
+
+#header_b
+{
+	width:900px;
+	height:205px;
+	margin:0 auto;
+	margin-top:23px;
+}
+
+#footer
+{
+	background: url(Images/bg_footer.gif) top left repeat-x #aec0e2;
+	height: 12px;
+	width: 1300px;
+	text-align: right;
+	font-size: 12px;
+	line-height: 12px;
+	padding: 7px 20px;
+	color: #f8f8f8;
+}
+
+#footer a
+{
+	color:#f8f8f8;
+	text-decoration:none;
+}
+
+#copyright 
+{
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	height: 30px;
+	width: 1300px;
+	margin: auto;
+	padding: 10px 26px;
+	color: #9db2cc;
+	font-size: 9px;
+	text-align: right;
+}
+
+h1
+{
+	float:left;
+	padding:0;
+	margin:0;
+	font-size:21px;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	color:#e58d28;
+}
+
+h2 
+{
+	line-height:22px;
+	font-size:16px;
+	float:left;
+	padding:0;
+	margin:0 0 5px 0;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+}
+
+.groupbox_1000
+{
+	background: url(Images/sidenav_bgtile_1200.gif) repeat-y left top;
+	width: 1100px;
+	padding: 0;
+	margin: 32px 0 0 18px;
+	float: left;
+	display: inline;
+}
+
+.groupbox_1000_1
+{
+	background: url(Images/sidenav_bgtile_1200.gif) repeat-y left top;
+	width: 1000px;
+	padding: 0;
+	margin: 32px 0 0 18px;
+	float: left;
+	display: inline;
+}
+
+.groupbox_600
+{
+	background: url(Images/sidenav_bgtile_600.gif) repeat-y left top;
+	width: 600px;
+	padding: 0;
+	margin: 32px 0 0 18px;
+	float: left;
+	display: inline;
+}
+
+.groupbox_600_athlete
+{
+	background: url(Images/sidenav_bgtile_1000.gif) repeat-y left top;
+	width: 675px;
+	padding: 0;
+	margin: 32px 0 0 18px;
+	float: left;
+	display: inline;
+}
+
+.groupbox_600_member
+{
+	background: url(Images/sidenav_bgtile_1000.gif) repeat-y left top;
+	width: 780px;
+	padding: 0;
+	margin: 32px 0 0 18px;
+	float: left;
+	display: inline;
+}
+
+.groupbox_home_page
+{
+	background: url(Images/sidenav_bgtile_1000.gif) repeat-y left top;
+	width: 1000px;
+	padding: 0;
+	margin: 32px 0 0 18px;
+	float: left;
+	display: inline;
+}
+
+.groupbox_title
+{
+	font-family:CharlotteSansBold;
+	font-weight:bold;
+	font-size:16px;
+	color:#ffffff;
+	margin-left:5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.groupbox_title a
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.groupbox_title a:hover
+{
+	text-decoration:underline;
+	color: #8e8e8e;
+}
+
+.groupbox_title_background
+{
+	width:100%;
+	margin-bottom:5px;
+}
+
+.groupbox_content
+{
+	margin: 0px 15px 0px 15px;
+}
+
+.groupbox_content_member
+{
+	margin: 10px 15px 10px 15px;
+}
+
+.groupbox_title_results_tab1
+{
+    width: 70%;
+	font-family:CharlotteSansBold;
+	font-weight:bold;
+	font-size:16px;
+	color:#ffffff;
+	padding-left:5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align:left;
+}
+
+.groupbox_title_results_tab2
+{
+    width: 2%;
+	padding-left:5px;
+	padding-top: -3px;
+	text-align:right;
+}
+
+.groupbox_title_results_tab3
+{
+    width: 11%;
+	padding-right:0px;
+	padding-top: 0px;
+	text-align:right;
+}
+
+.groupbox_title_results_tab4
+{
+    width: 17%;
+	padding-right:10px;
+	padding-top: 4px;
+	text-align:right;
+}
+
+.clear { clear:both; }
+
+/* IKS   
+----------------------------------------------------------*/
+
+.gradientV
+{
+	/* thanks to http://blog.fakedarren.com/2010/01/cross-browser-css-gradients/ */ /* fallback (Opera) */
+	background: #f2b822; /* Mozilla: */
+	background: -moz-linear-gradient(top, #f2b822, #f8d98d); /* Chrome, Safari:*/
+	background: -webkit-gradient(linear,                 left top, left bottom, from(#f2b822), to(#f8d98d)); /* MSIE */
+	filter: progid:DXImageTransform.Microsoft.Gradient(                 StartColorStr='#f2b822', EndColorStr='#f8d98d', GradientType=0);
+}
+
+.gradientH
+{
+	/* thanks to http://blog.fakedarren.com/2010/01/cross-browser-css-gradients/ */ /* fallback (Opera) */
+	background: #d5a34f; /* Mozilla: */
+	background: -moz-linear-gradient(left, #d5a34f, #e4c38c); /* Chrome, Safari:*/
+	background: -webkit-gradient(linear,                 left top, right top, from(#d5a34f), to(#e4c38c)); /* MSIE */
+	filter: progid:DXImageTransform.Microsoft.Gradient(                 StartColorStr='#d5a34f', EndColorStr='#e4c38c', GradientType=1);
+}
+
+.gradientHToWhite
+{
+	/* thanks to http://blog.fakedarren.com/2010/01/cross-browser-css-gradients/ */ /* fallback (Opera) */
+	background: #d5a34f; /* Mozilla: */
+	background: -moz-linear-gradient(left, #d5a34f, #ffe5ad); /* Chrome, Safari:*/
+	background: -webkit-gradient(linear,                 left top, right top, from(#d5a34f), to(#ffe5ad)); /* MSIE */
+	filter: progid:DXImageTransform.Microsoft.Gradient(                 StartColorStr='#d5a34f', EndColorStr='#ffe5ad', GradientType=1);
+}
+
+/* Telerik */
+.t-edit-form-container
+{
+    width: 350px;
+    margin: 1em;
+}
+    
+.t-edit-form-container .editor-label,
+.t-edit-form-container .editor-field
+{
+    padding-bottom: 1em;
+    float: left;
+}
+    
+.t-edit-form-container .editor-label
+{
+    width: 30%;
+    text-align: right;
+    padding-right: 3%;
+}
+    
+.t-edit-form-container .editor-field
+{
+    width: 60%;
+}
+
+.field-validation-error
+{
+    position: absolute;
+    display: block;
+}
+    
+* html .field-validation-error { position: relative; }
+*+html .field-validation-error { position: relative; }
+
+.field-validation-error span
+{
+    position: absolute;
+    white-space:nowrap;
+    color: white;
+    padding: 17px 5px 3px;
+	background: transparent url(Images/validation-error.png) no-repeat 0 0;
+}
+
+/* Indent Telerik PanalBar upto 3rd level*/
+.t-panelbar .t-group .t-group .t-group .t-link
+{
+    padding-left: 3em;
+}
+
+/* End Telerik */
+
+.comment
+{
+	cursor: pointer;
+}
+
+#menu
+{
+	float: left;
+	position: relative;
+	width: 200px;
+	margin: 5px 0px 0px 0px;
+}
+
+#logo_block
+{
+	float: left;
+	width: 128px;
+	height: 83px;
+	margin-right: 21px;
+	margin-left: 36px;
+}
+
+#header_block
+{
+	/*float: right;
+	margin-left: 21px;*/
+	float:right;
+	height: 83px;
+	width: 341px;
+	margin-left: 70px;
+}
+
+#title_block
+{
+	float: left;
+	width: 660px;
+	text-align: center;
+	margin: 0px 0px 0px 75px;
+}
+
+#year_text
+{
+	font-family: CharlotteSansBook;
+	font-size:125%;
+	color:#e58d28;
+	margin-top:10px;
+}
+
+#header_text
+{
+	font-family: CharlotteSansBold;
+	font-size: 175%;
+	color: #e58d28;
+}
+
+#sitemap
+{
+	float: left;
+	margin-left: 5px;
+	line-height: 2em;
+	font-family: MyriadProRegular;
+}
+
+#sitemap a
+{
+	text-decoration:underline;
+	color: #ffffff;
+}
+
+#sitemap a:hover
+{
+	text-decoration:underline;
+	color: #8e8e8e;
+}
+
+#live_id
+{
+	float: right;
+	width: 66px;
+	margin: 3px 0px 0px 2px;
+}
+
+#info_bar
+{
+	float: right;
+	width: 250px;
+}
+
+#main_container
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	position: relative;
+	width: 1125px;
+	float: left;
+}
+
+
+.button-span a
+{
+	font-size: 8pt;
+	color: Black;
+	text-decoration:none;
+}
+
+.button-span
+{
+	font-size: 8pt;
+	color: Black;
+}
+
+.button-span:hover
+{
+	font-size: 8pt;
+	color:Gray;
+}
+
+.sprite
+{
+	background:url(Images/OTPSprite.png);
+	display:inline-block;
+	font-size:0;
+	line-height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+	vertical-align:middle;
+}
+
+.textBox_EvalutionVersionName { width:210px }
+
+/* Sprite Rules */
+/* http://spritegen.website-performance.org/ */
+
+.sprite-Delete16{ background-position: 0 0; width: 16px; height: 16px; } 
+.sprite-StopLight_{ background-position: 0 -17px; width: 24px; height: 24px; } 
+.sprite-StopLight_GREEN{ background-position: 0 -42px; width: 24px; height: 24px; } 
+.sprite-StopLight_RED{ background-position: 0 -67px; width: 24px; height: 24px; } 
+.sprite-StopLight_YELLOW{ background-position: 0 -92px; width: 24px; height: 24px; } 
+.sprite-book_go{ background-position: 0 -117px; width: 16px; height: 16px; } 
+.sprite-chart_bar{ background-position: 0 -134px; width: 16px; height: 16px; } 
+.sprite-cog{ background-position: 0 -151px; width: 16px; height: 16px; } 
+.sprite-email{ background-position: 0 -168px; width: 16px; height: 16px; } 
+.sprite-group_link{ background-position: 0 -185px; width: 16px; height: 16px; } 
+.sprite-house{ background-position: 0 -202px; width: 16px; height: 16px; } 
+.sprite-ideaca_logo_standard{ background-position: 0 -219px; width: 91px; height: 35px; } 
+.sprite-layout_content{ background-position: 0 -255px; width: 16px; height: 16px; } 
+.sprite-layout_header{ background-position: 0 -272px; width: 16px; height: 16px; } 
+.sprite-medal_gold_3{ background-position: 0 -289px; width: 16px; height: 16px; } 
+.sprite-money{ background-position: 0 -306px; width: 16px; height: 16px; } 
+.sprite-money_dollar{ background-position: 0 -323px; width: 16px; height: 16px; } 
+.sprite-note{ background-position: 0 -340px; width: 16px; height: 16px; } 
+.sprite-note_none{ background-position: 0 -357px; width: 16px; height: 16px; } 
+.sprite-otp_logo{ background-position: 0 -374px; width: 128px; height: 83px; } 
+.sprite-phone{ background-position: 0 -458px; width: 16px; height: 16px; } 
+.sprite-report{ background-position: 0 -475px; width: 16px; height: 16px; } 
+.sprite-report_go{ background-position: 0 -492px; width: 16px; height: 16px; } 
+.sprite-report_user{ background-position: 0 -509px; width: 16px; height: 16px; } 
+.sprite-script{ background-position: 0 -526px; width: 16px; height: 16px; } 
+.sprite-shape_square{ background-position: 0 -543px; width: 16px; height: 16px; } 
+.sprite-shape_square_key{ background-position: 0 -560px; width: 16px; height: 16px; } 
+.sprite-sitemap_color{ background-position: 0 -577px; width: 16px; height: 16px; } 
+.sprite-sport_running_man{ background-position: 0 -594px; width: 16px; height: 16px; } 
+.sprite-thumb_down{ background-position: 0 -611px; width: 16px; height: 16px; } 
+.sprite-thumb_up{ background-position: 0 -628px; width: 16px; height: 16px; } 
+.sprite-tick{ background-position: 0 -645px; width: 16px; height: 16px; } 
+.sprite-time_add{ background-position: 0 -662px; width: 16px; height: 16px; } 
+.sprite-time_delete{ background-position: 0 -679px; width: 16px; height: 16px; } 
+.sprite-vcard{ background-position: 0 -696px; width: 16px; height: 16px; } 

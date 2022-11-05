@@ -1,0 +1,1512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OTPRingDataModelStoreContainer" CdmEntityContainer="RingEntities">
+    <FunctionImportMapping FunctionImportName="uspAddSportRanking" FunctionName="OTP.Ring.Data.Model.Store.uspAddSportRanking" />
+    <FunctionImportMapping FunctionImportName="uspDeleteSportRanking" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteSportRanking" />
+    <FunctionImportMapping FunctionImportName="uspUpdateSport" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateSport" />
+    <FunctionImportMapping FunctionImportName="uspUpdateSportRanking" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateSportRanking" />
+    <FunctionImportMapping FunctionImportName="uspAddSport" FunctionName="OTP.Ring.Data.Model.Store.uspAddSport" />
+    <FunctionImportMapping FunctionImportName="uspUpdateResource" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateResource" />
+    <FunctionImportMapping FunctionImportName="uspAddBenchmarkSport" FunctionName="OTP.Ring.Data.Model.Store.uspAddBenchmarkSport" />
+    <FunctionImportMapping FunctionImportName="uspAddBenchmarkTier" FunctionName="OTP.Ring.Data.Model.Store.uspAddBenchmarkTier" />
+    <FunctionImportMapping FunctionImportName="uspUpdateBenchmarkSport" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateBenchmarkSport" />
+    <FunctionImportMapping FunctionImportName="uspAddResource" FunctionName="OTP.Ring.Data.Model.Store.uspAddResource" />
+    <FunctionImportMapping FunctionImportName="uspAddResourceAffiliate" FunctionName="OTP.Ring.Data.Model.Store.uspAddResourceAffiliate" />
+    <FunctionImportMapping FunctionImportName="uspAddFundingBlock" FunctionName="OTP.Ring.Data.Model.Store.uspAddFundingBlock" />
+    <FunctionImportMapping FunctionImportName="uspAddFundingCategory" FunctionName="OTP.Ring.Data.Model.Store.uspAddFundingCategory" />
+    <FunctionImportMapping FunctionImportName="uspAddFundingDetail" FunctionName="OTP.Ring.Data.Model.Store.uspAddFundingDetail" />
+    <FunctionImportMapping FunctionImportName="uspAddFundingSummary" FunctionName="OTP.Ring.Data.Model.Store.uspAddFundingSummary" />
+    <FunctionImportMapping FunctionImportName="uspUpdateFundingBlock" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateFundingBlock" />
+    <FunctionImportMapping FunctionImportName="uspUpdateFundingCategory" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateFundingCategory" />
+    <FunctionImportMapping FunctionImportName="uspUpdateFundingDetail" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateFundingDetail" />
+    <FunctionImportMapping FunctionImportName="uspUpdateFundingSummary" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateFundingSummary" />
+    <FunctionImportMapping FunctionImportName="uspUpdateResourceAffiliate" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateResourceAffiliate" />
+    <FunctionImportMapping FunctionImportName="uspAddResourceDirectAthleteSupport" FunctionName="OTP.Ring.Data.Model.Store.uspAddResourceDirectAthleteSupport" />
+    <FunctionImportMapping FunctionImportName="uspUpdateResourceDirectAthleteSupport" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateResourceDirectAthleteSupport" />
+    <FunctionImportMapping FunctionImportName="uspAddBenchmarkResource" FunctionName="OTP.Ring.Data.Model.Store.uspAddBenchmarkResource" />
+    <FunctionImportMapping FunctionImportName="uspUpdateBenchmarkResource" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateBenchmarkResource" />
+    <FunctionImportMapping FunctionImportName="uspAddResourceSport" FunctionName="OTP.Ring.Data.Model.Store.uspAddResourceSport" />
+    <FunctionImportMapping FunctionImportName="uspUpdateResourceSport" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateResourceSport" />
+    <FunctionImportMapping FunctionImportName="uspAddResourceQualification" FunctionName="OTP.Ring.Data.Model.Store.uspAddResourceQualification" />
+    <FunctionImportMapping FunctionImportName="uspUpdateResourceQualification" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateResourceQualification" />
+    <FunctionImportMapping FunctionImportName="uspGetComments" FunctionName="OTP.Ring.Data.Model.Store.uspGetComments" />
+    <FunctionImportMapping FunctionImportName="uspUpdateComments" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateComments" />
+    <FunctionImportMapping FunctionImportName="uspAddActionItem" FunctionName="OTP.Ring.Data.Model.Store.uspAddActionItem" />
+    <FunctionImportMapping FunctionImportName="uspUpdateActionItem" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateActionItem" />
+    <FunctionImportMapping FunctionImportName="uspDeleteFundingDetail" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteFundingDetail" />
+    <FunctionImportMapping FunctionImportName="uspAddUser" FunctionName="OTP.Ring.Data.Model.Store.uspAddUser" />
+    <FunctionImportMapping FunctionImportName="uspUpdateUser" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateUser" />
+    <FunctionImportMapping FunctionImportName="uspAddFundingRevision" FunctionName="OTP.Ring.Data.Model.Store.uspAddFundingRevision" />
+    <FunctionImportMapping FunctionImportName="uspAddFundingRevisionVersion" FunctionName="OTP.Ring.Data.Model.Store.uspAddFundingRevisionVersion" />
+    <FunctionImportMapping FunctionImportName="uspDeleteResourceAffiliate" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteResourceAffiliate" />
+    <FunctionImportMapping FunctionImportName="uspDeleteResourceDirectAthleteSupport" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteResourceDirectAthleteSupport" />
+    <FunctionImportMapping FunctionImportName="uspDeleteResourceQualification" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteResourceQualification" />
+    <FunctionImportMapping FunctionImportName="uspDeleteResourceSport" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteResourceSport" />
+    <FunctionImportMapping FunctionImportName="uspDeleteBenchmarkSport" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteBenchmarkSport" />
+    <FunctionImportMapping FunctionImportName="uspDeleteBenchmarkResource" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteBenchmarkResource" />
+    <FunctionImportMapping FunctionImportName="uspAddCompetition" FunctionName="OTP.Ring.Data.Model.Store.uspAddCompetition" />
+    <FunctionImportMapping FunctionImportName="uspAddCompetitionEvent" FunctionName="OTP.Ring.Data.Model.Store.uspAddCompetitionEvent" />
+    <FunctionImportMapping FunctionImportName="uspDeleteCompetition" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteCompetition" />
+    <FunctionImportMapping FunctionImportName="uspDeleteCompetitionEvent" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteCompetitionEvent" />
+    <FunctionImportMapping FunctionImportName="uspUpdateCompetition" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateCompetition" />
+    <FunctionImportMapping FunctionImportName="uspUpdateCompetitionEvent" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateCompetitionEvent" />
+    <FunctionImportMapping FunctionImportName="uspAddDownloadStaging" FunctionName="OTP.Ring.Data.Model.Store.uspAddDownloadStaging" />
+    <FunctionImportMapping FunctionImportName="uspDeleteDownloadStaging" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteDownloadStaging" />
+    <FunctionImportMapping FunctionImportName="uspAddDownloadTemplate" FunctionName="OTP.Ring.Data.Model.Store.uspAddDownloadTemplate" />
+    <FunctionImportMapping FunctionImportName="uspDeleteDownloadTemplate" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteDownloadTemplate" />
+    <FunctionImportMapping FunctionImportName="uspUpdateDownloadTemplate" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateDownloadTemplate" />
+    <FunctionImportMapping FunctionImportName="uspUpdateDownloadTemplateMapping" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateDownloadTemplateMapping" />
+    <FunctionImportMapping FunctionImportName="uspAddResultStaging" FunctionName="OTP.Ring.Data.Model.Store.uspAddResultStaging" />
+    <FunctionImportMapping FunctionImportName="uspDeleteResultStaging" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteResultStaging" />
+    <FunctionImportMapping FunctionImportName="uspUpdateResultStaging" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateResultStaging" />
+    <FunctionImportMapping FunctionImportName="uspLoadDownloadStagingResults" FunctionName="OTP.Ring.Data.Model.Store.uspLoadDownloadStagingResults">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OTP.Ring.Data.Model.uspLoadDownloadStagingResults_Result">
+          <ScalarProperty Name="SourceColumn" ColumnName="SourceColumn" />
+          <ScalarProperty Name="SourceColumnName" ColumnName="SourceColumnName" />
+          <ScalarProperty Name="SourceRow" ColumnName="SourceRow" />
+          <ScalarProperty Name="DataType" ColumnName="DataType" />
+          <ScalarProperty Name="FieldLength" ColumnName="FieldLength" />
+          <ScalarProperty Name="DownloadValue" ColumnName="DownloadValue" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspAddTeam" FunctionName="OTP.Ring.Data.Model.Store.uspAddTeam" />
+    <FunctionImportMapping FunctionImportName="uspAddTeamMember" FunctionName="OTP.Ring.Data.Model.Store.uspAddTeamMember" />
+    <FunctionImportMapping FunctionImportName="uspDeleteTeam" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteTeam" />
+    <FunctionImportMapping FunctionImportName="uspDeleteTeamMember" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteTeamMember" />
+    <FunctionImportMapping FunctionImportName="uspUpdateTeam" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateTeam" />
+    <FunctionImportMapping FunctionImportName="uspUpdateTeamMember" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateTeamMember" />
+    <FunctionImportMapping FunctionImportName="uspLoadResultStagingResults" FunctionName="OTP.Ring.Data.Model.Store.uspLoadResultStagingResults" />
+    <FunctionImportMapping FunctionImportName="uspUpdateResultStagingStatus" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateResultStagingStatus" />
+    <FunctionImportMapping FunctionImportName="uspUnloadResultStagingResults" FunctionName="OTP.Ring.Data.Model.Store.uspUnloadResultStagingResults" />
+    <FunctionImportMapping FunctionImportName="uspAddEvaluationVersion" FunctionName="OTP.Ring.Data.Model.Store.uspAddEvaluationVersion" />
+    <FunctionImportMapping FunctionImportName="uspUpdateEvaluationVersion" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateEvaluationVersion" />
+    <FunctionImportMapping FunctionImportName="uspDiscardResultStagingResults" FunctionName="OTP.Ring.Data.Model.Store.uspDiscardResultStagingResults" />
+    <FunctionImportMapping FunctionImportName="uspAddEvaluationVersionQuestion" FunctionName="OTP.Ring.Data.Model.Store.uspAddEvaluationVersionQuestion" />
+    <FunctionImportMapping FunctionImportName="uspUpdateEvaluationVersionQuestion" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateEvaluationVersionQuestion" />
+    <FunctionImportMapping FunctionImportName="uspAddEvaluationBestPractice" FunctionName="OTP.Ring.Data.Model.Store.uspAddEvaluationBestPractice" />
+    <FunctionImportMapping FunctionImportName="uspAddEvaluationQuestion" FunctionName="OTP.Ring.Data.Model.Store.uspAddEvaluationQuestion" />
+    <FunctionImportMapping FunctionImportName="uspDeleteEvaluationBestPractice" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteEvaluationBestPractice" />
+    <FunctionImportMapping FunctionImportName="uspUpdateEvaluationBestPractice" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateEvaluationBestPractice" />
+    <FunctionImportMapping FunctionImportName="uspUpdateEvaluationQuestion" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateEvaluationQuestion" />
+    <FunctionImportMapping FunctionImportName="uspCopyEvaluationVersion" FunctionName="OTP.Ring.Data.Model.Store.uspCopyEvaluationVersion" />
+    <FunctionImportMapping FunctionImportName="uspUpdateEvaluation" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateEvaluation" />
+    <FunctionImportMapping FunctionImportName="uspAddEvaluation" FunctionName="OTP.Ring.Data.Model.Store.uspAddEvaluation" />
+    <FunctionImportMapping FunctionImportName="uspDeleteEvaluationVersionQuestion" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteEvaluationVersionQuestion" />
+    <FunctionImportMapping FunctionImportName="uspCopyEvaluation" FunctionName="OTP.Ring.Data.Model.Store.uspCopyEvaluation" />
+    <FunctionImportMapping FunctionImportName="uspGetReportFields" FunctionName="OTP.Ring.Data.Model.Store.uspGetReportFields">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OTP.Ring.Data.Model.uspGetReportFields_Result">
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="DataType" ColumnName="DataType" />
+          <ScalarProperty Name="Nullable" ColumnName="Nullable" />
+          <ScalarProperty Name="ColumnID" ColumnName="ColumnID" />
+          <ScalarProperty Name="MaxLength" ColumnName="MaxLength" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspAddAdhocReport" FunctionName="OTP.Ring.Data.Model.Store.uspAddAdhocReport" />
+    <FunctionImportMapping FunctionImportName="uspDeleteAdhocReport" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteAdhocReport" />
+    <FunctionImportMapping FunctionImportName="uspUpdateAdhocReport" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateAdhocReport" />
+    <FunctionImportMapping FunctionImportName="uspAddReportGroup" FunctionName="OTP.Ring.Data.Model.Store.uspAddReportGroup" />
+    <FunctionImportMapping FunctionImportName="uspUpdateReportGroup" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateReportGroup" />
+    <FunctionImportMapping FunctionImportName="uspDeleteReportGroup" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteReportGroup" />
+    <FunctionImportMapping FunctionImportName="uspAddReportColumn" FunctionName="OTP.Ring.Data.Model.Store.uspAddReportColumn" />
+    <FunctionImportMapping FunctionImportName="uspUpdateReportColumn" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateReportColumn" />
+    <FunctionImportMapping FunctionImportName="uspDeleteReportColumn" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteReportColumn" />
+    <FunctionImportMapping FunctionImportName="uspAddReportFilter" FunctionName="OTP.Ring.Data.Model.Store.uspAddReportFilter" />
+    <FunctionImportMapping FunctionImportName="uspUpdateReportFilter" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateReportFilter" />
+    <FunctionImportMapping FunctionImportName="uspDeleteReportFilter" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteReportFilter" />
+    <FunctionImportMapping FunctionImportName="uspAddReportSecurityGroupProfile" FunctionName="OTP.Ring.Data.Model.Store.uspAddReportSecurityGroupProfile" />
+    <FunctionImportMapping FunctionImportName="uspDeleteReportSecurityGroupProfile" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteReportSecurityGroupProfile" />
+    <FunctionImportMapping FunctionImportName="uspCopyReport" FunctionName="OTP.Ring.Data.Model.Store.uspCopyReport" />
+    <FunctionImportMapping FunctionImportName="uspAddResourcePoolAssignment" FunctionName="OTP.Ring.Data.Model.Store.uspAddResourcePoolAssignment" />
+    <FunctionImportMapping FunctionImportName="uspDeleteResourcePoolAssignment" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteResourcePoolAssignment" />
+    <FunctionImportMapping FunctionImportName="uspGetValidAggregations" FunctionName="OTP.Ring.Data.Model.Store.uspGetValidAggregations">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OTP.Ring.Data.Model.uspGetValidAggregations_Result">
+          <ScalarProperty Name="DecodeID" ColumnName="DecodeID" />
+          <ScalarProperty Name="DecodeID_EN" ColumnName="DecodeID_EN" />
+          <ScalarProperty Name="DecodeID_FR" ColumnName="DecodeID_FR" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspGetValidFormatStrings" FunctionName="OTP.Ring.Data.Model.Store.uspGetValidFormatStrings">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OTP.Ring.Data.Model.uspGetValidFormatStrings_Result">
+          <ScalarProperty Name="DecodeID" ColumnName="DecodeID" />
+          <ScalarProperty Name="DecodeID_EN" ColumnName="DecodeID_EN" />
+          <ScalarProperty Name="DecodeID_FR" ColumnName="DecodeID_FR" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspAddDownloadTemplateMapping" FunctionName="OTP.Ring.Data.Model.Store.uspAddDownloadTemplateMapping" />
+    <FunctionImportMapping FunctionImportName="uspDeleteDownloadTemplateMapping" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteDownloadTemplateMapping" />
+    <FunctionImportMapping FunctionImportName="uspAddDownloadStagingBulk" FunctionName="OTP.Ring.Data.Model.Store.uspAddDownloadStagingBulk" />
+    <EntitySetMapping Name="ActionItems">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ActionItem">
+        <MappingFragment StoreEntitySet="ActionItem">
+          <ScalarProperty Name="Description_FR" ColumnName="Description_FR" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ActionItemPriority" ColumnName="ActionItemPriority" />
+          <ScalarProperty Name="ActionItemStatus" ColumnName="ActionItemStatus" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ActionItemTypeID" ColumnName="ActionItemTypeID" />
+          <ScalarProperty Name="ActionItemID" ColumnName="ActionItemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActionItemTypes">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ActionItemType">
+        <MappingFragment StoreEntitySet="ActionItemType">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CategroyName_FR" ColumnName="CategroyName_FR" />
+          <ScalarProperty Name="CategoryName_EN" ColumnName="CategoryName_EN" />
+          <ScalarProperty Name="SourceName_FR" ColumnName="SourceName_FR" />
+          <ScalarProperty Name="SourceName_EN" ColumnName="SourceName_EN" />
+          <ScalarProperty Name="ActionItemTypeID" ColumnName="ActionItemTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AffiliateTypes">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.AffiliateType">
+        <MappingFragment StoreEntitySet="AffiliateType">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="AffiliateTypeID" ColumnName="AffiliateTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BenchmarkResources">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.BenchmarkResource">
+        <MappingFragment StoreEntitySet="BenchmarkResource">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="OTPValue" ColumnName="OTPValue" />
+          <ScalarProperty Name="NSOValue" ColumnName="NSOValue" />
+          <ScalarProperty Name="YearID" ColumnName="YearID" />
+          <ScalarProperty Name="BenchmarkTierID" ColumnName="BenchmarkTierID" />
+          <ScalarProperty Name="BenchmarkTypeID" ColumnName="BenchmarkTypeID" />
+          <ScalarProperty Name="ResourceSportID" ColumnName="ResourceSportID" />
+          <ScalarProperty Name="BenchmarkResourceID" ColumnName="BenchmarkResourceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BenchmarkSports">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.BenchmarkSport">
+        <MappingFragment StoreEntitySet="BenchmarkSport">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="OTPValue" ColumnName="OTPValue" />
+          <ScalarProperty Name="NSOValue" ColumnName="NSOValue" />
+          <ScalarProperty Name="YearID" ColumnName="YearID" />
+          <ScalarProperty Name="BenchmarkTierID" ColumnName="BenchmarkTierID" />
+          <ScalarProperty Name="BenchmarkTypeID" ColumnName="BenchmarkTypeID" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="BenchmarkSportID" ColumnName="BenchmarkSportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BenchmarkTiers">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.BenchmarkTier">
+        <MappingFragment StoreEntitySet="BenchmarkTier">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="PositionEnd" ColumnName="PositionEnd" />
+          <ScalarProperty Name="PositionStart" ColumnName="PositionStart" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="BenchmarkTierID" ColumnName="BenchmarkTierID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BenchmarkTypes">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.BenchmarkType">
+        <MappingFragment StoreEntitySet="BenchmarkType">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="BenchmarkTypeID" ColumnName="BenchmarkTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Competitions">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Competition">
+        <MappingFragment StoreEntitySet="Competition">
+          <ScalarProperty Name="WDBID" ColumnName="WDBID" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CompetitionDate" ColumnName="CompetitionDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BenchmarkTypeID" ColumnName="BenchmarkTypeID" />
+          <ScalarProperty Name="CompetitionTypeID" ColumnName="CompetitionTypeID" />
+          <ScalarProperty Name="YearID" ColumnName="YearID" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="CompetitionID" ColumnName="CompetitionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompetitionSports">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.CompetitionSport">
+        <MappingFragment StoreEntitySet="CompetitionSport">
+          <ScalarProperty Name="WDBID" ColumnName="WDBID" />
+          <ScalarProperty Name="Cancelled" ColumnName="Cancelled" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="FieldSize" ColumnName="FieldSize" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="CompetitionID" ColumnName="CompetitionID" />
+          <ScalarProperty Name="CompetitionSportID" ColumnName="CompetitionSportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompetitionTypes">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.CompetitionType">
+        <MappingFragment StoreEntitySet="CompetitionType">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="CompetitionTypeID" ColumnName="CompetitionTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Decodes">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Decode">
+        <MappingFragment StoreEntitySet="Decode">
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="DecodeID_FR" ColumnName="DecodeID_FR" />
+          <ScalarProperty Name="DecodeID_EN" ColumnName="DecodeID_EN" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="DecodeID" ColumnName="DecodeID" />
+          <ScalarProperty Name="DecodeCategoryID" ColumnName="DecodeCategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DecodeCategories">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.DecodeCategory">
+        <MappingFragment StoreEntitySet="DecodeCategory">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="DecodeCategoryID" ColumnName="DecodeCategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DirectAthleteSupports">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.DirectAthleteSupport">
+        <MappingFragment StoreEntitySet="DirectAthleteSupport">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="DirectAthleteSupportTypeID" ColumnName="DirectAthleteSupportTypeID" />
+          <ScalarProperty Name="DirectAthleteSupportID" ColumnName="DirectAthleteSupportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DirectAthleteSupportTypes">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.DirectAthleteSupportType">
+        <MappingFragment StoreEntitySet="DirectAthleteSupportType">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="DirectAthleteSupportTypeID" ColumnName="DirectAthleteSupportTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DownloadStagings">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.DownloadStaging">
+        <MappingFragment StoreEntitySet="DownloadStaging">
+          <ScalarProperty Name="DefaultColumn" ColumnName="DefaultColumn" />
+          <ScalarProperty Name="ColumnZ" ColumnName="ColumnZ" />
+          <ScalarProperty Name="ColumnY" ColumnName="ColumnY" />
+          <ScalarProperty Name="ColumnX" ColumnName="ColumnX" />
+          <ScalarProperty Name="ColumnW" ColumnName="ColumnW" />
+          <ScalarProperty Name="ColumnV" ColumnName="ColumnV" />
+          <ScalarProperty Name="ColumnU" ColumnName="ColumnU" />
+          <ScalarProperty Name="ColumnT" ColumnName="ColumnT" />
+          <ScalarProperty Name="ColumnS" ColumnName="ColumnS" />
+          <ScalarProperty Name="ColumnR" ColumnName="ColumnR" />
+          <ScalarProperty Name="ColumnQ" ColumnName="ColumnQ" />
+          <ScalarProperty Name="ColumnP" ColumnName="ColumnP" />
+          <ScalarProperty Name="ColumnO" ColumnName="ColumnO" />
+          <ScalarProperty Name="ColumnN" ColumnName="ColumnN" />
+          <ScalarProperty Name="ColumnM" ColumnName="ColumnM" />
+          <ScalarProperty Name="ColumnL" ColumnName="ColumnL" />
+          <ScalarProperty Name="ColumnK" ColumnName="ColumnK" />
+          <ScalarProperty Name="ColumnJ" ColumnName="ColumnJ" />
+          <ScalarProperty Name="ColumnI" ColumnName="ColumnI" />
+          <ScalarProperty Name="ColumnH" ColumnName="ColumnH" />
+          <ScalarProperty Name="ColumnG" ColumnName="ColumnG" />
+          <ScalarProperty Name="ColumnF" ColumnName="ColumnF" />
+          <ScalarProperty Name="ColumnE" ColumnName="ColumnE" />
+          <ScalarProperty Name="ColumnD" ColumnName="ColumnD" />
+          <ScalarProperty Name="ColumnC" ColumnName="ColumnC" />
+          <ScalarProperty Name="ColumnB" ColumnName="ColumnB" />
+          <ScalarProperty Name="ColumnA" ColumnName="ColumnA" />
+          <ScalarProperty Name="SourceRow" ColumnName="SourceRow" />
+          <ScalarProperty Name="BenchmarkTypeID" ColumnName="BenchmarkTypeID" />
+          <ScalarProperty Name="EventDescription" ColumnName="EventDescription" />
+          <ScalarProperty Name="EventDate" ColumnName="EventDate" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="CompetitionID" ColumnName="CompetitionID" />
+          <ScalarProperty Name="DownloadTemplateID" ColumnName="DownloadTemplateID" />
+          <ScalarProperty Name="DownloadStagingID" ColumnName="DownloadStagingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DownloadTemplates">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.DownloadTemplate">
+        <MappingFragment StoreEntitySet="DownloadTemplate">
+          <ScalarProperty Name="ResourceTracking" ColumnName="ResourceTracking" />
+          <ScalarProperty Name="TeamSport" ColumnName="TeamSport" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Instructions" ColumnName="Instructions" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="TableTemplateID" ColumnName="TableTemplateID" />
+          <ScalarProperty Name="DownloadTemplateID" ColumnName="DownloadTemplateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DownloadTemplateMappings">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.DownloadTemplateMapping">
+        <MappingFragment StoreEntitySet="DownloadTemplateMapping">
+          <ScalarProperty Name="SourceRowOffset" ColumnName="SourceRowOffset" />
+          <ScalarProperty Name="TeamMember" ColumnName="TeamMember" />
+          <ScalarProperty Name="TimeFormat" ColumnName="TimeFormat" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="DateFormat" ColumnName="DateFormat" />
+          <ScalarProperty Name="NameFormat" ColumnName="NameFormat" />
+          <ScalarProperty Name="SourceDefault" ColumnName="SourceDefault" />
+          <ScalarProperty Name="SourceColumn" ColumnName="SourceColumn" />
+          <ScalarProperty Name="SourceColumnName" ColumnName="SourceColumnName" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="DownloadTemplateID" ColumnName="DownloadTemplateID" />
+          <ScalarProperty Name="DownloadTemplateMappingID" ColumnName="DownloadTemplateMappingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Evaluations">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Evaluation">
+        <MappingFragment StoreEntitySet="Evaluation">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="EvaluationPhase" ColumnName="EvaluationPhase" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="EvaluationVersionID" ColumnName="EvaluationVersionID" />
+          <ScalarProperty Name="EvaluationID" ColumnName="EvaluationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvaluationBestPractices">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.EvaluationBestPractice">
+        <MappingFragment StoreEntitySet="EvaluationBestPractice">
+          <ScalarProperty Name="Description_FR" ColumnName="Description_FR" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="EvaluationMasterPillarID" ColumnName="EvaluationMasterPillarID" />
+          <ScalarProperty Name="EvaluationID" ColumnName="EvaluationID" />
+          <ScalarProperty Name="EvaluationBestPracticeID" ColumnName="EvaluationBestPracticeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvaluationMasterPillars">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.EvaluationMasterPillar">
+        <MappingFragment StoreEntitySet="EvaluationMasterPillar">
+          <ScalarProperty Name="UniqueKey" ColumnName="UniqueKey" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Description_FR" ColumnName="Description_FR" />
+          <ScalarProperty Name="Description_EN" ColumnName="Description_EN" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="OrganizationTypeID" ColumnName="OrganizationTypeID" />
+          <ScalarProperty Name="EvaluationMasterPillarID" ColumnName="EvaluationMasterPillarID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvaluationMasterQuestions">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.EvaluationMasterQuestion">
+        <MappingFragment StoreEntitySet="EvaluationMasterQuestion">
+          <ScalarProperty Name="MasterQuestion_FR" ColumnName="MasterQuestion_FR" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="MasterQuestion" ColumnName="MasterQuestion" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="EvaluationMasterPillarID" ColumnName="EvaluationMasterPillarID" />
+          <ScalarProperty Name="EvaluationMasterQuestionID" ColumnName="EvaluationMasterQuestionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvaluationQuestions">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.EvaluationQuestion">
+        <MappingFragment StoreEntitySet="EvaluationQuestion">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="EvaluationStatusCurrent" ColumnName="EvaluationStatusCurrent" />
+          <ScalarProperty Name="HPAAssessmentCurrent" ColumnName="HPAAssessmentCurrent" />
+          <ScalarProperty Name="EvaluationStatusInitial" ColumnName="EvaluationStatusInitial" />
+          <ScalarProperty Name="HPAAssessmentInitial" ColumnName="HPAAssessmentInitial" />
+          <ScalarProperty Name="NotApplicable" ColumnName="NotApplicable" />
+          <ScalarProperty Name="EvaluationVersionQuestionID" ColumnName="EvaluationVersionQuestionID" />
+          <ScalarProperty Name="EvaluationID" ColumnName="EvaluationID" />
+          <ScalarProperty Name="EvaluationQuestionID" ColumnName="EvaluationQuestionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvaluationVersions">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.EvaluationVersion">
+        <MappingFragment StoreEntitySet="EvaluationVersion">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="VersionPhase" ColumnName="VersionPhase" />
+          <ScalarProperty Name="VersionID" ColumnName="VersionID" />
+          <ScalarProperty Name="YearID" ColumnName="YearID" />
+          <ScalarProperty Name="OrganizationTypeID" ColumnName="OrganizationTypeID" />
+          <ScalarProperty Name="EvaluationVersionID" ColumnName="EvaluationVersionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvaluationVersionQuestions">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.EvaluationVersionQuestion">
+        <MappingFragment StoreEntitySet="EvaluationVersionQuestion">
+          <ScalarProperty Name="VersionQuestionFR" ColumnName="VersionQuestionFR" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="QuestionPhase" ColumnName="QuestionPhase" />
+          <ScalarProperty Name="VersionQuestion" ColumnName="VersionQuestion" />
+          <ScalarProperty Name="EvaluationMasterQuestionID" ColumnName="EvaluationMasterQuestionID" />
+          <ScalarProperty Name="EvaluationVersionID" ColumnName="EvaluationVersionID" />
+          <ScalarProperty Name="EvaluationVersionQuestionID" ColumnName="EvaluationVersionQuestionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FundingBlocks">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.FundingBlock">
+        <MappingFragment StoreEntitySet="FundingBlock">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="FundingBlockTypeID" ColumnName="FundingBlockTypeID" />
+          <ScalarProperty Name="FundingSummaryID" ColumnName="FundingSummaryID" />
+          <ScalarProperty Name="FundingBlockID" ColumnName="FundingBlockID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FundingBlockOrganizationTypes">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.FundingBlockOrganizationType">
+        <MappingFragment StoreEntitySet="FundingBlockOrganizationType">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="OrganizationTypeID" ColumnName="OrganizationTypeID" />
+          <ScalarProperty Name="FundingBlockTypeID" ColumnName="FundingBlockTypeID" />
+          <ScalarProperty Name="FundingBlockOrganizationTypeID" ColumnName="FundingBlockOrganizationTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FundingBlockTypes">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.FundingBlockType">
+        <MappingFragment StoreEntitySet="FundingBlockType">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="FundingBlockTypeID" ColumnName="FundingBlockTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FundingCategories">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.FundingCategory">
+        <MappingFragment StoreEntitySet="FundingCategory">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="FundingCategoryTypeID" ColumnName="FundingCategoryTypeID" />
+          <ScalarProperty Name="FundingBlockID" ColumnName="FundingBlockID" />
+          <ScalarProperty Name="FundingCategoryID" ColumnName="FundingCategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FundingCategoryTypes">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.FundingCategoryType">
+        <MappingFragment StoreEntitySet="FundingCategoryType">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ResourceTypeID" ColumnName="ResourceTypeID" />
+          <ScalarProperty Name="ResourceRequired" ColumnName="ResourceRequired" />
+          <ScalarProperty Name="CSCRequired" ColumnName="CSCRequired" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="FundingBlockTypeID" ColumnName="FundingBlockTypeID" />
+          <ScalarProperty Name="FundingCategoryTypeID" ColumnName="FundingCategoryTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FundingDetails">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.FundingDetail">
+        <MappingFragment StoreEntitySet="FundingDetail">
+          <ScalarProperty Name="RevisionCOC" ColumnName="RevisionCOC" />
+          <ScalarProperty Name="RevisionSC" ColumnName="RevisionSC" />
+          <ScalarProperty Name="RevisionTotal" ColumnName="RevisionTotal" />
+          <ScalarProperty Name="Recurring" ColumnName="Recurring" />
+          <ScalarProperty Name="RequestTotal" ColumnName="RequestTotal" />
+          <ScalarProperty Name="RecommendTotalOTP" ColumnName="RecommendTotalOTP" />
+          <ScalarProperty Name="RecommendTotalHPA" ColumnName="RecommendTotalHPA" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="FundsCOC" ColumnName="FundsCOC" />
+          <ScalarProperty Name="FundsSC" ColumnName="FundsSC" />
+          <ScalarProperty Name="FundsTotal" ColumnName="FundsTotal" />
+          <ScalarProperty Name="RecommendCOC" ColumnName="RecommendCOC" />
+          <ScalarProperty Name="RecommendSC" ColumnName="RecommendSC" />
+          <ScalarProperty Name="RecommendTotal" ColumnName="RecommendTotal" />
+          <ScalarProperty Name="RequestOTP" ColumnName="RequestOTP" />
+          <ScalarProperty Name="RequestSC" ColumnName="RequestSC" />
+          <ScalarProperty Name="RequestNSO" ColumnName="RequestNSO" />
+          <ScalarProperty Name="ActualTotal" ColumnName="ActualTotal" />
+          <ScalarProperty Name="FundingPriority" ColumnName="FundingPriority" />
+          <ScalarProperty Name="PercentCommitted" ColumnName="PercentCommitted" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FundingCategoryID" ColumnName="FundingCategoryID" />
+          <ScalarProperty Name="FundingDetailID" ColumnName="FundingDetailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FundingRevisions">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.FundingRevision">
+        <MappingFragment StoreEntitySet="FundingRevision">
+          <ScalarProperty Name="FundsCOC" ColumnName="FundsCOC" />
+          <ScalarProperty Name="FundsSC" ColumnName="FundsSC" />
+          <ScalarProperty Name="FundsTotal" ColumnName="FundsTotal" />
+          <ScalarProperty Name="Recurring" ColumnName="Recurring" />
+          <ScalarProperty Name="FundingPriority" ColumnName="FundingPriority" />
+          <ScalarProperty Name="PercentCommitted" ColumnName="PercentCommitted" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FundingDetailID" ColumnName="FundingDetailID" />
+          <ScalarProperty Name="FundingRevisionVersionID" ColumnName="FundingRevisionVersionID" />
+          <ScalarProperty Name="FundingRevisionID" ColumnName="FundingRevisionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FundingRevisionVersions">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.FundingRevisionVersion">
+        <MappingFragment StoreEntitySet="FundingRevisionVersion">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="RevisionTime" ColumnName="RevisionTime" />
+          <ScalarProperty Name="RevisionDate" ColumnName="RevisionDate" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="FundingRevisionVersion1" ColumnName="FundingRevisionVersion" />
+          <ScalarProperty Name="FundingSummaryID" ColumnName="FundingSummaryID" />
+          <ScalarProperty Name="FundingRevisionVersionID" ColumnName="FundingRevisionVersionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FundingSummaries">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.FundingSummary">
+        <MappingFragment StoreEntitySet="FundingSummary">
+          <ScalarProperty Name="FundingOther" ColumnName="FundingOther" />
+          <ScalarProperty Name="FundingCOC" ColumnName="FundingCOC" />
+          <ScalarProperty Name="FundingSC" ColumnName="FundingSC" />
+          <ScalarProperty Name="YearID" ColumnName="YearID" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="FundingStatus" ColumnName="FundingStatus" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="OrganizationTypeID" ColumnName="OrganizationTypeID" />
+          <ScalarProperty Name="FundingSummaryID" ColumnName="FundingSummaryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FundingTrackings">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.FundingTracking">
+        <MappingFragment StoreEntitySet="FundingTracking">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="FundingTrackingStatus" ColumnName="FundingTrackingStatus" />
+          <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
+          <ScalarProperty Name="PaidDate" ColumnName="PaidDate" />
+          <ScalarProperty Name="ScheduledAmount" ColumnName="ScheduledAmount" />
+          <ScalarProperty Name="ScheduledDate" ColumnName="ScheduledDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FundingSummaryID" ColumnName="FundingSummaryID" />
+          <ScalarProperty Name="FundingTrackingID" ColumnName="FundingTrackingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HPAs">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.HPA">
+        <MappingFragment StoreEntitySet="HPA">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="HPAID" ColumnName="HPAID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Language">
+        <MappingFragment StoreEntitySet="Language">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Organizations">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Organization">
+        <MappingFragment StoreEntitySet="Organization">
+          <ScalarProperty Name="HPDPhone" ColumnName="HPDPhone" />
+          <ScalarProperty Name="HPDEMail" ColumnName="HPDEMail" />
+          <ScalarProperty Name="CEOPresidentPhone" ColumnName="CEOPresidentPhone" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="MailingProvinceID" ColumnName="MailingProvinceID" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="HPDName" ColumnName="HPDName" />
+          <ScalarProperty Name="CEOPresidentEmail" ColumnName="CEOPresidentEmail" />
+          <ScalarProperty Name="CEOPresidentName" ColumnName="CEOPresidentName" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="EMailAddress" ColumnName="EMailAddress" />
+          <ScalarProperty Name="MailingCity" ColumnName="MailingCity" />
+          <ScalarProperty Name="MailingAddress" ColumnName="MailingAddress" />
+          <ScalarProperty Name="OrganizationURL" ColumnName="OrganizationURL" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="OrganizationTypeID" ColumnName="OrganizationTypeID" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrganizationTypes">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.OrganizationType">
+        <MappingFragment StoreEntitySet="OrganizationType">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="OrganizationTypeID" ColumnName="OrganizationTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provinces">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Province">
+        <MappingFragment StoreEntitySet="Province">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="ProvinceID" ColumnName="ProvinceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QualificationTypes">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.QualificationType">
+        <MappingFragment StoreEntitySet="QualificationType">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="QualificationTypeID" ColumnName="QualificationTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reports">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Report">
+        <MappingFragment StoreEntitySet="Report">
+          <ScalarProperty Name="ReportDefinition" ColumnName="ReportDefinition" />
+          <ScalarProperty Name="ReportDefinition_FR" ColumnName="ReportDefinition_FR" />
+          <ScalarProperty Name="ReportDefinition_EN" ColumnName="ReportDefinition_EN" />
+          <ScalarProperty Name="SecurityUserProfileID" ColumnName="SecurityUserProfileID" />
+          <ScalarProperty Name="ReportViewID" ColumnName="ReportViewID" />
+          <ScalarProperty Name="ReportType" ColumnName="ReportType" />
+          <ScalarProperty Name="SecurityUserSport" ColumnName="SecurityUserSport" />
+          <ScalarProperty Name="ReportCategory" ColumnName="ReportCategory" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="Description_FR" ColumnName="Description_FR" />
+          <ScalarProperty Name="Description_EN" ColumnName="Description_EN" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportAggregations">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ReportAggregation">
+        <MappingFragment StoreEntitySet="ReportAggregation">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ReportAggregation1" ColumnName="ReportAggregation" />
+          <ScalarProperty Name="XType" ColumnName="XType" />
+          <ScalarProperty Name="ReportAggregationID" ColumnName="ReportAggregationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportColumns">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ReportColumn">
+        <MappingFragment StoreEntitySet="ReportColumn">
+          <ScalarProperty Name="FormatString" ColumnName="FormatString" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="FieldSize" ColumnName="FieldSize" />
+          <ScalarProperty Name="ReportAggregation" ColumnName="ReportAggregation" />
+          <ScalarProperty Name="FieldName_FR" ColumnName="FieldName_FR" />
+          <ScalarProperty Name="FieldName_EN" ColumnName="FieldName_EN" />
+          <ScalarProperty Name="DisplayName_FR" ColumnName="DisplayName_FR" />
+          <ScalarProperty Name="DisplayName_EN" ColumnName="DisplayName_EN" />
+          <ScalarProperty Name="ReportColumnLevel" ColumnName="ReportColumnLevel" />
+          <ScalarProperty Name="ReportGroupID" ColumnName="ReportGroupID" />
+          <ScalarProperty Name="ReportColumnID" ColumnName="ReportColumnID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportFilters">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ReportFilter">
+        <MappingFragment StoreEntitySet="ReportFilter">
+          <ScalarProperty Name="ReportOperand" ColumnName="ReportOperand" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Default_EN" ColumnName="Default_EN" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+          <ScalarProperty Name="FieldName_FR" ColumnName="FieldName_FR" />
+          <ScalarProperty Name="FieldName_EN" ColumnName="FieldName_EN" />
+          <ScalarProperty Name="FilterName_FR" ColumnName="FilterName_FR" />
+          <ScalarProperty Name="FilterName_EN" ColumnName="FilterName_EN" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+          <ScalarProperty Name="ReportFilterID" ColumnName="ReportFilterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportFormatStrings">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ReportFormatString">
+        <MappingFragment StoreEntitySet="ReportFormatString">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ReportFormatString1" ColumnName="ReportFormatString" />
+          <ScalarProperty Name="XType" ColumnName="XType" />
+          <ScalarProperty Name="ReportFormatStringID" ColumnName="ReportFormatStringID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportGroups">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ReportGroup">
+        <MappingFragment StoreEntitySet="ReportGroup">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="FieldName_FR" ColumnName="FieldName_FR" />
+          <ScalarProperty Name="FieldName_EN" ColumnName="FieldName_EN" />
+          <ScalarProperty Name="ReportGroupLevel" ColumnName="ReportGroupLevel" />
+          <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+          <ScalarProperty Name="ReportGroupID" ColumnName="ReportGroupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportParameters">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ReportParameter">
+        <MappingFragment StoreEntitySet="ReportParameter">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="ReportProcedureIDParameter" ColumnName="ReportProcedureIDParameter" />
+          <ScalarProperty Name="ReportProcedureID" ColumnName="ReportProcedureID" />
+          <ScalarProperty Name="ReportParameterID" ColumnName="ReportParameterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportProcedures">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ReportProcedure">
+        <MappingFragment StoreEntitySet="ReportProcedure">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="DataSetRef" ColumnName="DataSetRef" />
+          <ScalarProperty Name="ProcedureType" ColumnName="ProcedureType" />
+          <ScalarProperty Name="ProcedureName" ColumnName="ProcedureName" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+          <ScalarProperty Name="ReportProcedureID" ColumnName="ReportProcedureID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportSecurityGroupProfiles">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ReportSecurityGroupProfile">
+        <MappingFragment StoreEntitySet="ReportSecurityGroupProfile">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SecurityGroupProfileID" ColumnName="SecurityGroupProfileID" />
+          <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+          <ScalarProperty Name="ReportSecurityGroupProfileID" ColumnName="ReportSecurityGroupProfileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportViews">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ReportView">
+        <MappingFragment StoreEntitySet="ReportView">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="ReportViewID" ColumnName="ReportViewID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Resources">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Resource">
+        <MappingFragment StoreEntitySet="Resource">
+          <ScalarProperty Name="LastName_Alias" ColumnName="LastName_Alias" />
+          <ScalarProperty Name="FirstName_Alias" ColumnName="FirstName_Alias" />
+          <ScalarProperty Name="WDBID" ColumnName="WDBID" />
+          <ScalarProperty Name="SkypeName" ColumnName="SkypeName" />
+          <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="HometownCountryID" ColumnName="HometownCountryID" />
+          <ScalarProperty Name="MailingPostalCode" ColumnName="MailingPostalCode" />
+          <ScalarProperty Name="MailingCountryID" ColumnName="MailingCountryID" />
+          <ScalarProperty Name="New" ColumnName="New" />
+          <ScalarProperty Name="Pooled" ColumnName="Pooled" />
+          <ScalarProperty Name="TBD" ColumnName="TBD" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SecondaryCSCID" ColumnName="SecondaryCSCID" />
+          <ScalarProperty Name="PrimaryCSCID" ColumnName="PrimaryCSCID" />
+          <ScalarProperty Name="HometownProvinceID" ColumnName="HometownProvinceID" />
+          <ScalarProperty Name="HometownCity" ColumnName="HometownCity" />
+          <ScalarProperty Name="EMailAddress" ColumnName="EMailAddress" />
+          <ScalarProperty Name="MailingProvinceID" ColumnName="MailingProvinceID" />
+          <ScalarProperty Name="MailingCity" ColumnName="MailingCity" />
+          <ScalarProperty Name="MailingAddress" ColumnName="MailingAddress" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="ResourceSpecialtyID" ColumnName="ResourceSpecialtyID" />
+          <ScalarProperty Name="ResourceClassID" ColumnName="ResourceClassID" />
+          <ScalarProperty Name="ResourceTypeID" ColumnName="ResourceTypeID" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceAffiliates">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ResourceAffiliate">
+        <MappingFragment StoreEntitySet="ResourceAffiliate">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="AffiliateEmail" ColumnName="AffiliateEmail" />
+          <ScalarProperty Name="AffiliateContact" ColumnName="AffiliateContact" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="AffiliateName" ColumnName="AffiliateName" />
+          <ScalarProperty Name="YearToID" ColumnName="YearToID" />
+          <ScalarProperty Name="YearFromID" ColumnName="YearFromID" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="AffiliateTypeID" ColumnName="AffiliateTypeID" />
+          <ScalarProperty Name="ResourceAffiliateID" ColumnName="ResourceAffiliateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceClasses">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ResourceClass">
+        <MappingFragment StoreEntitySet="ResourceClass">
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="ResourceClassID" ColumnName="ResourceClassID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceDirectAthleteSupports">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ResourceDirectAthleteSupport">
+        <MappingFragment StoreEntitySet="ResourceDirectAthleteSupport">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="SupportEmail" ColumnName="SupportEmail" />
+          <ScalarProperty Name="SupportContact" ColumnName="SupportContact" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SupportName" ColumnName="SupportName" />
+          <ScalarProperty Name="YearID" ColumnName="YearID" />
+          <ScalarProperty Name="DirectAthleteSupportID" ColumnName="DirectAthleteSupportID" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="ResourceDirectAthleteSupportID" ColumnName="ResourceDirectAthleteSupportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourcePoolAssignments">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ResourcePoolAssignment">
+        <MappingFragment StoreEntitySet="ResourcePoolAssignment">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ResourceIDAssignment" ColumnName="ResourceIDAssignment" />
+          <ScalarProperty Name="ResourceIDPool" ColumnName="ResourceIDPool" />
+          <ScalarProperty Name="ResourcePoolAssignmentID" ColumnName="ResourcePoolAssignmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceQualifications">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ResourceQualification">
+        <MappingFragment StoreEntitySet="ResourceQualification">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Qualified" ColumnName="Qualified" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="QualificationTypeID" ColumnName="QualificationTypeID" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="ResourceQualificationID" ColumnName="ResourceQualificationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceSpecialties">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ResourceSpecialty">
+        <MappingFragment StoreEntitySet="ResourceSpecialty">
+          <ScalarProperty Name="ResourceTypeID" ColumnName="ResourceTypeID" />
+          <ScalarProperty Name="CoachIndicator" ColumnName="CoachIndicator" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="ResourceSpecialtyID" ColumnName="ResourceSpecialtyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceSports">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ResourceSport">
+        <MappingFragment StoreEntitySet="ResourceSport">
+          <ScalarProperty Name="ISTPrimary" ColumnName="ISTPrimary" />
+          <ScalarProperty Name="ISTCrossCompetency" ColumnName="ISTCrossCompetency" />
+          <ScalarProperty Name="CoachResourceID" ColumnName="CoachResourceID" />
+          <ScalarProperty Name="SportTrackingRef" ColumnName="SportTrackingRef" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ResourceClassID" ColumnName="ResourceClassID" />
+          <ScalarProperty Name="YearID" ColumnName="YearID" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="ResourceSportID" ColumnName="ResourceSportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceTypes">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ResourceType">
+        <MappingFragment StoreEntitySet="ResourceType">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="ResourceTypeID" ColumnName="ResourceTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Results">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Result">
+        <MappingFragment StoreEntitySet="Result">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="PerfTime" ColumnName="PerfTime" />
+          <ScalarProperty Name="PerfValue" ColumnName="PerfValue" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="TeamID" ColumnName="TeamID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="BenchmarkTypeID" ColumnName="BenchmarkTypeID" />
+          <ScalarProperty Name="EventDescription" ColumnName="EventDescription" />
+          <ScalarProperty Name="EventDate" ColumnName="EventDate" />
+          <ScalarProperty Name="CompetitionID" ColumnName="CompetitionID" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="ResultID" ColumnName="ResultID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResultPositionMappings">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ResultPositionMapping">
+        <MappingFragment StoreEntitySet="ResultPositionMapping">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ResultPositionDecode" ColumnName="ResultPositionDecode" />
+          <ScalarProperty Name="ResultPositionValue" ColumnName="ResultPositionValue" />
+          <ScalarProperty Name="ResultPositionMappingID" ColumnName="ResultPositionMappingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResultStagings">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ResultStaging">
+        <MappingFragment StoreEntitySet="ResultStaging">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="PerfTime" ColumnName="PerfTime" />
+          <ScalarProperty Name="PerfValue" ColumnName="PerfValue" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="TeamID" ColumnName="TeamID" />
+          <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="SourceRow" ColumnName="SourceRow" />
+          <ScalarProperty Name="BenchmarkTypeID" ColumnName="BenchmarkTypeID" />
+          <ScalarProperty Name="EventDescription" ColumnName="EventDescription" />
+          <ScalarProperty Name="EventDate" ColumnName="EventDate" />
+          <ScalarProperty Name="CompetitionID" ColumnName="CompetitionID" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="Approved" ColumnName="Approved" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DownloadSourceID" ColumnName="DownloadSourceID" />
+          <ScalarProperty Name="DownloadTemplateID" ColumnName="DownloadTemplateID" />
+          <ScalarProperty Name="DownloadSourceType" ColumnName="DownloadSourceType" />
+          <ScalarProperty Name="ResultStagingID" ColumnName="ResultStagingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResultStagingResources">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ResultStagingResource">
+        <MappingFragment StoreEntitySet="ResultStagingResource">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DownloadFirstName" ColumnName="DownloadFirstName" />
+          <ScalarProperty Name="DownloadLastName" ColumnName="DownloadLastName" />
+          <ScalarProperty Name="SportTrackingRef" ColumnName="SportTrackingRef" />
+          <ScalarProperty Name="TeamMember" ColumnName="TeamMember" />
+          <ScalarProperty Name="SourceRow" ColumnName="SourceRow" />
+          <ScalarProperty Name="ResultStagingID" ColumnName="ResultStagingID" />
+          <ScalarProperty Name="ResultStagingResourceID" ColumnName="ResultStagingResourceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityGroupPages">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.SecurityGroupPage">
+        <MappingFragment StoreEntitySet="SecurityGroupPage">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Recursive" ColumnName="Recursive" />
+          <ScalarProperty Name="WriteAccess" ColumnName="WriteAccess" />
+          <ScalarProperty Name="ReadAccess" ColumnName="ReadAccess" />
+          <ScalarProperty Name="SecurityPageID" ColumnName="SecurityPageID" />
+          <ScalarProperty Name="SecurityGroupProfileID" ColumnName="SecurityGroupProfileID" />
+          <ScalarProperty Name="SecurityGroupPageID" ColumnName="SecurityGroupPageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityGroupProfiles">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.SecurityGroupProfile">
+        <MappingFragment StoreEntitySet="SecurityGroupProfile">
+          <ScalarProperty Name="SecurityPageIDHome" ColumnName="SecurityPageIDHome" />
+          <ScalarProperty Name="External" ColumnName="External" />
+          <ScalarProperty Name="Public" ColumnName="Public" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SecurityGroupProfileID" ColumnName="SecurityGroupProfileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityPages">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.SecurityPage">
+        <MappingFragment StoreEntitySet="SecurityPage">
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="Description_FR" ColumnName="Description_FR" />
+          <ScalarProperty Name="Description_EN" ColumnName="Description_EN" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="NodeLeafCode" ColumnName="NodeLeafCode" />
+          <ScalarProperty Name="SportFilterCode" ColumnName="SportFilterCode" />
+          <ScalarProperty Name="StylingCode" ColumnName="StylingCode" />
+          <ScalarProperty Name="IconURL" ColumnName="IconURL" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="ParentSecurityPageID" ColumnName="ParentSecurityPageID" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SecurityPageID" ColumnName="SecurityPageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityUsers">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.SecurityUser">
+        <MappingFragment StoreEntitySet="SecurityUser">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LiveID" ColumnName="LiveID" />
+          <ScalarProperty Name="SecurityUserProfileID" ColumnName="SecurityUserProfileID" />
+          <ScalarProperty Name="SecurityUserID" ColumnName="SecurityUserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityUserProfiles">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.SecurityUserProfile">
+        <MappingFragment StoreEntitySet="SecurityUserProfile">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SecurityGroupProfileID" ColumnName="SecurityGroupProfileID" />
+          <ScalarProperty Name="SecurityUserProfileID" ColumnName="SecurityUserProfileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityUserSports">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.SecurityUserSport">
+        <MappingFragment StoreEntitySet="SecurityUserSport">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="SecurityUserProfileID" ColumnName="SecurityUserProfileID" />
+          <ScalarProperty Name="SecurityUserSportID" ColumnName="SecurityUserSportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sports">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Sport">
+        <MappingFragment StoreEntitySet="Sport">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="TeamSize" ColumnName="TeamSize" />
+          <ScalarProperty Name="ResourceTracking" ColumnName="ResourceTracking" />
+          <ScalarProperty Name="TeamSport" ColumnName="TeamSport" />
+          <ScalarProperty Name="UniqueKey" ColumnName="UniqueKey" />
+          <ScalarProperty Name="StylingCode" ColumnName="StylingCode" />
+          <ScalarProperty Name="MedalEvent" ColumnName="MedalEvent" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Benchmark" ColumnName="Benchmark" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="HPAID" ColumnName="HPAID" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="ParentSportID" ColumnName="ParentSportID" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="SportCode" ColumnName="SportCode" />
+          <ScalarProperty Name="SportLevelID" ColumnName="SportLevelID" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SportLevels">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.SportLevel">
+        <MappingFragment StoreEntitySet="SportLevel">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="SportLevelID" ColumnName="SportLevelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SportRankings">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.SportRanking">
+        <MappingFragment StoreEntitySet="SportRanking">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SportRankingCategoryID" ColumnName="SportRankingCategoryID" />
+          <ScalarProperty Name="YearID" ColumnName="YearID" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="SportRankingID" ColumnName="SportRankingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SportRankingCategories">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.SportRankingCategory">
+        <MappingFragment StoreEntitySet="SportRankingCategory">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="OTPRankClass" ColumnName="OTPRankClass" />
+          <ScalarProperty Name="OTPRank" ColumnName="OTPRank" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="SportRankingCategoryID" ColumnName="SportRankingCategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TableTemplates">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.TableTemplate">
+        <MappingFragment StoreEntitySet="TableTemplate">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="TableTemplateID" ColumnName="TableTemplateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TableTemplateFields">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.TableTemplateField">
+        <MappingFragment StoreEntitySet="TableTemplateField">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="FormatType" ColumnName="FormatType" />
+          <ScalarProperty Name="ForeignKeyField" ColumnName="ForeignKeyField" />
+          <ScalarProperty Name="ForeignKeyTable" ColumnName="ForeignKeyTable" />
+          <ScalarProperty Name="RequiredNTR" ColumnName="RequiredNTR" />
+          <ScalarProperty Name="RequiredTNR" ColumnName="RequiredTNR" />
+          <ScalarProperty Name="RequiredTR" ColumnName="RequiredTR" />
+          <ScalarProperty Name="BusinessKey" ColumnName="BusinessKey" />
+          <ScalarProperty Name="ReplaceKey" ColumnName="ReplaceKey" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="TableTemplateID" ColumnName="TableTemplateID" />
+          <ScalarProperty Name="TableTemplateFieldID" ColumnName="TableTemplateFieldID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teams">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Team">
+        <MappingFragment StoreEntitySet="Team">
+          <ScalarProperty Name="WDBID" ColumnName="WDBID" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="TeamTypeID" ColumnName="TeamTypeID" />
+          <ScalarProperty Name="TeamID" ColumnName="TeamID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeamResources">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.TeamResource">
+        <MappingFragment StoreEntitySet="TeamResource">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="TeamID" ColumnName="TeamID" />
+          <ScalarProperty Name="TeamResourceID" ColumnName="TeamResourceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeamTypes">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.TeamType">
+        <MappingFragment StoreEntitySet="TeamType">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="TeamTypeID" ColumnName="TeamTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Years">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Year">
+        <MappingFragment StoreEntitySet="Year">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="YearTo" ColumnName="YearTo" />
+          <ScalarProperty Name="YearFrom" ColumnName="YearFrom" />
+          <ScalarProperty Name="YearID" ColumnName="YearID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="uspAddResultStagingResource" FunctionName="OTP.Ring.Data.Model.Store.uspAddResultStagingResource" />
+    <FunctionImportMapping FunctionImportName="uspUpdateResultStagingResource" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateResultStagingResource" />
+    <FunctionImportMapping FunctionImportName="uspDeleteResultStagingResource" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteResultStagingResource" />
+    <EntitySetMapping Name="ResultResources">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ResultResource">
+        <MappingFragment StoreEntitySet="ResultResource">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DownloadFirstName" ColumnName="DownloadFirstName" />
+          <ScalarProperty Name="DownloadLastName" ColumnName="DownloadLastName" />
+          <ScalarProperty Name="SportTrackingRef" ColumnName="SportTrackingRef" />
+          <ScalarProperty Name="TeamMember" ColumnName="TeamMember" />
+          <ScalarProperty Name="ResultID" ColumnName="ResultID" />
+          <ScalarProperty Name="ResultResourceID" ColumnName="ResultResourceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="uspCopyFunding" FunctionName="OTP.Ring.Data.Model.Store.uspCopyFunding" />
+    <FunctionImportMapping FunctionImportName="uspDeleteResult" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteResult" />
+    <FunctionImportMapping FunctionImportName="uspUpdateResult" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateResult" />
+    <FunctionImportMapping FunctionImportName="uspAddResult" FunctionName="OTP.Ring.Data.Model.Store.uspAddResult" />
+    <FunctionImportMapping FunctionImportName="uspDeleteResource" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteResource" />
+    <EntitySetMapping Name="Months">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Month">
+        <MappingFragment StoreEntitySet="Month">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="MonthID" ColumnName="MonthID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportParameter0">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ReportParameter0">
+        <MappingFragment StoreEntitySet="ReportParameter0">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="ReportProcedureIDParameter" ColumnName="ReportProcedureIDParameter" />
+          <ScalarProperty Name="ReportProcedureID" ColumnName="ReportProcedureID" />
+          <ScalarProperty Name="ReportParameterID" ColumnName="ReportParameterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActionItem_bk">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ActionItem_bk">
+        <MappingFragment StoreEntitySet="ActionItem_bk">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ActionItemPriority" ColumnName="ActionItemPriority" />
+          <ScalarProperty Name="ActionItemStatus" ColumnName="ActionItemStatus" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="Description_FR" ColumnName="Description_FR" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="ActionItemTypeID" ColumnName="ActionItemTypeID" />
+          <ScalarProperty Name="ActionItemID" ColumnName="ActionItemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvalMastQuest2013">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.EvalMastQuest2013">
+        <MappingFragment StoreEntitySet="EvalMastQuest2013">
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="ACTIVE" ColumnName="ACTIVE" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="EvaluationQuestion" ColumnName="EvaluationQuestion" />
+          <ScalarProperty Name="EvaluationMasterPillarID" ColumnName="EvaluationMasterPillarID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportSSSMSearchStrings">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ReportSSSMSearchString">
+        <MappingFragment StoreEntitySet="ReportSSSMSearchStrings">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="DisciplineSortOrder" ColumnName="DisciplineSortOrder" />
+          <ScalarProperty Name="SSSMDiscipline" ColumnName="SSSMDiscipline" />
+          <ScalarProperty Name="SportScienceOrSportMedicine" ColumnName="SportScienceOrSportMedicine" />
+          <ScalarProperty Name="SearchSortOrder" ColumnName="SearchSortOrder" />
+          <ScalarProperty Name="SSSMSearchString" ColumnName="SSSMSearchString" />
+          <ScalarProperty Name="SSSMSearchID" ColumnName="SSSMSearchID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceRankingCategories">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.ResourceRankingCategory">
+        <MappingFragment StoreEntitySet="ResourceRankingCategory">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="ResourceRankingCategoryID" ColumnName="ResourceRankingCategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sport_bk">
+      <EntityTypeMapping TypeName="OTP.Ring.Data.Model.Sport_bk">
+        <MappingFragment StoreEntitySet="Sport_bk">
+          <ScalarProperty Name="ResourceTracking" ColumnName="ResourceTracking" />
+          <ScalarProperty Name="TeamSport" ColumnName="TeamSport" />
+          <ScalarProperty Name="UniqueKey" ColumnName="UniqueKey" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="StylingCode" ColumnName="StylingCode" />
+          <ScalarProperty Name="MedalEvent" ColumnName="MedalEvent" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Benchmark" ColumnName="Benchmark" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="HPAID" ColumnName="HPAID" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="ParentSportID" ColumnName="ParentSportID" />
+          <ScalarProperty Name="Name_FR" ColumnName="Name_FR" />
+          <ScalarProperty Name="Name_EN" ColumnName="Name_EN" />
+          <ScalarProperty Name="SportCode" ColumnName="SportCode" />
+          <ScalarProperty Name="SportLevelID" ColumnName="SportLevelID" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="uspUpdateResourceResourceSport" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateResourceResourceSport" />
+    <FunctionImportMapping FunctionImportName="uspUpdateResourcePoolAssignment" FunctionName="OTP.Ring.Data.Model.Store.uspUpdateResourcePoolAssignment" />
+    <FunctionImportMapping FunctionImportName="uspGetMaintenanceAthleteGridViewModel" FunctionName="OTP.Ring.Data.Model.Store.uspGetMaintenanceAthleteGridViewModel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OTP.Ring.Data.Model.uspGetMaintenanceAthleteGridModel">
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="GenderName" ColumnName="GenderName" />
+          <ScalarProperty Name="ResourceId" ColumnName="ResourceId" />
+          <ScalarProperty Name="Pooled" ColumnName="Pooled" />
+          <ScalarProperty Name="TBD" ColumnName="TBD" />
+          <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+          <ScalarProperty Name="BenchmarksEntered" ColumnName="BenchmarksEntered" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="PersonalCoachId" ColumnName="PersonalCoachId" />
+          <ScalarProperty Name="PersonalCoachName" ColumnName="PersonalCoachName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspGetMaintenanceISTMembersGridViewModel" FunctionName="OTP.Ring.Data.Model.Store.uspGetMaintenanceISTMembersGridViewModel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OTP.Ring.Data.Model.uspGetMaintenanceISTMembersGridModel">
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="GenderName" ColumnName="GenderName" />
+          <ScalarProperty Name="PrimaryCscId" ColumnName="PrimaryCscId" />
+          <ScalarProperty Name="PrimaryCscName" ColumnName="PrimaryCscName" />
+          <ScalarProperty Name="ResourceSpecialtyId" ColumnName="ResourceSpecialtyId" />
+          <ScalarProperty Name="ResourceSpecialtyName" ColumnName="ResourceSpecialtyName" />
+          <ScalarProperty Name="ResourceId" ColumnName="ResourceId" />
+          <ScalarProperty Name="Pooled" ColumnName="Pooled" />
+          <ScalarProperty Name="TBD" ColumnName="TBD" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspGetMaintenanceNSOMembersGridViewModel" FunctionName="OTP.Ring.Data.Model.Store.uspGetMaintenanceNSOMembersGridViewModel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OTP.Ring.Data.Model.uspGetMaintenanceNSOMembersGridModel">
+          <ScalarProperty Name="GenderName" ColumnName="GenderName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="ResourceSpecialtyId" ColumnName="ResourceSpecialtyId" />
+          <ScalarProperty Name="ResourceSpecialtyName" ColumnName="ResourceSpecialtyName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="ResourceId" ColumnName="ResourceId" />
+          <ScalarProperty Name="Pooled" ColumnName="Pooled" />
+          <ScalarProperty Name="TBD" ColumnName="TBD" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspGetMaintenanceAthletesResultsViewModel" FunctionName="OTP.Ring.Data.Model.Store.uspGetMaintenanceAthletesResultsViewModel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OTP.Ring.Data.Model.uspGetMaintenanceAthletesResultsViewModel">
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="ResultID" ColumnName="ResultID" />
+          <ScalarProperty Name="CompetitionID" ColumnName="CompetitionID" />
+          <ScalarProperty Name="CompetitionName" ColumnName="CompetitionName" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="SportName" ColumnName="SportName" />
+          <ScalarProperty Name="CompetitionDate" ColumnName="CompetitionDate" />
+          <ScalarProperty Name="EventDate" ColumnName="EventDate" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="DisciplineID" ColumnName="DisciplineID" />
+          <ScalarProperty Name="DisciplineName" ColumnName="DisciplineName" />
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+          <ScalarProperty Name="EventName" ColumnName="EventName" />
+          <ScalarProperty Name="PerfValue" ColumnName="PerfValue" />
+          <ScalarProperty Name="PerfTime" ColumnName="PerfTime" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspGetMaintenanceAthleteGridViewModel1" FunctionName="OTP.Ring.Data.Model.Store.uspGetMaintenanceAthleteGridViewModel1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OTP.Ring.Data.Model.uspGetMaintenanceAthleteGridModel">
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="GenderName" ColumnName="GenderName" />
+          <ScalarProperty Name="ResourceId" ColumnName="ResourceId" />
+          <ScalarProperty Name="Pooled" ColumnName="Pooled" />
+          <ScalarProperty Name="TBD" ColumnName="TBD" />
+          <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+          <ScalarProperty Name="BenchmarksEntered" ColumnName="BenchmarksEntered" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="PersonalCoachId" ColumnName="PersonalCoachId" />
+          <ScalarProperty Name="PersonalCoachName" ColumnName="PersonalCoachName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspDeleteSport" FunctionName="OTP.Ring.Data.Model.Store.uspDeleteSport" />
+  </EntityContainerMapping>
+</Mapping>

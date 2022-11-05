@@ -1,0 +1,77 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.ComponentModel;
+using OTP.Ring.Data.Models;
+using System.Runtime.Serialization;
+using System.ComponentModel.DataAnnotations;
+using OTP.Ring.Common;
+
+namespace OTP.Ring.Models.ViewModel
+{
+    [Serializable]
+    [KnownType(typeof(MaintenanceAthletesAthleteGridViewModel))]
+    public class MaintenanceAthletesAthleteGridViewModel
+    {
+        [ReadOnly(true)]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_ResourceIdShort")]
+        public int ResourceId { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_TBD")]
+        public bool TBD { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_Pooled")]
+        public bool Pooled { get; set; }
+
+        [ReadOnly(true)]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_IsNew")]
+        public bool IsNew { get; set; }
+
+        [ReadOnly(true)]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_BenchmarksEntered")]
+        public bool BenchmarksEntered { get; set; }
+
+        [ReadOnly(true)]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_Category")]
+        public string Category { get; set; }
+
+        [UIHint("AthletesGridCountryTemplate")]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_CountryId")]
+        public string CountryId { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_CountryName")]
+        public string CountryName { get; set; }
+
+        [UIHint("AthletesGridSpecialtyTemplate")]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_ResourceSpecialtyId")]
+        public string ResourceSpecialtyId { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_ResourceSpecialtyName")]
+        public string ResourceSpecialtyName { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(MaintenanceAthletesLocalization), ErrorMessageResourceName = "Error_Required_FirstName")]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_FirstName")]
+        public string FirstName { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(MaintenanceAthletesLocalization), ErrorMessageResourceName = "Error_Required_LastName")]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_LastName")]
+        public string LastName { get; set; }
+
+        [UIHint("AthletesGridGenderTemplate")]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_GenderId")]
+        public string GenderId { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_GenderName")]
+        public string GenderName { get; set; }
+
+        [UIHint("AthletesGridCoachResourcesTemplate")]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_PersonalCoachId")]
+        public int? PersonalCoachId { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_PersonalCoachName")]
+        public string PersonalCoachName { get; set; }
+
+        public string AssignSportId { get; set; }
+    }
+}

@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D9A6655-F68A-4130-951D-D30640D1CF6C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OTP.Ring.Models</RootNamespace>
+    <AssemblyName>OTP.Ring.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extentions.cs" />
+    <Compile Include="FilteredListItem.cs" />
+    <Compile Include="ListItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationsLocalization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EvaluationsLocalization.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Evaluations\EvaluationsLocalization.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EvaluationsLocalization.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationActionItemViewModel.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationsSummaryOverallQuestionsGridViewModel.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationFormViewModel.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationPillarViewModel.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationsQuestionsEvaluationPillarQuestionsGridViewModel.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationsQuestionsEvaluationPillarsGridViewModel.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationsQuestionsEvaluationVersionGridViewModel.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationsQuestionsViewModel.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationsSummaryGridViewModel.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationsSummaryViewModel.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationStatusChangeViewModel.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationsMaintenanceViewModel.cs" />
+    <Compile Include="ViewModel\Funding\FundingActionItemViewModel.cs" />
+    <Compile Include="ViewModel\Funding\FundingAllocationViewModel.cs" />
+    <Compile Include="ViewModel\Funding\FundingIndexViewModel.cs" />
+    <Compile Include="ViewModel\Funding\FundingStatusChangeViewModel.cs" />
+    <Compile Include="ViewModel\Funding\FundingSummaryViewModel.cs" />
+    <Compile Include="ViewModel\Funding\FundingViewModel.cs" />
+    <Compile Include="ViewModel\Home\HomeIndexViewModel.cs" />
+    <Compile Include="ViewModel\Home\HomeSignInViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Athletes\MaintenanceAthletesLocalization.Designer.cs">
+      <DependentUpon>MaintenanceAthletesLocalization.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ViewModel\Maintenance\Athletes\MaintenanceAthletesLocalization.fr-CA.Designer.cs">
+      <DependentUpon>MaintenanceAthletesLocalization.fr-CA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ViewModel\Maintenance\Benchmarks\MaintenanceBenchmarksLocalization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaintenanceBenchmarksLocalization.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Maintenance\Benchmarks\MaintenanceBenchmarksLocalization.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaintenanceBenchmarksLocalization.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Maintenance\NSOMembers\MaintenanceNSOMembersPoolInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\ISTMembers\MaintenanceISTMembersPoolInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\ISTMembers\MaintenanceISTMembersLocalization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaintenanceISTMembersLocalization.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Maintenance\ISTMembers\MaintenanceISTMembersLocalization.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaintenanceISTMembersLocalization.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Maintenance\ISTMembers\MaintenanceISTMembersSportsInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\ISTMembers\MaintenanceISTMembersContactInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\ISTMembers\MaintenanceISTMembersGeneralInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\ISTMembers\MaintenanceISTMembersGridViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\ISTMembers\MaintenanceISTMembersViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\ISTMembers\MaintenanceISTMembersQualificationInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\MaintenanceEditableViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\NSOMembers\MaintenanceNSOMembersLocalization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaintenanceNSOMembersLocalization.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Maintenance\NSOMembers\MaintenanceNSOMembersLocalization.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaintenanceNSOMembersLocalization.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Maintenance\NSOMembers\MaintenanceNSOMembersSportsInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\NSOMembers\MaintenanceNSOMembersQualificationInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\NSOMembers\MaintenanceNSOMembersGridViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\NSOMembers\MaintenanceNSOMembersContactInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\NSOMembers\MaintenanceNSOMembersGeneralInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\NSOMembers\MaintenanceNSOMembersViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Sports\MaintenanceSportsLocalization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaintenanceSportsLocalization.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Maintenance\Sports\MaintenanceSportsLocalization.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaintenanceSportsLocalization.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Maintenance\WhoAmIViewModel.cs" />
+    <Compile Include="ViewModel\Reporting\ReportingDesignAnalysisSecurityGridViewModel.cs" />
+    <Compile Include="ViewModel\Reporting\ReportingDesignAnalysisTestReportViewModel.cs" />
+    <Compile Include="ViewModel\Reporting\ReportingDesignAnalysisFiltersGridViewModel.cs" />
+    <Compile Include="ViewModel\Reporting\ReportingDesignAnalysisGroupingColumnsGridViewModel.cs" />
+    <Compile Include="ViewModel\Reporting\ReportingDesignAnalysisGroupingsGridViewModel.cs" />
+    <Compile Include="ViewModel\Reporting\ReportingEditableViewModel.cs" />
+    <Compile Include="ViewModel\Reporting\ReportingDesignAnalysisReportGridViewModel.cs" />
+    <Compile Include="ViewModel\Reporting\ReportingDesignAnalysisViewModel.cs" />
+    <Compile Include="ViewModel\Reporting\ReportingLocalization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportingLocalization.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Reporting\ReportingLocalization.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportingLocalization.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Reporting\ReportingReportParametersViewModel.cs" />
+    <Compile Include="ViewModel\Reporting\ReportingReportDataViewModel.cs" />
+    <Compile Include="ViewModel\Reporting\ReportingStandardReportsViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Athletes\MaintenanceAthletesAffiliatesInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Athletes\MaintenanceAthletesDirectAthleteSupportViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Athletes\MaintenanceAthletesBenchmarkSportsViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Athletes\MaintenanceAthletesAthleteGridViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Athletes\MaintenanceAthletesContactInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Athletes\MaintenanceAthletesGeneralInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Athletes\MaintenanceAthletesSportsInfoViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Athletes\MaintenanceAthletesViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Benchmarks\MaintenanceBenchmarksGridSportBenchmarkViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Benchmarks\MaintenanceBenchmarksGridSportViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Benchmarks\MaintenanceBenchmarksInsertBenchmarkTierViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Benchmarks\MaintenanceBenchmarksViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\MaintenanceIndexViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Sports\MaintenanceSportsGridDisiplineViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Sports\MaintenanceSportsGridEventViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Sports\MaintenanceSportsGridSportViewModel.cs" />
+    <Compile Include="ViewModel\Maintenance\Sports\MaintenanceSportsViewModel.cs" />
+    <Compile Include="ViewModel\NavMenuViewModel.cs" />
+    <Compile Include="ViewModel\Reporting\ReportingIndexViewModel.cs" />
+    <Compile Include="ViewModel\Results\ResultsManageResultsStagingGridViewModel.cs" />
+    <Compile Include="ViewModel\Results\ResultsLoadResultsErrorGridViewModel.cs" />
+    <Compile Include="ViewModel\Results\ResultsLoadTemplateDownloadTemplateMappingsGridViewModel.cs" />
+    <Compile Include="ViewModel\Results\ResultsLocalization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResultsLocalization.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Results\ResultsLocalization.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResultsLocalization.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Results\ResultsMaintenanceViewModel.cs" />
+    <Compile Include="ViewModel\Results\ResultsLoadTemplateDownloadTemplateGridViewModel.cs" />
+    <Compile Include="ViewModel\Results\ResultsLoadTemplatesViewModel.cs" />
+    <Compile Include="ViewModel\Results\ResultsLoadResultsViewModel.cs" />
+    <Compile Include="ViewModel\Results\ResultsManageTeamViewModel.cs" />
+    <Compile Include="ViewModel\Results\ResultsManageViewModel.cs" />
+    <Compile Include="ViewModel\Results\ResultsSummaryViewModel.cs" />
+    <Compile Include="ViewModel\Results\ResultsManageResultsStagingResourceGridViewModel.cs" />
+    <Compile Include="ViewModel\SummaryListViewModel.cs" />
+    <Compile Include="ViewModel\Evaluations\EvaluationsIndexViewModel.cs" />
+    <Compile Include="ViewModel\Results\ResultsIndexViewModel.cs" />
+    <Compile Include="ViewModel\YearSelectionViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\OTP.Ring.Common.csproj">
+      <Project>{5987E936-6B1D-4083-A035-684C261B6B8E}</Project>
+      <Name>OTP.Ring.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\OTP.Ring.Data.csproj">
+      <Project>{2BF349F1-4EEF-494D-A123-7DCAAEDA331C}</Project>
+      <Name>OTP.Ring.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ViewModel\Evaluations\EvaluationsLocalization.fr-CA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EvaluationsLocalization.fr-CA.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Evaluations\EvaluationsLocalization.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EvaluationsLocalization.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Maintenance\Athletes\MaintenanceAthletesLocalization.fr-CA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaintenanceAthletesLocalization.fr-CA.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Maintenance\Athletes\MaintenanceAthletesLocalization.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaintenanceAthletesLocalization.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Maintenance\Benchmarks\MaintenanceBenchmarksLocalization.fr-CA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaintenanceBenchmarksLocalization.fr-CA.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Maintenance\Benchmarks\MaintenanceBenchmarksLocalization.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaintenanceBenchmarksLocalization.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Maintenance\ISTMembers\MaintenanceISTMembersLocalization.fr-CA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaintenanceISTMembersLocalization.fr-CA.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Maintenance\ISTMembers\MaintenanceISTMembersLocalization.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaintenanceISTMembersLocalization.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Maintenance\NSOMembers\MaintenanceNSOMembersLocalization.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaintenanceNSOMembersLocalization.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Maintenance\NSOMembers\MaintenanceNSOMembersLocalization.fr-CA.resx">
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaintenanceNSOMembersLocalization.fr-CA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Maintenance\Sports\MaintenanceSportsLocalization.fr-CA.resx">
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaintenanceSportsLocalization.fr-CA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Maintenance\Sports\MaintenanceSportsLocalization.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaintenanceSportsLocalization.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Reporting\ReportingLocalization.fr-CA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReportingLocalization.fr-CA.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Reporting\ReportingLocalization.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReportingLocalization.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Results\ResultsLocalization.fr-CA.resx">
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResultsLocalization.fr-CA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\Results\ResultsLocalization.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResultsLocalization.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OTP.Ring.Models.ViewModel</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

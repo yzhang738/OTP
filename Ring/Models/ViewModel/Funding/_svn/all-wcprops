@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Funding
+END
+FundingAllocationViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Funding/FundingAllocationViewModel.cs
+END
+FundingIndexViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Funding/FundingIndexViewModel.cs
+END
+FundingStatusChangeViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Funding/FundingStatusChangeViewModel.cs
+END
+FundingActionItemViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Funding/FundingActionItemViewModel.cs
+END
+FundingSummaryViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Funding/FundingSummaryViewModel.cs
+END
+FundingViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Funding/FundingViewModel.cs
+END

@@ -1,0 +1,36 @@
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<EvaluationsQuestionsEvaluationVersionGridViewModel>" %>
+
+<script type="text/javascript">
+    function onOrganizationTypeComboLoad()
+    {
+        var combo = $(this).data('tDropDownList');
+        combo.reload();
+    }
+
+    function onOrganizationTypeComboBound()
+    {
+        var editor = $(this).data('tDropDownList');
+        var tr = $(this).closest('tr:has(form)');
+        var dataItem = tr.closest('.t-grid').data('tGrid').dataItem(tr);
+
+        if (dataItem)
+        {
+            var isNewRow = ($(this).closest('.t-grid-new-row').length == 1);
+            if (!isNewRow)
+            {
+                editor.value(dataItem.OrganizationTypeId);
+            }
+        }
+    }
+
+</script>
+
+<%=         
+    Html.Telerik().DropDownList()
+        .Name("OrganizationTypeId")
+        .DataBinding(binding => binding.Ajax().Select("OrganizationTypesAjax", "Shared"))
+        .HtmlAttributes(new { style = "font-size:8pt;width:250px" })
+        .ClientEvents(events => events
+                .OnLoad("onOrganizationTypeComboLoad")
+                .OnDataBound("onOrganizationTypeComboBound"))
+%>

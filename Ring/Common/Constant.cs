@@ -1,0 +1,408 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace OTP.Ring.Common
+{
+    public static class Constant
+    {
+        public const string DataConnectionString = "RingEntities";
+        public const string ReportConnectionString = "ReportConnectionString";
+        public const string UndefinedString = "#String_Undefined#";
+        public const int MaxExcelColumnsSupported = 26;
+        public const int ExportExcelLimit = 100000;
+        public const int ExportExcelCellUnit = 64;
+        public const int MaxExportExcelFileNameLength = 250;
+
+        public class AccessLevel
+        {
+            public static int No = 0;
+            public static int Assigned = 1;
+            public static int All = 2;
+        }
+
+        public class Cache
+        {
+            public static string KeyTemplate = "{0}^{1}^{2}";
+            public static string BaseControlAllSports = "AllSports";
+            public static string BaseControlAllPages = "AllPages";
+            public static string Decode = "Decode";
+            public static string DecodeOrganizationType = "DecodeOrgType";
+            public static string DecodeActionItemType = "DecodeAiType";
+            public static string DecodeYear = "DecodeYear";
+            public static string DecodeCountry = "DecodeCountry";
+            public static string DecodeCountryName = "DecodeCountryName";
+            public static string DecodeGender = "DecodeGender";
+            public static string DecodeHumanGender = "DecodeHumanGender";
+            public static string DecodeOrganization = "DecodeOrganization";
+            public static string DecodeOrganizationByType = "DecodeOrganizationByType";
+            public static string DecodeAffiliate = "DecodeAffiliate";
+            public static string DecodeDirectAthleteSupportType = "DecodeDirectAthleteSupportType";
+            public static string DecodDirectAthleteSupportCategory = "DecodDirectAthleteSupportCategory";
+            public static string DecodeBenchmarkType = "DecodeBenchmarkType";
+            public static string DecodeCompetitionType = "DecodeCompetitionType";
+            public static string DecodeCompetitionName = "DecodeCompetitionName";
+            public static string DecodeCompetitionHostCity = "DecodeCompetitionHostCity";
+            public static string DecodeCompetitionDate = "DecodeCompetitionDate";
+            public static string DecodeTeamType = "DecodeTeamType";
+            public static string DecodePositionType = "DecodePositionType";
+            public static string Funding = "Funding";
+            public static string FundingBlockType = "FundingBlockType";
+            public static string FundingCategoryType = "FundingCategoryType";
+            public static string DecodeColumnnFormat = "DecodeColumnnFormat";
+            public static string DecodeEvaluationVersionPhase = "DecodeEvaluationVersionPhase";
+        }
+
+        public class Gender
+        {
+            public static string Male = "M";
+            public static string Female = "F";
+        }
+
+        public class TeamType
+        {
+            public static string Individual = "Individual";
+            public static string National = "National";
+            public static string Squad = "Squad";
+        }
+
+        public class SecurityGroupProfile
+        {
+            public static string NSO = "NSO_NSO";
+            public static string Admin = "OTP_ADM";
+            public static string DBA = "OTP_DBA";
+            public static string Executive = "OTP_EXE";
+            public static string HPA = "OTP_HPA";
+            public static string Public = "PUB_PUB";
+        }
+
+        public class SecurityUserProfile
+        {
+            public static string Admin = "OTP_ADM";
+            public static string DBA = "OTP_DBA";
+            public static string Executive = "OTP_EXE";
+            public static string Public = "PUB_PUB";
+        }
+
+        public class ResourceType
+        {
+            public static string Athletes = "ATH";
+            public static string ISTMembers = "IST";
+            public static string NSOMembers = "NSO";
+        }
+
+        public class PageId
+        {
+            public static string HomeIndex = "H";
+            public static string FundingIndex = "F";
+            public static string FundingRequests = "F_REQ";
+            public static string FundingRecommendation = "F_REC";
+            public static string FundingRevision = "F_REV";
+            public static string FundingSummary = "F_SUM";
+            public static string FundingAction = "F_ACT";
+            public static string MaintenanceIndex = "M";
+            public static string MaintenanceResources = "M_RES";
+            public static string MaintenanceSports = "M_SPO";
+            public static string MaintenanceMaintainSports = "M_SPO_SPO";
+            public static string MaintenanceAthletes = "M_RES_ATH";
+            public static string MaintenanceNSOMembers = "M_RES_NSO";
+            public static string MaintenanceISTMembers = "M_RES_IST";
+            public static string MaintenanceMaintainBenchmarks = "M_SPO_BMK";
+            public static string ReportingIndex = "R";
+            public static string ReportingStandardReports = "R_STD";
+            public static string ReportingDesignAnalysis = "R_DES";
+            public static string EvaluationsIndex = "E";
+            public static string EvaluationsSummary = "E_SUM";
+            public static string EvaluationForm = "E_EVA";
+            public static string EvaluationAction = "E_ACT";
+            public static string EvaluationsMaintenance = "E_MNT";
+            public static string EvaluationsQuestions = "E_MNT_EVQ";
+            public static string ResultsIndex = "T";
+            public static string ResultsMaintenance = "T_MNT";
+            public static string ResultsLoadResults = "T_LOD";
+            public static string ResultsSummary = "T_SUM";
+            public static string ResultsLoadTemplates = "T_MNT_LOD";
+            public static string ResultsManage = "T_MAN";
+            public static string NoScript = "X";
+            public static string Browser = "X";
+            public static string MaintenanceOther = "M_TRK";
+        }
+
+        public class SportId
+        {
+            public static string All = "ALL";
+        }
+
+        public class SportLevelId
+        {
+            public static int All = 0;
+            public static int Olympic = 1;
+            public static int Season = 2;
+            public static int Sport = 3;
+            public static int Discipline = 4;
+            public static int Event = 5;
+        }
+
+        public class NodeLeafCode
+        {
+            public static int Node = 1;
+            public static int Leaf = 2;
+        }
+
+        public class LanguageCode
+        {
+            public static string English = "EN";
+            public static string French = "FR";
+        }
+
+        public class Organization
+        {
+            public static string OTP = "OTP_OTP";
+        }
+
+        public class OrganizationTypeId
+        {
+            public static string CSC = "CSC";
+            public static string NSO = "NSO";
+            public static string Other = "Other";
+            public static string OTP = "OTP";
+        }
+
+        public class DecodeCategoryId
+        {
+            public static string Gender = "Gender";
+            public static string NodeLeaf = "NodeLeaf";
+            public static string ReadAccess = "ReadAccess";
+            public static string SportFilter = "SportFilter";
+            public static string Styling = "Styling";
+            public static string WriteAccess = "WriteAccess";
+            public static string FundingPriority = "FundingPriority";
+            public static string FundingStatus = "FundingStatus";
+            public static string ActionItemStatus = "ActionItemStatus";
+            public static string ActionItemPriority = "ActionItemPriority";
+            public static string DownloadStatus = "DownloadStatus";
+            public static string DownloadOptions = "DownloadOptions";
+            public static string DateFormat = "DateFormat";
+            public static string NameFormat = "NameFormat";
+            public static string TimeFormat = "TimeFormat";
+            public static string VersionPhase = "VersionPhase";
+            public static string QuestionPhase = "QuestionPhase";
+            public static string EvaluationPhase = "EvaluationPhase";
+            public static string EvaluationStatus = "EvaluationStatus";
+            public static string ReportCategory = "ReportCategory";
+            public static string ReportFieldSize = "ReportFieldSize";
+            public static string ReportAggregation = "ReportAggregation";
+            public static string ReportOperand = "ReportOperand";
+            public static string FormatType = "FormatType";
+            public static string ReportFormatString = "ReportFormatString";
+        }
+
+        public class FundingMenuItems
+        {
+            public static string Action = "A";
+            public static string Resource = "R";
+        }
+
+        public class FundingStatus
+        {
+            public static string New = "0";
+            public static string Requested = "1";
+            public static string HpaRecommended = "2";
+            public static string OtpRecommended = "3";
+            public static string Approved = "4";
+            public static string Allocated = "5";
+            public static string Revise = "20";
+            public static string Actualize = "30";
+            public static string Closed = "99";
+
+            public static string SysAloc = "999";
+        }
+
+        public class FundingAction
+        {
+            public static string Request = "Requests";
+            public static string Recommend = "Recommendation";
+            public static string Revise = "RevisionActual";
+        }
+
+        public class FundingTotalType
+        {
+            public static string ProgramSupport = "Program Support";
+            public static string IstCsc = "IST-CSC";
+            public static string IstOther = "IST-Other";
+            public static string Total = "Total";
+        }
+
+        public class FundingBlockType
+        {
+            public static string IST = "IST";
+        }
+
+        public class ActionItemType
+        {
+            public static string FundingRequest = "FundREQ";
+            public static string FundingRecommendation = "FundREC";
+            public static string FundingRevision = "FundREV";
+        }
+
+        public class ActionItemSource
+        {
+            public static string Funding = "Funding";
+            public static string Evaluation = "Evaluation";
+        }
+
+        public class ActionItemStatus
+        {
+            public static string New = "N";
+            public static string InProgress = "IP";
+            public static string Cancelled = "CA";
+            public static string Closed = "CL";
+        }
+
+        public class ActionItemPriority
+        {
+            public static string Medium = "M";
+        }
+
+        public class FundingCopyAmountType
+        {
+            public static string HpaRecommend = "HR";
+            public static string OtpRecommend = "OR";
+            public static string FinalRecommend = "FR";
+            public static string Revised = "R";
+        }
+
+        public class ReportProcedureType
+        {
+            public static string Filter = "Filter";
+            public static string DataSet = "DataSet";
+        }
+
+        public class DownloadSourceType
+        {
+            public static string Manual = "MAN";
+        }
+
+        public class DownloadStatus
+        {
+            public static string Pending = "P";
+            public static string Approved = "A";
+            public static string Posted = "C";
+        }
+
+        public class ResultAction
+        {
+            public static string Approve = "Approve";
+            public static string Unapprove = "Unapprove";
+            public static string Posted = "Posted";
+        }
+
+        public class DownloadOption
+        {
+            public static string AddNewOnly = "A";
+            public static string Replace = "R";
+            public static string Update = "U";
+            public static string Discard = "D";
+        }
+
+        public class CompetitionStatus
+        {
+            public static string NoEvents = "No Events";
+            public static string NotStarted = "No";
+            public static string Pending = "Pending";
+            public static string Partial = "Partial";
+            public static string Complete = "Complete";
+            public static string Posted = "Posted";
+        }
+
+        public static class QuestionPhase
+        {
+            public const string CopiedFromPrevious = "COPY";
+            public const string DeletedCurrent = "DELETE_NEW";
+            public const string DeletedPrevious = "DELETE_OLD";
+            public const string New = "NEW";
+        }
+
+        public class VersionPhase
+        {
+            public static string Closed = "CLOSED";
+            public static string Edit = "EDIT";
+            public static string Open = "OPEN";
+        }
+
+        public class VersionID
+        {
+            public static string MASTER = "MASTER";
+            public static string Version1 = "Version 1";
+            public static string Version2 = "Version 2";
+            public static string Version3 = "Version 3";
+        }
+
+        public class EvaluationPhase
+        {
+            public static string Edit = "EDIT";
+            public static string Submit = "SUBMIT";
+            public static string Revise = "REVISE";
+            public static string Closed = "CLOSED";
+        }
+
+        public class ResultSummaryFilter
+        { 
+            public static string All = "ALL";
+            public static string PendingAll = "PALL";
+            public static string PendingDownload = "PD";
+            public static string PendingApprove = "PA";
+        }
+
+        public class ReportType
+        {
+            public static string Template = "0";
+            public static string StandardReporting = "1";
+            public static string AdHocReporting = "2";
+        }
+
+        public class ReportCategory
+        {
+            public static string Evaluation = "Evaluation";
+            public static string Funding = "Funding";
+            public static string Results = "Results";
+            public static string Template = "Template";
+        }
+
+        public class ReportFieldSize
+        {
+            public static string Small = "S";
+            public static string Large = "L";
+        }
+
+        public static class TableTemplateField
+        {
+            public const string DownloadFullName = "DownloadFullName";
+            public const string DownloadLastName = "DownloadLastName";
+            public const string DownloadFirstName = "DownloadFirstName";
+        }
+
+        public class ExportExcelFileName
+        {
+            public static string ExportExtension = ".xls";
+            public static string AthletesPageExport = "AthletesPageExcelExport";
+            public static string ISTMembersPageExport = "ISTMembersPageExcelExport";
+            public static string NSOMembersPageExport = "NSOMembersPageExcelExport";
+            public static string AthletesResourceSportExport = "AthletesResourceSportExcelExport";
+            public static string AthletesDirectAthleteSupportExport = "AthletesDirectAthleteSupportExcelExport";
+            public static string AthletesAffiliatesInfoExport = "AthletesAffiliatesInfoExcelExport";
+            public static string AthletesResultsExport = "AthletesResultsExcelExport";
+            public static string ISTMembersSportInfoExport = "ISTMembersSportInfoExcelExport";
+            public static string NSOMembersSportInfoExport = "NSOMembersSportInfoExcelExport";
+        }
+
+        public class ExcelAlignment
+        {
+            public static string Left = "LEFT";
+            public static string Center = "CENTER";
+            public static string Right = "RIGHT";
+            public static string Justify = "JUSTIFY";
+        }
+    }
+}

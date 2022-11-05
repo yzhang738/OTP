@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/!svn/ver/3328/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/EditorTemplates
+END
+FundingResource.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/!svn/ver/3328/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/EditorTemplates/FundingResource.ascx
+END
+FundingCsc.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repos/!svn/ver/3328/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/EditorTemplates/FundingCsc.ascx
+END
+FundingNumber.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/!svn/ver/2104/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/EditorTemplates/FundingNumber.ascx
+END
+FundingRecurring.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/!svn/ver/2033/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/EditorTemplates/FundingRecurring.ascx
+END
+FundingPriority.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/!svn/ver/2424/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/EditorTemplates/FundingPriority.ascx
+END

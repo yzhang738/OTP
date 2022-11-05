@@ -1,0 +1,127 @@
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\OTP.Ring.Models.dll
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\OTP.Ring.Models.pdb
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\fr-CA\OTP.Ring.Models.resources.dll
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\OTP.Ring.Common.dll
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\OTP.Ring.Data.dll
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\OTP.Ring.Common.pdb
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\OTP.Ring.Data.pdb
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\fr-CA\OTP.Ring.Common.resources.dll
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Evaluations.EvaluationsLocalization.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Athletes.MaintenanceAthletesLocalization.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Benchmarks.MaintenanceBenchmarksLocalization.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.ISTMembers.MaintenanceISTMembersLocalization.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.NSOMembers.MaintenanceNSOMembersLocalization.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Sports.MaintenanceSportsLocalization.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Reporting.ReportingLocalization.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Results.ResultsLocalization.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Evaluations.EvaluationsLocalization.fr-CA.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Athletes.MaintenanceAthletesLocalization.fr-CA.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Benchmarks.MaintenanceBenchmarksLocalization.fr-CA.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.ISTMembers.MaintenanceISTMembersLocalization.fr-CA.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.NSOMembers.MaintenanceNSOMembersLocalization.fr-CA.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Sports.MaintenanceSportsLocalization.fr-CA.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Reporting.ReportingLocalization.fr-CA.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Results.ResultsLocalization.fr-CA.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\GenerateResource.read.1.tlog
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\GenerateResource.write.1.tlog
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\fr-CA\OTP.Ring.Models.resources.dll
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.dll
+C:\Development\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\OTP.Ring.Models.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\OTP.Ring.Models.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\fr-CA\OTP.Ring.Models.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\OTP.Ring.Common.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\OTP.Ring.Data.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\OTP.Ring.Common.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\OTP.Ring.Data.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\bin\Debug\fr-CA\OTP.Ring.Common.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Evaluations.EvaluationsLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Athletes.MaintenanceAthletesLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Benchmarks.MaintenanceBenchmarksLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.ISTMembers.MaintenanceISTMembersLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.NSOMembers.MaintenanceNSOMembersLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Sports.MaintenanceSportsLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Reporting.ReportingLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Results.ResultsLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Evaluations.EvaluationsLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Athletes.MaintenanceAthletesLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Benchmarks.MaintenanceBenchmarksLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.ISTMembers.MaintenanceISTMembersLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.NSOMembers.MaintenanceNSOMembersLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Sports.MaintenanceSportsLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Reporting.ReportingLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Results.ResultsLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\fr-CA\OTP.Ring.Models.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Models\obj\Debug\OTP.Ring.Models.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\bin\Debug\OTP.Ring.Models.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\bin\Debug\OTP.Ring.Models.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\bin\Debug\fr-CA\OTP.Ring.Models.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\bin\Debug\OTP.Ring.Common.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\bin\Debug\OTP.Ring.Data.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\bin\Debug\OTP.Ring.Common.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\bin\Debug\OTP.Ring.Data.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\bin\Debug\fr-CA\OTP.Ring.Common.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Evaluations.EvaluationsLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Athletes.MaintenanceAthletesLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Benchmarks.MaintenanceBenchmarksLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.ISTMembers.MaintenanceISTMembersLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.NSOMembers.MaintenanceNSOMembersLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Sports.MaintenanceSportsLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Reporting.ReportingLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Results.ResultsLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Evaluations.EvaluationsLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Athletes.MaintenanceAthletesLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Benchmarks.MaintenanceBenchmarksLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.ISTMembers.MaintenanceISTMembersLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.NSOMembers.MaintenanceNSOMembersLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Sports.MaintenanceSportsLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Reporting.ReportingLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Results.ResultsLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\fr-CA\OTP.Ring.Models.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\OTP.Ring.Models.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\OTP.Ring.Models.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\fr-CA\OTP.Ring.Models.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\OTP.Ring.Common.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\OTP.Ring.Data.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\OTP.Ring.Common.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\OTP.Ring.Data.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\fr-CA\OTP.Ring.Common.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Evaluations.EvaluationsLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Athletes.MaintenanceAthletesLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Benchmarks.MaintenanceBenchmarksLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.ISTMembers.MaintenanceISTMembersLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.NSOMembers.MaintenanceNSOMembersLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Sports.MaintenanceSportsLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Reporting.ReportingLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Results.ResultsLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Evaluations.EvaluationsLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Athletes.MaintenanceAthletesLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Benchmarks.MaintenanceBenchmarksLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.ISTMembers.MaintenanceISTMembersLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.NSOMembers.MaintenanceNSOMembersLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Maintenance.Sports.MaintenanceSportsLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Reporting.ReportingLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.ViewModel.Results.ResultsLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\fr-CA\OTP.Ring.Models.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.csprojResolveAssemblyReference.cache
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\obj\Debug\OTP.Ring.Models.csproj.GenerateResource.Cache
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\System.Data.DataSetExtensions.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\System.Data.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\System.Data.Entity.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\System.Runtime.Serialization.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\System.Web.Mvc.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\System.Web.Mvc.xml
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\System.Xml.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Models\bin\Debug\System.Xml.Linq.dll

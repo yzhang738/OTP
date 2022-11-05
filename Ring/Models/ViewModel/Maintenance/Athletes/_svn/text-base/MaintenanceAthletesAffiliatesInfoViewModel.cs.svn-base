@@ -1,0 +1,56 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using OTP.Ring.Data.Models;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.Runtime.Serialization;
+using OTP.Ring.Common;
+
+namespace OTP.Ring.Models.ViewModel
+{
+    [Serializable]
+    [KnownType(typeof(MaintenanceAthletesAffiliatesInfoViewModel))]
+    public class MaintenanceAthletesAffiliatesInfoViewModel
+    {
+        [Editable(false)]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_ResourceId")]
+        public int ResourceId { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_ResourceAffiliateId")]
+        public int ResourceAffiliateId { get; set; }
+
+        [UIHint("AthletesAffiliateInfoAffiliateTypeTemplate")]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_AffiliateTypeId")]
+        public string AffiliateTypeId { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_AffiliateTypeName")]
+        public string AffiliateTypeName { get; set; }
+
+        [UIHint("AthletesAffiliateInfoYearFromTemplate")]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_YearFromId")]
+        public string YearFromId { get; set; }
+
+        [UIHint("AthletesAffiliateInfoYearToTemplate")]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_YearToId")]
+        public string YearToId { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(MaintenanceAthletesLocalization), ErrorMessageResourceName = "Error_Required_AffiliateName")]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_AffiliateName")]
+        public string AffiliateName { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_Description")]
+        public string Description { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_AffiliateContact")]
+        public string AffiliateContact { get; set; }
+
+        [DisplayName("Email")]
+        [LocalizedDisplayName(typeof(MaintenanceAthletesLocalization), "Title_AffiliateEmail")]
+        public string AffiliateEmail { get; set; }
+
+        [ReadOnly(true)]
+        public bool HasComments { get; set; }
+    }
+}

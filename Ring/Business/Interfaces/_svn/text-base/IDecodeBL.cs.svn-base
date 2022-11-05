@@ -1,0 +1,28 @@
+﻿using System.Collections.Generic;
+
+namespace OTP.Ring.Business
+{
+    public interface IDecodeBL
+    {
+        IEnumerable<OTP.Ring.Common.Decode> GetActionItemTypes();
+        List<OTP.Ring.Models.ListItem> GetAffiliateTypes();
+        List<OTP.Ring.Models.ListItem> GetAllCountriesList();
+        List<OTP.Ring.Common.Organization> GetAllOrganizations();
+        List<OTP.Ring.Common.Organization> GetAllOrganizationsByType(string organizationTypeId, bool includeNullItem = false);
+        List<OTP.Ring.Data.Models.SecurityPage> GetAllPages();
+        List<OTP.Ring.Models.ListItem> GetAllYearsList();
+        IEnumerable<OTP.Ring.Common.Decode> GetDecodesByCategory(string categoryId);
+        List<OTP.Ring.Models.ListItem> GetDirectAthleteSupportCategoriesByType(string directAthleteSupportTypeId);
+        List<OTP.Ring.Models.ListItem> GetDirectAthleteSupportTypes();
+        List<OTP.Ring.Models.ListItem> GetGenders(bool includeNull);
+        List<OTP.Ring.Models.ListItem> GetHumanGenders(bool includeNull);
+        IEnumerable<OTP.Ring.Common.Decode> GetBenchmarkTypes();
+        IEnumerable<OTP.Ring.Common.Decode> GetOrganizationTypes();
+        IEnumerable<OTP.Ring.Common.Decode> GetCompetitionTypes();
+        IEnumerable<OTP.Ring.Common.Decode> GetTeamTypes();
+        IEnumerable<OTP.Ring.Common.Decode> GetSpecialResultPositionTypes();
+        List<OTP.Ring.Models.ViewModel.SummaryListViewModel> GetSummaryPageList(string currentPageId, OTP.Ring.Common.User user);
+        char[] GetColumnLetterArray(int numberofColumns);
+        List<OTP.Ring.Models.ListItem> GetColumnFormatList(int downloadTemplateId, string fieldName);
+    }
+}

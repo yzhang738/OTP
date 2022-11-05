@@ -1,0 +1,80 @@
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<MaintenanceEditableViewModel>" %>
+
+    <div class="groupbox_title_background gradientHToWhite">
+        <div class="groupbox_title" >
+            <%= ViewData["resourceName"] %>
+        </div>
+    </div>
+
+    <% if (ViewData["resourceId"] != null)
+       { %>
+
+        <input type="hidden" id="tabResourceId" value="<%= ViewData["resourceId"] %>" />
+        <%= Html.Telerik().Grid<MaintenanceAthletesAffiliatesInfoViewModel>()
+            .Name("Affiliates")
+                .TableHtmlAttributes(new { style = "font-size:8pt;" })
+                .HtmlAttributes(new { style = "height:385px" })
+            .DataKeys(k => k.Add(k2 => k2.ResourceAffiliateId))
+            .ToolBar(t =>
+                {
+                    if (Model.Editable) t.Insert().ButtonType(GridButtonType.ImageAndText);
+                })
+            .Editable(e => e.Mode(GridEditMode.InLine).Enabled(true))
+            .ClientEvents(e => e.OnError("grid_OnError"))
+            .DataBinding(dataBinding => dataBinding.Ajax()
+                            .Select("AthletesAffiliatesInfoAjax", "Maintenance")
+                            .Update("UpdateAthletesAffiliate", "Maintenance")
+                            .Insert("InsertAthletesAffiliate", "Maintenance")
+                            .Delete("DeleteAthletesAffiliate", "Maintenance")
+            )
+            .Pageable(paging => paging.PageSize(14))
+                .Scrollable(scrolling => scrolling.Height(326))
+            .Resizable(resize => resize.Columns(true))
+            .Sortable()
+            .Filterable()
+            .Columns(columns =>
+            {
+                columns.Bound(a => a.AffiliateTypeId)
+                    .ClientTemplate("<#= AffiliateTypeName #>")
+                    .Width(280);
+                columns.Bound(a => a.YearFromId)
+                    .Width(120);
+                columns.Bound(a => a.YearToId)
+                    .Width(120);
+                columns.Bound(a => a.AffiliateName)
+                    .Width(250);
+                columns.Bound(a => a.Description)
+                    .Width(275);
+                columns.Bound(a => a.AffiliateContact)
+                    .Width(250);
+                columns.Bound(a => a.AffiliateEmail)
+                    .Width(250);
+                columns.Bound(a => a.HasComments)
+                    .ClientTemplate("<span onclick=\"openCommentWindow('ResourceAffiliate', '<#= ResourceAffiliateId #>', '<#= AffiliateName #>', '" + Model.Editable + "', 'true');\" class=\"comment sprite sprite-<#= HasComments ? \"note\" : \"note_none\" #>\"></span>")
+                    .Width(37)
+                    .Title("")
+                    .Filterable(false);
+                columns.Command(commands =>
+                {
+                    if (Model.Editable)
+                    {
+                        commands.Edit().ButtonType(GridButtonType.ImageAndText);
+                        commands.Delete().ButtonType(GridButtonType.ImageAndText);
+                    }
+                }).Width(95);
+                columns.Bound(a => a.ResourceAffiliateId).Hidden(true);
+                columns.Bound(a => a.ResourceId).Hidden(true);
+            })
+
+                    %>
+
+            <br />
+            <br />
+            <div class="clear"></div>
+
+    <% } %>
+
+    
+
+
+           

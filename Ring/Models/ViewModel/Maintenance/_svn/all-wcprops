@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Maintenance
+END
+WhoAmIViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Maintenance/WhoAmIViewModel.cs
+END
+MaintenanceIndexViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Maintenance/MaintenanceIndexViewModel.cs
+END
+MaintenanceEditableViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Maintenance/MaintenanceEditableViewModel.cs
+END

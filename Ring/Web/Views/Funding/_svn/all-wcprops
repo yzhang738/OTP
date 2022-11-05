@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/repos/!svn/ver/3328/OTP/Ring/Application/trunk/Ring/Web/Views/Funding
+END
+Index.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/2393/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/Index.aspx
+END
+RevisionActual.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/2393/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/RevisionActual.aspx
+END
+FundingStrings.resx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/2368/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/FundingStrings.resx
+END
+Requests.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/!svn/ver/2393/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/Requests.aspx
+END
+FundingStrings.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repos/!svn/ver/2368/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/FundingStrings.Designer.cs
+END
+Summary.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/2450/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/Summary.aspx
+END
+ActionItems.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/!svn/ver/2775/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/ActionItems.aspx
+END
+FundingStatus.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/!svn/ver/2366/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/FundingStatus.ascx
+END
+FundingStrings.fr-CA.resx
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/!svn/ver/2531/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/FundingStrings.fr-CA.resx
+END
+FundingAllocation.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/!svn/ver/2353/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/FundingAllocation.ascx
+END
+FundingGrid.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/!svn/ver/2796/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/FundingGrid.ascx
+END
+ActionItemStatusSelector.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/3327/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/ActionItemStatusSelector.ascx
+END
+FundingStrings.fr-CA.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repos/!svn/ver/2353/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/FundingStrings.fr-CA.Designer.cs
+END
+Recommendation.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/2907/OTP/Ring/Application/trunk/Ring/Web/Views/Funding/Recommendation.aspx
+END

@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Error_Required_AffiliateName" xml:space="preserve">
+    <value>Le nom est requis</value>
+  </data>
+  <data name="Error_Required_BenchmarkTierId" xml:space="preserve">
+    <value>La classe de jalon est requise</value>
+  </data>
+  <data name="Error_Required_BenchmarkTypeId" xml:space="preserve">
+    <value>Le type de jalon est requis</value>
+  </data>
+  <data name="Error_Required_DirectAthleteSupportCode" xml:space="preserve">
+    <value>La catégorie est requise</value>
+  </data>
+  <data name="Error_Required_DirectAthleteSupportTypeId" xml:space="preserve">
+    <value>Le type est requis</value>
+  </data>
+  <data name="Error_Required_DisciplineId" xml:space="preserve">
+    <value>La discipline est requise</value>
+  </data>
+  <data name="Error_Required_EventId" xml:space="preserve">
+    <value>L'événement est requis</value>
+  </data>
+  <data name="Error_Required_FirstName" xml:space="preserve">
+    <value>Le prénom est requis</value>
+  </data>
+  <data name="Error_Required_LastName" xml:space="preserve">
+    <value>Le nom de famille est requis</value>
+  </data>
+  <data name="Error_Required_ResourceClassId" xml:space="preserve">
+    <value>La catégorie est requise</value>
+  </data>
+  <data name="Error_Required_SportsId" xml:space="preserve">
+    <value>Le sport est requis</value>
+  </data>
+  <data name="Error_Required_SupportName" xml:space="preserve">
+    <value>Le nom est requis</value>
+  </data>
+  <data name="Error_Required_YearId" xml:space="preserve">
+    <value>La saison est requise</value>
+  </data>
+  <data name="Title_Active" xml:space="preserve">
+    <value>Actif</value>
+  </data>
+  <data name="Title_AffiliateContact" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Title_AffiliateEmail" xml:space="preserve">
+    <value>Courriel</value>
+  </data>
+  <data name="Title_AffiliateName" xml:space="preserve">
+    <value>Nom  </value>
+  </data>
+  <data name="Title_AffiliateTypeId" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Title_AffiliateTypeName" xml:space="preserve">
+    <value>Nom du type d'affilié</value>
+  </data>
+  <data name="Title_Amount" xml:space="preserve">
+    <value>Montant</value>
+  </data>
+  <data name="Title_Benchmark" xml:space="preserve">
+    <value>Jalon</value>
+  </data>
+  <data name="Title_BenchmarkResourceId" xml:space="preserve">
+    <value>Identification de la ressource de jalon</value>
+  </data>
+  <data name="Title_BenchmarksEntered" xml:space="preserve">
+    <value>Jalons</value>
+  </data>
+  <data name="Title_BenchmarkTierId" xml:space="preserve">
+    <value>Classe de jalons</value>
+  </data>
+  <data name="Title_BenchmarkTierName" xml:space="preserve">
+    <value>Nom de classe de jalons</value>
+  </data>
+  <data name="Title_BenchmarkTypeId" xml:space="preserve">
+    <value>Type de jalons</value>
+  </data>
+  <data name="Title_BenchmarkTypeName" xml:space="preserve">
+    <value>Nom de type de jalons</value>
+  </data>
+  <data name="Title_Category" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="Title_CellPhone" xml:space="preserve">
+    <value>Téléphone cellulaire</value>
+  </data>
+  <data name="Title_Comments" xml:space="preserve">
+    <value>Commentaires</value>
+  </data>
+  <data name="Title_CountryId" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="Title_CountryName" xml:space="preserve">
+    <value>Nom du pays</value>
+  </data>
+  <data name="Title_DateOfBirth" xml:space="preserve">
+    <value>Date de naissance</value>
+  </data>
+  <data name="Title_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Title_DirectAthleteSupportCode" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="Title_DirectAthleteSupportName" xml:space="preserve">
+    <value>Nom du soutien direct aux athlètes</value>
+  </data>
+  <data name="Title_DirectAthleteSupportTypeId" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Title_DirectAthleteSupportTypeName" xml:space="preserve">
+    <value>Nom du type de soutien direct aux athlètes</value>
+  </data>
+  <data name="Title_DisciplineId" xml:space="preserve">
+    <value>Discipline</value>
+  </data>
+  <data name="Title_DisciplineName" xml:space="preserve">
+    <value>Nom de discipline</value>
+  </data>
+  <data name="Title_EMailAddress" xml:space="preserve">
+    <value>Courriel</value>
+  </data>
+  <data name="Title_EventId" xml:space="preserve">
+    <value>Événement</value>
+  </data>
+  <data name="Title_EventName" xml:space="preserve">
+    <value>Nom d'événement</value>
+  </data>
+  <data name="Title_FirstName" xml:space="preserve">
+    <value>Prénom</value>
+  </data>
+  <data name="Title_Gender" xml:space="preserve">
+    <value>Genre</value>
+  </data>
+  <data name="Title_GenderId" xml:space="preserve">
+    <value>Genre</value>
+  </data>
+  <data name="Title_GenderName" xml:space="preserve">
+    <value>Nom de genre</value>
+  </data>
+  <data name="Title_HasComments" xml:space="preserve">
+    <value>A des commentaires?</value>
+  </data>
+  <data name="Title_HomePhone" xml:space="preserve">
+    <value>Téléphone domicile</value>
+  </data>
+  <data name="Title_HometownCity" xml:space="preserve">
+    <value>Ville d'origine</value>
+  </data>
+  <data name="Title_HometownCountryId" xml:space="preserve">
+    <value>Pays d'origine</value>
+  </data>
+  <data name="Title_HometownProvinceId" xml:space="preserve">
+    <value>Province d'origine</value>
+  </data>
+  <data name="Title_IsNew" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="Title_IsNewAthlete" xml:space="preserve">
+    <value>Nouvel athlète</value>
+  </data>
+  <data name="Title_LastName" xml:space="preserve">
+    <value>Nom de famille</value>
+  </data>
+  <data name="Title_MailingAddress" xml:space="preserve">
+    <value>Addresse</value>
+  </data>
+  <data name="Title_MailingCity" xml:space="preserve">
+    <value>Ville  </value>
+  </data>
+  <data name="Title_MailingCountryId" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="Title_MailingPostalCode" xml:space="preserve">
+    <value>Code Postal</value>
+  </data>
+  <data name="Title_MailingProvinceId" xml:space="preserve">
+    <value>Province  </value>
+  </data>
+  <data name="Title_NSOValue" xml:space="preserve">
+    <value>Valeur ONS</value>
+  </data>
+  <data name="Title_OTPValue" xml:space="preserve">
+    <value>Valeur ANP</value>
+  </data>
+  <data name="Title_Pooled" xml:space="preserve">
+    <value>Collectif</value>
+  </data>
+  <data name="Title_PrimaryCSCId" xml:space="preserve">
+    <value>Primaire</value>
+  </data>
+  <data name="Title_ResourceAffiliateId" xml:space="preserve">
+    <value>Identification de la ressource affiliée</value>
+  </data>
+  <data name="Title_ResourceClassId" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="Title_ResourceClassName" xml:space="preserve">
+    <value>Nom de la classe de ressource</value>
+  </data>
+  <data name="Title_ResourceDirectAthleteSupportId" xml:space="preserve">
+    <value>Identification de la ressource du soutien direct aux athlètes</value>
+  </data>
+  <data name="Title_ResourceId" xml:space="preserve">
+    <value>Identification de la ressource</value>
+  </data>
+  <data name="Title_ResourceIdShort" xml:space="preserve">
+    <value>Identification</value>
+  </data>
+  <data name="Title_ResourceSpecialtyId" xml:space="preserve">
+    <value>Spécialisation</value>
+  </data>
+  <data name="Title_ResourceSpecialtyName" xml:space="preserve">
+    <value>Nom de la spécialisation de la ressource</value>
+  </data>
+  <data name="Title_ResourceSportId" xml:space="preserve">
+    <value>Identification du sport de la ressource</value>
+  </data>
+  <data name="Title_SecondaryCSCId" xml:space="preserve">
+    <value>Secondaire</value>
+  </data>
+  <data name="Title_SkypeName" xml:space="preserve">
+    <value>Nom Skype</value>
+  </data>
+  <data name="Title_SportName" xml:space="preserve">
+    <value>Nom du sport</value>
+  </data>
+  <data name="Title_SportsId" xml:space="preserve">
+    <value>Sport</value>
+  </data>
+  <data name="Title_SportTrackingRef" xml:space="preserve">
+    <value>Référence du suivi du sport</value>
+  </data>
+  <data name="Title_SupportContact" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Title_SupportEmail" xml:space="preserve">
+    <value>Courriel</value>
+  </data>
+  <data name="Title_SupportName" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="Title_TBD" xml:space="preserve">
+    <value>À determiner</value>
+  </data>
+  <data name="Title_YearFromId" xml:space="preserve">
+    <value>Année de</value>
+  </data>
+  <data name="Title_YearId" xml:space="preserve">
+    <value>Saison</value>
+  </data>
+  <data name="Title_YearToId" xml:space="preserve">
+    <value>Année à</value>
+  </data>
+  <data name="Title_EventCoachId" xml:space="preserve">
+    <value>Entraîneur personnel</value>
+  </data>
+  <data name="Title_EventCoachName" xml:space="preserve">
+    <value>Nom de l'entraîneur personnel</value>
+  </data>
+  <data name="Title_PersonalCoachId" xml:space="preserve">
+    <value>Entraîneur principal</value>
+  </data>
+  <data name="Title_PersonalCoachName" xml:space="preserve">
+    <value>Nom de l'entraîneur principal</value>
+  </data>
+</root>

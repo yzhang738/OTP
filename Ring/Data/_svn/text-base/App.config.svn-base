@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <connectionStrings>
+    <!--DEV-->
+    <add name="RingEntities" connectionString="metadata=res://*/Models.RingDataModel.csdl|res://*/Models.RingDataModel.ssdl|res://*/Models.RingDataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=pn20upwud6.database.windows.net;Initial Catalog=OTPDEV;Persist Security Info=True;User ID=DSteinke;Password=iks4me!OTP;MultipleActiveResultSets=False&quot;" providerName="System.Data.EntityClient" />
+    <!--TEST-->
+    <!--<add name="RingEntities" connectionString="metadata=res://*/Models.RingDataModel.csdl|res://*/Models.RingDataModel.ssdl|res://*/Models.RingDataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=pn20upwud6.database.windows.net;Initial Catalog=OTPTEST;Persist Security Info=True;User ID=OTPWebTest;Password=L0nd0n2o!o;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient" />-->
+  </connectionStrings>
+</configuration>

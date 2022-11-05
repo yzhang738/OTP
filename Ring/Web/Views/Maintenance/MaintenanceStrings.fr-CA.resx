@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AthletesGeneralInfo_CSC" xml:space="preserve">
+    <value>CCM</value>
+  </data>
+  <data name="Athletes_PageTitle" xml:space="preserve">
+    <value>Maintien des ressources</value>
+  </data>
+  <data name="Athletes_ResourceTitle" xml:space="preserve">
+    <value>Athlètes</value>
+  </data>
+  <data name="Index_Title" xml:space="preserve">
+    <value>Maintien</value>
+  </data>
+  <data name="ISTMembers_PageTitle" xml:space="preserve">
+    <value>Maintien des ressources</value>
+  </data>
+  <data name="ISTMembers_ResourceTitle" xml:space="preserve">
+    <value>Membres de l'ESI</value>
+  </data>
+  <data name="MaintainBenchmarks_AddBenchmarkTierButton" xml:space="preserve">
+    <value>Définir une classe de jalons</value>
+  </data>
+  <data name="MaintainBenchmarks_Error_NoSelectedSport" xml:space="preserve">
+    <value>Sélectionnez un sport à partir du menu de gauche</value>
+  </data>
+  <data name="MaintainBenchmarks_InsertBenchmark_GroupBoxTitle" xml:space="preserve">
+    <value>Ajouter une classe de jalons</value>
+  </data>
+  <data name="MaintainBenchmarks_Title" xml:space="preserve">
+    <value>Maintien des jalons</value>
+  </data>
+  <data name="MaintainSports_Title" xml:space="preserve">
+    <value>Maintien des sports </value>
+  </data>
+  <data name="NSOMembers_PageTitle" xml:space="preserve">
+    <value>Maintien des ressources</value>
+  </data>
+  <data name="NSOMembers_ResourceTitle" xml:space="preserve">
+    <value>Membres des ONS</value>
+  </data>
+  <data name="Resources_Title" xml:space="preserve">
+    <value>Maintien des ressources</value>
+  </data>
+  <data name="Sports_Title" xml:space="preserve">
+    <value>Maintien des sports </value>
+  </data>
+  <data name="Tab_Affiliates" xml:space="preserve">
+    <value>Affiliés</value>
+  </data>
+  <data name="Tab_Contact" xml:space="preserve">
+    <value>Information   </value>
+  </data>
+  <data name="Tab_DAS" xml:space="preserve">
+    <value>Soutien direct à l'athlète</value>
+  </data>
+  <data name="Tab_General" xml:space="preserve">
+    <value>Général</value>
+  </data>
+  <data name="Tab_Qualifications" xml:space="preserve">
+    <value>Qualifications</value>
+  </data>
+  <data name="Tab_Sports" xml:space="preserve">
+    <value>Sports</value>
+  </data>
+  <data name="WhoAmI_Info" xml:space="preserve">
+    <value>Information de l'usager</value>
+  </data>
+  <data name="WhoAmI_Title" xml:space="preserve">
+    <value>Enregistrement</value>
+  </data>
+  <data name="Other_Title" xml:space="preserve">
+    <value>Maintien de la catégorie autre</value>
+  </data>
+  <data name="Tab_PoolAssignment" xml:space="preserve">
+    <value>Assignation du collectif</value>
+  </data>
+  <data name="Tab_Results" xml:space="preserve">
+    <value>Résultats</value>
+  </data>
+  <data name="ShowHideEdit" xml:space="preserve">
+    <value>Montrer/Cacher bouton d'éditer</value>
+  </data>
+  <data name="ExportToExcel" xml:space="preserve">
+    <value>Exporter à excel</value>
+  </data>
+  <data name="Athlete_DeleteConfirmation" xml:space="preserve">
+    <value>Sachez que si un nom d’athlete est supprime, toutes associes avec le nom seront supprimes aussi. Etes-vous bien surs de vouloir effacer l’athlete?</value>
+  </data>
+  <data name="Athlete_AddConfirmation" xml:space="preserve">
+    <value>Verifiez le filtre du sport si tu ne peux pas trouver la nouveau athlete ajoute.</value>
+  </data>
+  <data name="Athlete_SaveConfirmation" xml:space="preserve">
+    <value>Il y a un autre athlete qui coincide le nom et pays entre. Veux-tu continuer pour ajouter l’athlete?</value>
+  </data>
+  <data name="ExportExcelTimeLimit" xml:space="preserve">
+    <value>En raison du nombre d’objets pour exporter, il peut prendre plusieurs minutes avant de terminer le processus.  Veux-tu continuer toujours?</value>
+  </data>
+  <data name="Maintenance_DefaultDeleteConfirmation" xml:space="preserve">
+    <value>Etes-vous surs de vouloir effacer le contenu?</value>
+  </data>
+  <data name="Member_DeleteConfirmation" xml:space="preserve">
+    <value>Sachez que si un nom de membre est supprime, toutes associes avec le nom seront supprimes aussi. Etes-vous bien surs de vouloir effacer le membre?</value>
+  </data>
+  <data name="ISTMember_AddConfirmation" xml:space="preserve">
+    <value>Verifiez le filtre du sport si tu ne peux pas trouver le nouveau membre de ESI ajoute.</value>
+  </data>
+  <data name="ISTMember_SaveConfirmation" xml:space="preserve">
+    <value>Il y a un autre membre de ESI qui coincide le nom et pays entre. Veux-tu continuer pour ajouter le membre de ESI?</value>
+  </data>
+  <data name="MaintenanceIST_AssignSportAndSave" xml:space="preserve">
+    <value>Enregistrer le membre d'ÉSI et attribuer un sport</value>
+  </data>
+  <data name="MaintenanceIST_AssignSportCaption" xml:space="preserve">
+    <value>Attribuer le membre d'ÉSI au sport choisi: </value>
+  </data>
+  <data name="MaintenanceIST_NotAssignSportAndSave" xml:space="preserve">
+    <value>Enregistrer le membre d'ÉSI mais ne attribuer pas un sport</value>
+  </data>
+  <data name="Maintenance_AssignSportAndSave" xml:space="preserve">
+    <value>Enregistrer l'athlete et attribuer un sport</value>
+  </data>
+  <data name="Maintenance_AssignSportCaption" xml:space="preserve">
+    <value>Attribuer l'athlete au sport choisi:</value>
+  </data>
+  <data name="Maintenance_AssignSportEvent" xml:space="preserve">
+    <value>Événement:  </value>
+  </data>
+  <data name="Maintenance_AssignSportTitle" xml:space="preserve">
+    <value>Attribuer un sport</value>
+  </data>
+  <data name="Maintenance_NotAssignSportAndSave" xml:space="preserve">
+    <value>Enregistrer l'athlete mais ne attribuer pas un sport</value>
+  </data>
+  <data name="MaintenanceNSO_AssignSportAndSave" xml:space="preserve">
+    <value>Enregistrer le membre d'ONS et attribuer un sport</value>
+  </data>
+  <data name="MaintenanceNSO_AssignSportCaption" xml:space="preserve">
+    <value>Attribuer le membre d'ONS au sport choisi:</value>
+  </data>
+  <data name="MaintenanceNSO_NotAssignSportAndSave" xml:space="preserve">
+    <value>Enregistrer le membre d'ONS mais ne attribuer pas un sport</value>
+  </data>
+  <data name="NSOMember_AddConfirmation" xml:space="preserve">
+    <value>Verifiez le filtre du sport si tu ne peux pas trouver le nouveau membre de ONS ajoute.</value>
+  </data>
+  <data name="NSOMember_SaveConfirmation" xml:space="preserve">
+    <value>Il y a un autre membre de ONS qui coincide le nom et pays entre. Veux-tu continuer pour ajouter le membre de ONS?</value>
+  </data>
+  <data name="GoToPage" xml:space="preserve">
+    <value>Aller à la page</value>
+  </data>
+  <data name="Maintenance_GoToPageTitle" xml:space="preserve">
+    <value>Aller à la page</value>
+  </data>
+  <data name="Maintenance_GoToPage" xml:space="preserve">
+    <value>Aller</value>
+  </data>
+  <data name="Maintenance_GoToPageCaption" xml:space="preserve">
+    <value>Aller à la page: </value>
+  </data>
+</root>

@@ -1,0 +1,61 @@
+C:\Development\OTP\Ring\Application\trunk\Ring\Common\bin\Debug\OTP.Ring.Common.dll
+C:\Development\OTP\Ring\Application\trunk\Ring\Common\bin\Debug\OTP.Ring.Common.pdb
+C:\Development\OTP\Ring\Application\trunk\Ring\Common\bin\Debug\fr-CA\OTP.Ring.Common.resources.dll
+C:\Development\OTP\Ring\Application\trunk\Ring\Common\bin\Debug\OTP.Ring.Data.dll
+C:\Development\OTP\Ring\Application\trunk\Ring\Common\bin\Debug\OTP.Ring.Data.pdb
+C:\Development\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\OTP.Ring.Common.CommonLocalization.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\OTP.Ring.Common.CommonLocalization.fr-CA.resources
+C:\Development\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\GenerateResource.read.1.tlog
+C:\Development\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\GenerateResource.write.1.tlog
+C:\Development\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\fr-CA\OTP.Ring.Common.resources.dll
+C:\Development\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\OTP.Ring.Common.dll
+C:\Development\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\OTP.Ring.Common.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Common\bin\Debug\OTP.Ring.Common.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Common\bin\Debug\OTP.Ring.Common.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Common\bin\Debug\fr-CA\OTP.Ring.Common.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Common\bin\Debug\OTP.Ring.Data.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Common\bin\Debug\OTP.Ring.Data.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\OTP.Ring.Common.CommonLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\OTP.Ring.Common.CommonLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\fr-CA\OTP.Ring.Common.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\OTP.Ring.Common.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\Ring\Common\obj\Debug\OTP.Ring.Common.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Common\obj\Debug\OTP.Ring.Common.CommonLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Common\obj\Debug\OTP.Ring.Common.CommonLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Common\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Common\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Common\obj\Debug\OTP.Ring.Common.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Common\obj\Debug\OTP.Ring.Common.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Common\bin\Debug\OTP.Ring.Common.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Common\bin\Debug\OTP.Ring.Common.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Common\bin\Debug\fr-CA\OTP.Ring.Common.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Common\bin\Debug\OTP.Ring.Data.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Common\bin\Debug\OTP.Ring.Data.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\newtrunk\OTP\Ring\Common\obj\Debug\fr-CA\OTP.Ring.Common.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\OTP.Ring.Common.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\OTP.Ring.Common.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\fr-CA\OTP.Ring.Common.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\OTP.Ring.Data.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\OTP.Ring.Data.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\obj\Debug\OTP.Ring.Common.CommonLocalization.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\obj\Debug\OTP.Ring.Common.CommonLocalization.fr-CA.resources
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\obj\Debug\fr-CA\OTP.Ring.Common.resources.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\obj\Debug\OTP.Ring.Common.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\obj\Debug\OTP.Ring.Common.pdb
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\obj\Debug\OTP.Ring.Common.csprojResolveAssemblyReference.cache
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\obj\Debug\OTP.Ring.Common.csproj.GenerateResource.Cache
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\System.Data.DataSetExtensions.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\System.Data.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\System.Data.Entity.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\System.Runtime.Serialization.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\System.Web.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\System.Web.Mvc.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\System.Web.Mvc.xml
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\System.Xml.dll
+C:\Users\zhang\Documents\Visual Studio 2010\Projects\OTP\Ring\Application\trunk\OTP\Ring\Common\bin\Debug\System.Xml.Linq.dll

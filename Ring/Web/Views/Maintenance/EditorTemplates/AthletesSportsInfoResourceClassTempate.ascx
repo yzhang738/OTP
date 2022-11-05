@@ -1,0 +1,39 @@
+<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<string>" %>
+
+<script type="text/javascript">
+    function onResourceClassBinding(e) {
+        // Get the resource Id
+        var resourceId = $('#resourceId').val();
+
+        e.data = $.extend({}, e.data, { id: resourceId });
+    }
+
+    function onResourceClassLoad()
+    {
+        var combo = $(this).data('tDropDownList');
+        combo.reload();
+    }
+
+    function onResourceClassBound()
+    {
+        var editor = $(this).data('tDropDownList');
+        var tr = $(this).closest('tr:has(form)');
+        var dataItem = tr.closest('.t-grid').data('tGrid').dataItem(tr);
+
+        if (dataItem) {
+            var isNewRow = ($(this).closest('.t-grid-new-row').length == 1);
+            if (!isNewRow) editor.value(dataItem.ResourceClassId);
+        }
+    }
+</script>
+
+<%=         
+    Html.Telerik().DropDownList()
+        .Name("ResourceClassId")
+        .DataBinding(binding => binding.Ajax().Select("ResourceClassAjax", "Shared"))
+        .HtmlAttributes(new { style = "font-size:8pt;" })
+        .ClientEvents(events => events
+            .OnLoad("onResourceClassLoad")
+            .OnDataBinding("onResourceClassBinding")
+            .OnDataBound("onResourceClassBound"))
+%>

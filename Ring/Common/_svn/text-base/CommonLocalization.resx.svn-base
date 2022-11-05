@@ -1,0 +1,1026 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionItemType_Title_Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="ActionItemType_Title_Source" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="ActionItemType_Title_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ActionItem_Required_Description" xml:space="preserve">
+    <value>Description is Required</value>
+  </data>
+  <data name="ActionItem_Title_ActionName" xml:space="preserve">
+    <value>Action Name</value>
+  </data>
+  <data name="ActionItem_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="ActionItem_Title_ControllerName" xml:space="preserve">
+    <value>Controller Name</value>
+  </data>
+  <data name="ActionItem_Title_Description" xml:space="preserve">
+    <value>Action Description</value>
+  </data>
+  <data name="ActionItem_Title_DueDate" xml:space="preserve">
+    <value>Due Date</value>
+  </data>
+  <data name="ActionItem_Title_HasComment" xml:space="preserve">
+    <value>Has Comments</value>
+  </data>
+  <data name="ActionItem_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="ActionItem_Title_OrganizationDesc" xml:space="preserve">
+    <value>Organization Desc</value>
+  </data>
+  <data name="ActionItem_Title_OrganizationId" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="ActionItem_Title_Priority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="ActionItem_Title_PriorityDesc" xml:space="preserve">
+    <value>Priority Desc</value>
+  </data>
+  <data name="ActionItem_Title_ReferenceId" xml:space="preserve">
+    <value>Reference Id</value>
+  </data>
+  <data name="ActionItem_Title_SportDesc" xml:space="preserve">
+    <value>Sport Desc</value>
+  </data>
+  <data name="ActionItem_Title_SportId" xml:space="preserve">
+    <value>Sport</value>
+  </data>
+  <data name="ActionItem_Title_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ActionItem_Title_StatusDesc" xml:space="preserve">
+    <value>Status Desc</value>
+  </data>
+  <data name="ActionItem_Title_Type" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="ActionItem_Title_TypeDesc" xml:space="preserve">
+    <value>Type Desc</value>
+  </data>
+  <data name="ActionItem_Title_UserId" xml:space="preserve">
+    <value>User Id</value>
+  </data>
+  <data name="CompetitionEvent_Required_DisciplineId" xml:space="preserve">
+    <value>Discipline is Required</value>
+  </data>
+  <data name="CompetitionEvent_Required_EventId" xml:space="preserve">
+    <value>Event is Required</value>
+  </data>
+  <data name="CompetitionEvent_Title_ApproveCount" xml:space="preserve">
+    <value>Approve Count</value>
+  </data>
+  <data name="CompetitionEvent_Title_Cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="CompetitionEvent_Title_DisciplineDesc" xml:space="preserve">
+    <value>Discipline Desc</value>
+  </data>
+  <data name="CompetitionEvent_Title_DisciplineId" xml:space="preserve">
+    <value>Discipline</value>
+  </data>
+  <data name="CompetitionEvent_Title_DownloadCount" xml:space="preserve">
+    <value>Download Count</value>
+  </data>
+  <data name="CompetitionEvent_Title_EventDesc" xml:space="preserve">
+    <value>Event Desc</value>
+  </data>
+  <data name="CompetitionEvent_Title_EventId" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="CompetitionEvent_Title_FieldSize" xml:space="preserve">
+    <value>Field Size</value>
+  </data>
+  <data name="CompetitionEvent_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Competition_Required_BenchmarkCode" xml:space="preserve">
+    <value>Benchmark is Required</value>
+  </data>
+  <data name="Competition_Required_Date" xml:space="preserve">
+    <value>Date is Required</value>
+  </data>
+  <data name="Competition_Required_Name" xml:space="preserve">
+    <value>Name is Required</value>
+  </data>
+  <data name="Competition_Required_SportId" xml:space="preserve">
+    <value>Sport is Required</value>
+  </data>
+  <data name="Competition_Required_Type" xml:space="preserve">
+    <value>Type is Required</value>
+  </data>
+  <data name="Competition_Title_ApproveCount" xml:space="preserve">
+    <value>Approve Count</value>
+  </data>
+  <data name="Competition_Title_ApproveStatus" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Competition_Title_BenchmarkCode" xml:space="preserve">
+    <value>Benchmark</value>
+  </data>
+  <data name="Competition_Title_BenchmarkDesc" xml:space="preserve">
+    <value>Benchmark Desc</value>
+  </data>
+  <data name="Competition_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="Competition_Title_CountryCode" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Competition_Title_CountryDesc" xml:space="preserve">
+    <value>Country Desc</value>
+  </data>
+  <data name="Competition_Title_Date" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="Competition_Title_DownloadCount" xml:space="preserve">
+    <value>Download Count</value>
+  </data>
+  <data name="Competition_Title_DownloadStatus" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Competition_Title_Editable" xml:space="preserve">
+    <value>Editable</value>
+  </data>
+  <data name="Competition_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Competition_Title_Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Competition_Title_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Competition_Title_Ratio" xml:space="preserve">
+    <value>Downloaded/Approved</value>
+  </data>
+  <data name="Competition_Title_ShowApproveConfirmation" xml:space="preserve">
+    <value>Show Approve Confirmation</value>
+  </data>
+  <data name="Competition_Title_ShowApproveStatus" xml:space="preserve">
+    <value>Show Approve Status</value>
+  </data>
+  <data name="Competition_Title_ShowDownloadStatus" xml:space="preserve">
+    <value>Show Download Status</value>
+  </data>
+  <data name="Competition_Title_SportDesc" xml:space="preserve">
+    <value>Sport Desc</value>
+  </data>
+  <data name="Competition_Title_SportId" xml:space="preserve">
+    <value>Sport</value>
+  </data>
+  <data name="Competition_Title_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Competition_Title_TypeDesc" xml:space="preserve">
+    <value>Type Desc</value>
+  </data>
+  <data name="Competition_Title_YearId" xml:space="preserve">
+    <value>Year Id</value>
+  </data>
+  <data name="EvaluationBestPractice_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="EvaluationBestPractice_Title_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="EvaluationBestPractice_Title_EvaluationId" xml:space="preserve">
+    <value>Evaluation Id</value>
+  </data>
+  <data name="EvaluationBestPractice_Title_HasComment" xml:space="preserve">
+    <value>HasComment</value>
+  </data>
+  <data name="EvaluationBestPractice_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="EvaluationBestPractice_Title_MasterPillarId" xml:space="preserve">
+    <value>Master Pillar Id</value>
+  </data>
+  <data name="EvaluationBestPractice_Title_SportDesc" xml:space="preserve">
+    <value>Sport Desc</value>
+  </data>
+  <data name="EvaluationBestPractice_Title_SportId" xml:space="preserve">
+    <value>Sport</value>
+  </data>
+  <data name="EvaluationBestPractice_Title_YearId" xml:space="preserve">
+    <value>Season</value>
+  </data>
+  <data name="EvaluationPillar_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="EvaluationPillar_Title_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="EvaluationPillar_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="EvaluationPillar_Title_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="EvaluationPillar_Title_SortOrder" xml:space="preserve">
+    <value>SortOrder</value>
+  </data>
+  <data name="EvaluationQuestion_Required_CurrentAssessment" xml:space="preserve">
+    <value>Assessment is Required</value>
+  </data>
+  <data name="EvaluationQuestion_Required_CurrentStatus" xml:space="preserve">
+    <value>Current Status is Required</value>
+  </data>
+  <data name="EvaluationQuestion_Required_InitialAssessment" xml:space="preserve">
+    <value>Assessment is Required</value>
+  </data>
+  <data name="EvaluationQuestion_Required_InitialStatus" xml:space="preserve">
+    <value>Initial Status is Required</value>
+  </data>
+  <data name="EvaluationQuestion_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="EvaluationQuestion_Title_CurrentAssessment" xml:space="preserve">
+    <value>Current Assessment</value>
+  </data>
+  <data name="EvaluationQuestion_Title_CurrentStatus" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="EvaluationQuestion_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="EvaluationQuestion_Title_InitialAssessment" xml:space="preserve">
+    <value>Initial Assessment</value>
+  </data>
+  <data name="EvaluationQuestion_Title_InitialStatus" xml:space="preserve">
+    <value>Initial</value>
+  </data>
+  <data name="EvaluationQuestion_Title_MasterPillarId" xml:space="preserve">
+    <value>Master Pillar Id</value>
+  </data>
+  <data name="EvaluationQuestion_Title_MasterQuestionId" xml:space="preserve">
+    <value>Master Question Id</value>
+  </data>
+  <data name="EvaluationQuestion_Title_NotApplicable" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="EvaluationQuestion_Title_Phase" xml:space="preserve">
+    <value>Phase</value>
+  </data>
+  <data name="EvaluationQuestion_Title_Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="EvaluationQuestion_Title_SortOrder" xml:space="preserve">
+    <value>Q#</value>
+  </data>
+  <data name="EvaluationQuestion_Title_SportId" xml:space="preserve">
+    <value>Sport Id</value>
+  </data>
+  <data name="EvaluationQuestion_Title_VersionId" xml:space="preserve">
+    <value>Version Id</value>
+  </data>
+  <data name="EvaluationQuestion_Title_VersionQuestionId" xml:space="preserve">
+    <value>Version Question Id</value>
+  </data>
+  <data name="Evaluation_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="Evaluation_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Evaluation_Title_Phase" xml:space="preserve">
+    <value>Phase</value>
+  </data>
+  <data name="Evaluation_Title_PhaseDesc" xml:space="preserve">
+    <value>Phase Desc</value>
+  </data>
+  <data name="Evaluation_Title_SportDesc" xml:space="preserve">
+    <value>Sport Desc</value>
+  </data>
+  <data name="Evaluation_Title_SportId" xml:space="preserve">
+    <value>Sport Id</value>
+  </data>
+  <data name="Evaluation_Title_VersionId" xml:space="preserve">
+    <value>Version Id</value>
+  </data>
+  <data name="Evaluation_Title_VersionName" xml:space="preserve">
+    <value>Version Name</value>
+  </data>
+  <data name="Evaluation_Title_VersionYearId" xml:space="preserve">
+    <value>Version Year Id</value>
+  </data>
+  <data name="FundingAllocation_Title_AllocatedFundsCoc" xml:space="preserve">
+    <value>COC</value>
+  </data>
+  <data name="FundingAllocation_Title_AllocatedFundsOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="FundingAllocation_Title_AllocatedFundsSC" xml:space="preserve">
+    <value>SC</value>
+  </data>
+  <data name="FundingAllocation_Title_AvailableFundsCoc" xml:space="preserve">
+    <value>COC</value>
+  </data>
+  <data name="FundingAllocation_Title_AvailableFundsOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="FundingAllocation_Title_AvailableFundsSC" xml:space="preserve">
+    <value>SC</value>
+  </data>
+  <data name="FundingAllocation_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="FundingAllocation_Title_SportId" xml:space="preserve">
+    <value>Sport Id</value>
+  </data>
+  <data name="FundingAllocation_Title_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="FundingAllocation_Title_UnallocatedFundsCoc" xml:space="preserve">
+    <value>COC</value>
+  </data>
+  <data name="FundingAllocation_Title_UnallocatedFundsOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="FundingAllocation_Title_UnallocatedFundsSC" xml:space="preserve">
+    <value>SC</value>
+  </data>
+  <data name="FundingAllocation_Title_YearId" xml:space="preserve">
+    <value>Season</value>
+  </data>
+  <data name="FundingBase_Required_Actual" xml:space="preserve">
+    <value>Actual is Required</value>
+  </data>
+  <data name="FundingBase_Required_FinalRecommend" xml:space="preserve">
+    <value>Final Recmd is Required</value>
+  </data>
+  <data name="FundingBase_Required_HpaRecommend" xml:space="preserve">
+    <value>HPA Recmd is Required</value>
+  </data>
+  <data name="FundingBase_Required_OriginalBudget" xml:space="preserve">
+    <value>Total Funds is Required</value>
+  </data>
+  <data name="FundingBase_Required_OtpRecommend" xml:space="preserve">
+    <value>OTP Recmd is Required</value>
+  </data>
+  <data name="FundingBase_Required_PendingRevise" xml:space="preserve">
+    <value>OTP Revising is Required</value>
+  </data>
+  <data name="FundingBase_Required_PendingReviseCoc" xml:space="preserve">
+    <value>COC is Required</value>
+  </data>
+  <data name="FundingBase_Required_PendingReviseSC" xml:space="preserve">
+    <value>SC is Required</value>
+  </data>
+  <data name="FundingBase_Required_RecommendCoc" xml:space="preserve">
+    <value>COC is Required</value>
+  </data>
+  <data name="FundingBase_Required_RecommendSC" xml:space="preserve">
+    <value>SC is Required</value>
+  </data>
+  <data name="FundingBase_Required_Revised" xml:space="preserve">
+    <value>OTP Revised is Required</value>
+  </data>
+  <data name="FundingBase_Required_RevisedCoc" xml:space="preserve">
+    <value>COC is Required</value>
+  </data>
+  <data name="FundingBase_Required_RevisedSC" xml:space="preserve">
+    <value>SC is Required</value>
+  </data>
+  <data name="FundingBase_Title_Actual" xml:space="preserve">
+    <value>Actual</value>
+  </data>
+  <data name="FundingBase_Title_FinalRecommend" xml:space="preserve">
+    <value>Final Recmd</value>
+  </data>
+  <data name="FundingBase_Title_HpaRecommend" xml:space="preserve">
+    <value>HPA Recmd</value>
+  </data>
+  <data name="FundingBase_Title_OriginalBudget" xml:space="preserve">
+    <value>Total Funds</value>
+  </data>
+  <data name="FundingBase_Title_OtpRecommend" xml:space="preserve">
+    <value>OTP Recmd</value>
+  </data>
+  <data name="FundingBase_Title_PendingRevise" xml:space="preserve">
+    <value>Revise Total</value>
+  </data>
+  <data name="FundingBase_Title_PendingReviseCoc" xml:space="preserve">
+    <value>Revise COC</value>
+  </data>
+  <data name="FundingBase_Title_PendingReviseOther" xml:space="preserve">
+    <value>Revise Other</value>
+  </data>
+  <data name="FundingBase_Title_PendingReviseSC" xml:space="preserve">
+    <value>Revise SC</value>
+  </data>
+  <data name="FundingBase_Title_RecommendCoc" xml:space="preserve">
+    <value>COC</value>
+  </data>
+  <data name="FundingBase_Title_RecommendOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="FundingBase_Title_RecommendSC" xml:space="preserve">
+    <value>SC</value>
+  </data>
+  <data name="FundingBase_Title_RequestNso" xml:space="preserve">
+    <value>Discretionary</value>
+  </data>
+  <data name="FundingBase_Title_RequestOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="FundingBase_Title_RequestOtp" xml:space="preserve">
+    <value>Request To OTP</value>
+  </data>
+  <data name="FundingBase_Title_RequestSC" xml:space="preserve">
+    <value>SC Core</value>
+  </data>
+  <data name="FundingBase_Title_Revised" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="FundingBase_Title_RevisedBudget" xml:space="preserve">
+    <value>Budget</value>
+  </data>
+  <data name="FundingBase_Title_RevisedCoc" xml:space="preserve">
+    <value>Current COC</value>
+  </data>
+  <data name="FundingBase_Title_RevisedOther" xml:space="preserve">
+    <value>Current Other</value>
+  </data>
+  <data name="FundingBase_Title_RevisedSC" xml:space="preserve">
+    <value>Current SC</value>
+  </data>
+  <data name="FundingBase_Title_Variance" xml:space="preserve">
+    <value>Variance</value>
+  </data>
+  <data name="FundingBlockType_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="FundingBlockType_Title_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="FundingBlockType_Title_SortOrder" xml:space="preserve">
+    <value>Sort Order</value>
+  </data>
+  <data name="FundingBlockType_Title_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="FundingBlock_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="FundingBlock_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="FundingBlock_Title_Type" xml:space="preserve">
+    <value>Funding Block</value>
+  </data>
+  <data name="FundingBlock_Title_TypeDesc" xml:space="preserve">
+    <value>Type Desc</value>
+  </data>
+  <data name="FundingCategoryType_Title_BlockType" xml:space="preserve">
+    <value>Block Type</value>
+  </data>
+  <data name="FundingCategoryType_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="FundingCategoryType_Title_CscRequired" xml:space="preserve">
+    <value>Csc Required</value>
+  </data>
+  <data name="FundingCategoryType_Title_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="FundingCategoryType_Title_ResourceRequired" xml:space="preserve">
+    <value>Resource Required</value>
+  </data>
+  <data name="FundingCategoryType_Title_ResourceType" xml:space="preserve">
+    <value>Resource Type</value>
+  </data>
+  <data name="FundingCategoryType_Title_SortOrder" xml:space="preserve">
+    <value>Sort Order</value>
+  </data>
+  <data name="FundingCategoryType_Title_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="FundingCategory_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="FundingCategory_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="FundingCategory_Title_ResourceRequired" xml:space="preserve">
+    <value>Resource Required</value>
+  </data>
+  <data name="FundingCategory_Title_ResourceType" xml:space="preserve">
+    <value>Resource Type</value>
+  </data>
+  <data name="FundingCategory_Title_Type" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="FundingCategory_Title_TypeDesc" xml:space="preserve">
+    <value>Type Desc</value>
+  </data>
+  <data name="FundingDetail_Required_Description" xml:space="preserve">
+    <value>Detail is Required</value>
+  </data>
+  <data name="FundingDetail_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="FundingDetail_Title_CommittedPercent" xml:space="preserve">
+    <value>% Committed</value>
+  </data>
+  <data name="FundingDetail_Title_CscDesc" xml:space="preserve">
+    <value>Csc Desc</value>
+  </data>
+  <data name="FundingDetail_Title_CscId" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="FundingDetail_Title_Description" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="FundingDetail_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="FundingDetail_Title_PriorityCode" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="FundingDetail_Title_PriorityDesc" xml:space="preserve">
+    <value>Priority Desc</value>
+  </data>
+  <data name="FundingDetail_Title_Recurring" xml:space="preserve">
+    <value>Recurring</value>
+  </data>
+  <data name="FundingDetail_Title_ResourceDesc" xml:space="preserve">
+    <value>Resource Desc</value>
+  </data>
+  <data name="FundingDetail_Title_ResourceId" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="FundingSummary_Title_Actual" xml:space="preserve">
+    <value>Actual</value>
+  </data>
+  <data name="FundingSummary_Title_FinalRecommend" xml:space="preserve">
+    <value>Final Recmd</value>
+  </data>
+  <data name="FundingSummary_Title_HpaRecommend" xml:space="preserve">
+    <value>HPA Recmd</value>
+  </data>
+  <data name="FundingSummary_Title_OriginalBudget" xml:space="preserve">
+    <value>Original Budget</value>
+  </data>
+  <data name="FundingSummary_Title_OtpRecommend" xml:space="preserve">
+    <value>OTP Recmd</value>
+  </data>
+  <data name="FundingSummary_Title_Paid" xml:space="preserve">
+    <value>Paid</value>
+  </data>
+  <data name="FundingSummary_Title_RequestOtp" xml:space="preserve">
+    <value>Request To OTP</value>
+  </data>
+  <data name="FundingSummary_Title_Revised" xml:space="preserve">
+    <value>Revise</value>
+  </data>
+  <data name="FundingSummary_Title_RevisedBudget" xml:space="preserve">
+    <value>Budget</value>
+  </data>
+  <data name="FundingSummary_Title_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="FundingSummary_Title_TypeDesc" xml:space="preserve">
+    <value>Type Desc</value>
+  </data>
+  <data name="FundingTotal_Title_Type" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="Funding_Title_ActionItem" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="Funding_Title_Actual" xml:space="preserve">
+    <value>Actual</value>
+  </data>
+  <data name="Funding_Title_AvailableFundsCoc" xml:space="preserve">
+    <value>COC</value>
+  </data>
+  <data name="Funding_Title_AvailableFundsOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Funding_Title_AvailableFundsSC" xml:space="preserve">
+    <value>SC</value>
+  </data>
+  <data name="Funding_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="Funding_Title_FinalRecommend" xml:space="preserve">
+    <value>Final Recmd</value>
+  </data>
+  <data name="Funding_Title_HpaRecommend" xml:space="preserve">
+    <value>HPA Recmd</value>
+  </data>
+  <data name="Funding_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Funding_Title_OrganizationDesc" xml:space="preserve">
+    <value>Organization Desc</value>
+  </data>
+  <data name="Funding_Title_OrganizationId" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="Funding_Title_OriginalBudget" xml:space="preserve">
+    <value>Original Budget</value>
+  </data>
+  <data name="Funding_Title_OtpRecommend" xml:space="preserve">
+    <value>OTP Recmd</value>
+  </data>
+  <data name="Funding_Title_Paid" xml:space="preserve">
+    <value>Paid</value>
+  </data>
+  <data name="Funding_Title_RecommendCoc" xml:space="preserve">
+    <value>COC</value>
+  </data>
+  <data name="Funding_Title_RecommendOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Funding_Title_RecommendSC" xml:space="preserve">
+    <value>SC</value>
+  </data>
+  <data name="Funding_Title_RequestOtp" xml:space="preserve">
+    <value>Request To OTP</value>
+  </data>
+  <data name="Funding_Title_Revised" xml:space="preserve">
+    <value>Revise</value>
+  </data>
+  <data name="Funding_Title_RevisedBudget" xml:space="preserve">
+    <value>Budget</value>
+  </data>
+  <data name="Funding_Title_ShowFinalRecommendLink" xml:space="preserve">
+    <value>Show Final Recommend Link</value>
+  </data>
+  <data name="Funding_Title_ShowHpaRecommendLink" xml:space="preserve">
+    <value>Show Hpa Recommend Link</value>
+  </data>
+  <data name="Funding_Title_ShowOtpRecommendLink" xml:space="preserve">
+    <value>Show Otp Recommend Link</value>
+  </data>
+  <data name="Funding_Title_ShowRevisedLink" xml:space="preserve">
+    <value>Show Revised Link</value>
+  </data>
+  <data name="Funding_Title_SportDesc" xml:space="preserve">
+    <value>Sport Desc</value>
+  </data>
+  <data name="Funding_Title_SportId" xml:space="preserve">
+    <value>Sport</value>
+  </data>
+  <data name="Funding_Title_StatusCode" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Funding_Title_StatusDesc" xml:space="preserve">
+    <value>Status Desc</value>
+  </data>
+  <data name="Funding_Title_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Funding_Title_YearId" xml:space="preserve">
+    <value>Year Id</value>
+  </data>
+  <data name="ListItem_NotSet" xml:space="preserve">
+    <value>{Not Set}</value>
+  </data>
+  <data name="Organization_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Organization_Title_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Organization_Title_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ResultStaging_Required_BenchmarkTypeId" xml:space="preserve">
+    <value>Benchmark is Required</value>
+  </data>
+  <data name="ResultStaging_Required_CountryCode" xml:space="preserve">
+    <value>Country is Required</value>
+  </data>
+  <data name="ResultStaging_Required_DownloadFirstName" xml:space="preserve">
+    <value>First Name is Required</value>
+  </data>
+  <data name="ResultStaging_Required_DownloadLastName" xml:space="preserve">
+    <value>Last Name/Team is Required</value>
+  </data>
+  <data name="ResultStaging_Required_EventDate" xml:space="preserve">
+    <value>Event Date is Required</value>
+  </data>
+  <data name="ResultStaging_Required_EventDescription" xml:space="preserve">
+    <value>Description is Required</value>
+  </data>
+  <data name="ResultStaging_Required_EventId" xml:space="preserve">
+    <value>Event is Required</value>
+  </data>
+  <data name="ResultStaging_Required_PositionDesc" xml:space="preserve">
+    <value>Position is Required</value>
+  </data>
+  <data name="ResultStaging_Title_Approved" xml:space="preserve">
+    <value>Appr.</value>
+  </data>
+  <data name="ResultStaging_Title_BenchmarkTypeId" xml:space="preserve">
+    <value>Benchmark</value>
+  </data>
+  <data name="ResultStaging_Title_BirthDate" xml:space="preserve">
+    <value>Birth Date</value>
+  </data>
+  <data name="ResultStaging_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="ResultStaging_Title_CompetitionId" xml:space="preserve">
+    <value>Competition Id</value>
+  </data>
+  <data name="ResultStaging_Title_CountryCode" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="ResultStaging_Title_CountryDesc" xml:space="preserve">
+    <value>Country Desc</value>
+  </data>
+  <data name="ResultStaging_Title_DisciplineDesc" xml:space="preserve">
+    <value>Discipline Desc</value>
+  </data>
+  <data name="ResultStaging_Title_DisciplineId" xml:space="preserve">
+    <value>Discipline Id</value>
+  </data>
+  <data name="ResultStaging_Title_DownloadFirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="ResultStaging_Title_DownloadLastName" xml:space="preserve">
+    <value>Last Name/Team</value>
+  </data>
+  <data name="ResultStaging_Title_DownloadSourceId" xml:space="preserve">
+    <value>Download Source Id</value>
+  </data>
+  <data name="ResultStaging_Title_DownloadSourceType" xml:space="preserve">
+    <value>Download Source Type</value>
+  </data>
+  <data name="ResultStaging_Title_DownloadTempalteId" xml:space="preserve">
+    <value>Download Tempalte Id</value>
+  </data>
+  <data name="ResultStaging_Title_EventDate" xml:space="preserve">
+    <value>Event Date</value>
+  </data>
+  <data name="ResultStaging_Title_EventDesc" xml:space="preserve">
+    <value>Event Desc</value>
+  </data>
+  <data name="ResultStaging_Title_EventDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ResultStaging_Title_EventId" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="ResultStaging_Title_GenderCode" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="ResultStaging_Title_GenderDesc" xml:space="preserve">
+    <value>Gender Desc</value>
+  </data>
+  <data name="ResultStaging_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="ResultStaging_Title_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ResultStaging_Title_PerfTime" xml:space="preserve">
+    <value>Perf Time</value>
+  </data>
+  <data name="ResultStaging_Title_PerfTimeDesc" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="ResultStaging_Title_PerfValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="ResultStaging_Title_Position" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="ResultStaging_Title_PositionDesc" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="ResultStaging_Title_SportTrackingRef" xml:space="preserve">
+    <value>Sport Tracking Ref.</value>
+  </data>
+  <data name="ResultStaging_Title_StatusCode" xml:space="preserve">
+    <value>Status Code</value>
+  </data>
+  <data name="ResultStaging_Title_StatusDesc" xml:space="preserve">
+    <value>Status Desc</value>
+  </data>
+  <data name="ResultStaging_Title_TeamDesc" xml:space="preserve">
+    <value>Team Desc</value>
+  </data>
+  <data name="ResultStaging_Title_TeamId" xml:space="preserve">
+    <value>Athlete/Team</value>
+  </data>
+  <data name="ResultStaging_Title_TeamType" xml:space="preserve">
+    <value>Team Type</value>
+  </data>
+  <data name="SportDetail_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="SportDetail_Title_Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="SportDetail_Title_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="TeamMember_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="TeamMember_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="TeamMember_Title_ResourceDesc" xml:space="preserve">
+    <value>Resource Desc</value>
+  </data>
+  <data name="TeamMember_Title_ResourceId" xml:space="preserve">
+    <value>Athlete</value>
+  </data>
+  <data name="Team_Title_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="Team_Title_CountryCode" xml:space="preserve">
+    <value>Country Code</value>
+  </data>
+  <data name="Team_Title_CountryDesc" xml:space="preserve">
+    <value>Country Desc</value>
+  </data>
+  <data name="Team_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Team_Title_Name" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="Team_Title_SportDesc" xml:space="preserve">
+    <value>Sport Desc</value>
+  </data>
+  <data name="Team_Title_SportId" xml:space="preserve">
+    <value>Sport Id</value>
+  </data>
+  <data name="Team_Title_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="User_Required_Comments" xml:space="preserve">
+    <value>Comments is Required</value>
+  </data>
+  <data name="User_Required_FirstName" xml:space="preserve">
+    <value>First Name is Required</value>
+  </data>
+  <data name="User_Required_LastName" xml:space="preserve">
+    <value>Last Name is Required</value>
+  </data>
+  <data name="User_Title_AuthenticatedLiveId" xml:space="preserve">
+    <value>Authenticated Live Id</value>
+  </data>
+  <data name="User_Title_Comments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="User_Title_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="User_Title_GroupProfileId" xml:space="preserve">
+    <value>Group Profile Id</value>
+  </data>
+  <data name="User_Title_GroupProfileName" xml:space="preserve">
+    <value>Group Profile Name</value>
+  </data>
+  <data name="User_Title_HomePageId" xml:space="preserve">
+    <value>Home Page Id</value>
+  </data>
+  <data name="User_Title_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="User_Title_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="User_Title_LiveId" xml:space="preserve">
+    <value>Live Id</value>
+  </data>
+  <data name="User_Title_UserProfileId" xml:space="preserve">
+    <value>User Profile Id</value>
+  </data>
+  <data name="User_Title_UserProfileName" xml:space="preserve">
+    <value>User Profile Name</value>
+  </data>
+</root>

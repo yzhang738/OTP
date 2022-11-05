@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionItemEditor_ActionItem" xml:space="preserve">
+    <value>Action:</value>
+  </data>
+  <data name="ActionItemEditor_Comments" xml:space="preserve">
+    <value>Commentaires:</value>
+  </data>
+  <data name="ActionItemEditor_CreateActionItemWindow_Title" xml:space="preserve">
+    <value>Nouvelle action:</value>
+  </data>
+  <data name="ActionItemEditor_Description" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="ActionItemEditor_DueDate" xml:space="preserve">
+    <value>Date prévue:</value>
+  </data>
+  <data name="ActionItemEditor_Priority" xml:space="preserve">
+    <value>Priorité:</value>
+  </data>
+  <data name="BestPractices" xml:space="preserve">
+    <value>Meilleures pratiques</value>
+  </data>
+  <data name="Button_Copy" xml:space="preserve">
+    <value>Copie</value>
+  </data>
+  <data name="Button_New" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="Button_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Button_Save" xml:space="preserve">
+    <value>Sauvegarder  </value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Commentaires</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>COMMUNIQUEZ AVEC NOUS</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>À nous le podium</value>
+  </data>
+  <data name="Error_AddExistingBenchmark" xml:space="preserve">
+    <value>Erreur: impossible d'ajouter un jalon.  Un jalon existe avec le même type et classe de jalons.</value>
+  </data>
+  <data name="Error_AddExistingCompetiton" xml:space="preserve">
+    <value>Erreur: impossible d'ajouter une compétition.  Une compétition existe avec les mêmes date et nom.</value>
+  </data>
+  <data name="Error_AddExistingEvent" xml:space="preserve">
+    <value>Erreur:  impossible d'ajouter l'événement.  Cet événement existe déjà</value>
+  </data>
+  <data name="Error_AddExistingFundingRequest" xml:space="preserve">
+    <value>Erreur: impossible de crééer une requête financière.  Une requête financière existe déjà pour la même année et ou sport / organisation.</value>
+  </data>
+  <data name="Error_AffiliateAssociation" xml:space="preserve">
+    <value>Erreur:  Cet affilié est dèjà associé à la ressource.</value>
+  </data>
+  <data name="Error_AllFieldsRequired" xml:space="preserve">
+    <value>Tous les champs sont requis</value>
+  </data>
+  <data name="Error_CannotLoadFile" xml:space="preserve">
+    <value>Le fichier fourni n'a pu être télécharger</value>
+  </data>
+  <data name="Error_CannotPostResults" xml:space="preserve">
+    <value>Erreur:  les résultats ne peuvent être affichés</value>
+  </data>
+  <data name="Error_DASAssociation" xml:space="preserve">
+    <value>Erreur: le soutien direct aux athlètes est déjà associé à cette ressource.</value>
+  </data>
+  <data name="Error_DeleteCompetition" xml:space="preserve">
+    <value>Erreur: cette compétition ne peut être rejetée; des événements sont associés à cette compétiton.</value>
+  </data>
+  <data name="Error_DeleteDiscipline" xml:space="preserve">
+    <value>Erreur: cette discipline ne peut être rejetée; des ressources sont associées avec cette discipline.</value>
+  </data>
+  <data name="Error_DeleteEvent" xml:space="preserve">
+    <value>Erreur: cet événement ne peut être rejeté; des ressources sont associées avec cet événement.</value>
+  </data>
+  <data name="Error_InvalidSortOrder" xml:space="preserve">
+    <value>Un ordre valide doit être fourni</value>
+  </data>
+  <data name="Error_InvalidTime" xml:space="preserve">
+    <value>{0} n'est pas une valeur de temps valide.</value>
+  </data>
+  <data name="Error_MissingAssessment" xml:space="preserve">
+    <value>Il y a des questions sans examens sous {0}</value>
+  </data>
+  <data name="Error_RecommendedSum" xml:space="preserve">
+    <value>La somme recommandée de SC et COC ne doit pas dépasser ANP recommandé.</value>
+  </data>
+  <data name="Error_RevisedSum" xml:space="preserve">
+    <value>La somme de SC révisé et COC financé ne doit pas excéder ANP révisé.</value>
+  </data>
+  <data name="Error_RevisingSum" xml:space="preserve">
+    <value>La somme de SC révisé et COC financé ne doit pas excéder ANP révision.</value>
+  </data>
+  <data name="Error_SportAssociation" xml:space="preserve">
+    <value>Erreur: le sport est déjà associé à la ressource.</value>
+  </data>
+  <data name="Error_SumExceedTotalFunds" xml:space="preserve">
+    <value>La somme de la requête ANP, ONS discrétionnaire, et base SC ne soit pas excéder le financement total.</value>
+  </data>
+  <data name="Error_UpdateExistingBenchmark" xml:space="preserve">
+    <value>Erreur: impossible d'ajouter un jalon.  Un jalon existe avec le même type et classe de jalons.</value>
+  </data>
+  <data name="Error_UpdateExistingCompetition" xml:space="preserve">
+    <value>Erreur: impossible de changer cette compétition; il existe une compétition avec les mêmes nom et date.</value>
+  </data>
+  <data name="Error_UpdateExistingEvent" xml:space="preserve">
+    <value>Erreur: impossible de changer cet événement; cet événement existe déjà.</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>Important</value>
+  </data>
+  <data name="LanguagePolicy" xml:space="preserve">
+    <value>POLITIQUE DES LANGUES OFFICIELLES</value>
+  </data>
+  <data name="LegalDisclaimer" xml:space="preserve">
+    <value>MENTIONS LEGALES</value>
+  </data>
+  <data name="ListItem_All" xml:space="preserve">
+    <value>Tous  </value>
+  </data>
+  <data name="ListItem_AllEvents" xml:space="preserve">
+    <value>Tous les événements</value>
+  </data>
+  <data name="Listitem_Close" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="ListItem_Open" xml:space="preserve">
+    <value>Ouvrir</value>
+  </data>
+  <data name="ListItem_PendingAll" xml:space="preserve">
+    <value>En attente de tous</value>
+  </data>
+  <data name="ListItem_PendingApproval" xml:space="preserve">
+    <value>En attente d'approbation</value>
+  </data>
+  <data name="ListItem_PendingDownload" xml:space="preserve">
+    <value>En attente de téléchargement</value>
+  </data>
+  <data name="ListItem_Select" xml:space="preserve">
+    <value>Sélectionner</value>
+  </data>
+  <data name="ListItem_SelectACountry" xml:space="preserve">
+    <value>Sélectionner un pays</value>
+  </data>
+  <data name="ListItem_SelectADiscipline" xml:space="preserve">
+    <value>Sélectionner une discipline</value>
+  </data>
+  <data name="ListItem_SelectAnEvent" xml:space="preserve">
+    <value>Sélectionner un événement</value>
+  </data>
+  <data name="ListItem_SelectAResource" xml:space="preserve">
+    <value>Sélectionner une ressource</value>
+  </data>
+  <data name="ListItem_SelectASport" xml:space="preserve">
+    <value>Sélectionner un sport</value>
+  </data>
+  <data name="ListItem_SelectATeam" xml:space="preserve">
+    <value>Sélectionner une équipe</value>
+  </data>
+  <data name="ListItem_SelectAType" xml:space="preserve">
+    <value>Sélectionner un type</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>POLITIQUE</value>
+  </data>
+  <data name="SaveComments" xml:space="preserve">
+    <value>Sauvegarder les commentaires</value>
+  </data>
+  <data name="SiteMaster_Title" xml:space="preserve">
+    <value>À nous le podium</value>
+  </data>
+  <data name="Summary_ClickHere" xml:space="preserve">
+    <value>cliquez ici</value>
+  </data>
+  <data name="YearSelector_ForYear" xml:space="preserve">
+    <value>Saison</value>
+  </data>
+  <data name="Error_Evaluation_CurAssRequired" xml:space="preserve">
+    <value>Une évaluation actuelle est requise</value>
+  </data>
+  <data name="Error_Evaluation_CurStatusRequired" xml:space="preserve">
+    <value>L'état actuel est requis</value>
+  </data>
+  <data name="Error_Evaluation_IniAssRequired" xml:space="preserve">
+    <value>L'évaluation initiale est requise</value>
+  </data>
+  <data name="Error_Evaluation_IniStatusRequired" xml:space="preserve">
+    <value>L'état initial est requis</value>
+  </data>
+  <data name="Error_Evaluation_QuestionRequired" xml:space="preserve">
+    <value>Une question est requise</value>
+  </data>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Pre_Summary_ClickHere" xml:space="preserve">
+    <value>Pour accéder à</value>
+  </data>
+  <data name="Error_AddExistingCompetitonResult" xml:space="preserve">
+    <value>Erreur:  impossible d'ajouter le résultat.  Une événement de la compétition avec même nom et date existe déjà.</value>
+  </data>
+  <data name="Error_CompetitonNotExist" xml:space="preserve">
+    <value>Erreur: la compétition saisi n'est pas disponible dans la base de données. S'il vous plaît saisir la compétition séparément.</value>
+  </data>
+  <data name="Error_PerfTimeInvalid" xml:space="preserve">
+    <value>Erreur: le tempsPerf saisi n'est pas valable. Le format valable est soit  0h 0m 0.00s ou 00:00:00.00 (heure, minute et seconde doit être chiffre, et minute et second doit être entre 0 et 59). S'il vous plaît saisir le encore.</value>
+  </data>
+  <data name="Error_AddEvaluationVersion" xml:space="preserve">
+    <value>Erreur:  impossible d'ajouter le version.  Une version avec même organisation identification, même nom et year existe déjà.</value>
+  </data>
+  <data name="GridColumn_Command" xml:space="preserve">
+    <value>Commandes</value>
+  </data>
+  <data name="ListItem_NoCoachSelect" xml:space="preserve">
+    <value>Aucun entraineur sélectionné</value>
+  </data>
+  <data name="Error_DeleteSportID" xml:space="preserve">
+    <value>Erreur: cette identité du sport ne peut être rejetée; Il y a identités des sport que prennent il comme identité du parent.</value>
+  </data>
+</root>

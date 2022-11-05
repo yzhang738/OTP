@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/repos/!svn/ver/2900/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting
+END
+DesignAnalysisFiltersInfo.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repos/!svn/ver/2590/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting/DesignAnalysisFiltersInfo.ascx
+END
+ReportRenderer.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/!svn/ver/2740/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting/ReportRenderer.ascx
+END
+DesignAnalysisGroupingInfo.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/!svn/ver/2544/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting/DesignAnalysisGroupingInfo.ascx
+END
+DesignAnalysisTestReportView.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/!svn/ver/2427/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting/DesignAnalysisTestReportView.ascx
+END
+Index.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/2393/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting/Index.aspx
+END
+ReportingStrings.resx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/2558/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting/ReportingStrings.resx
+END
+ReportingStrings.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/!svn/ver/2507/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting/ReportingStrings.Designer.cs
+END
+DesignAnalysis.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/!svn/ver/2900/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting/DesignAnalysis.aspx
+END
+StandardReports.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/!svn/ver/2497/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting/StandardReports.aspx
+END
+ReportingStrings.fr-CA.resx
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/2558/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting/ReportingStrings.fr-CA.resx
+END
+ReportParameters.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/2562/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting/ReportParameters.ascx
+END
+ReportingStrings.fr-CA.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/!svn/ver/2363/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting/ReportingStrings.fr-CA.Designer.cs
+END
+DesignAnalysisSecurityInfo.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/!svn/ver/2900/OTP/Ring/Application/trunk/Ring/Web/Views/Reporting/DesignAnalysisSecurityInfo.ascx
+END

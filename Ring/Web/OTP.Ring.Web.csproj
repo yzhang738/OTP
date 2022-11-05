@@ -1,0 +1,1159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{046108DD-AB33-4ECD-94E1-FB757642904E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OTP.Ring.Web</RootNamespace>
+    <AssemblyName>OTP.Ring.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>true</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspProviders">
+      <HintPath>..\lib\AspProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Microsoft.Data.Edm.5.6.2\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Microsoft.Data.OData.5.6.2\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Microsoft.Data.Services.Client.5.6.2\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Microsoft.WindowsAzure.ConfigurationManager.3.1.0\lib\net40\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\WindowsAzure.Storage.4.3.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcSiteMapProvider">
+      <HintPath>..\lib\MvcSiteMapProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.5.0.8\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Spatial, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\System.Spatial.5.6.2\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.Mvc, Version=2010.3.1110.235, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Telerik.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\EditorLocalization.pl-PL.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.pl-PL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.pt-BR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.pt-BR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.ru-RU.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.ru-RU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.uk-UA.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.uk-UA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.fr-CA.designer.cs">
+      <DependentUpon>GridLocalization.fr-CA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.bg-BG.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.bg-BG.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.de-DE.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.de-DE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.fr-FR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.bg-BG.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.bg-BG.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.de-DE.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.de-DE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.es-ES.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.es-ES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.fr-FR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.pl-PL.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.pl-PL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.pt-BR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.pt-BR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.pt-PT.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.pt-PT.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.ru-RU.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.ru-RU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.uk-UA.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.uk-UA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AuthenticationController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ExportExcelButtonController.cs" />
+    <Compile Include="Controllers\FundingController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MaintenanceController.cs" />
+    <Compile Include="Controllers\ReportingController.cs" />
+    <Compile Include="Controllers\SharedController.cs" />
+    <Compile Include="Controllers\EvaluationsController.cs" />
+    <Compile Include="Controllers\ResultsController.cs" />
+    <Compile Include="CookieLocalizationModule.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ReportViewer.aspx.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportViewer.aspx.designer.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\NinjectControllerFactory.cs" />
+    <Compile Include="Utility\WindowsLiveLogin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\Evaluations\EditorTemplates\EvaluationsQuestionsVersionIDTemplate.ascx.cs">
+      <DependentUpon>EvaluationsQuestionsVersionIDTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Evaluations\EditorTemplates\EvaluationsQuestionsVersionIDTemplate.ascx.designer.cs">
+      <DependentUpon>EvaluationsQuestionsVersionIDTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Evaluations\EditorTemplates\EvaluationsQuestionsVersionNameEnTemplate.ascx.cs">
+      <DependentUpon>EvaluationsQuestionsVersionNameEnTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Evaluations\EditorTemplates\EvaluationsQuestionsVersionNameEnTemplate.ascx.designer.cs">
+      <DependentUpon>EvaluationsQuestionsVersionNameEnTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Evaluations\EditorTemplates\EvaluationsQuestionsVersionNameFrTemplate.ascx.cs">
+      <DependentUpon>EvaluationsQuestionsVersionNameFrTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Evaluations\EditorTemplates\EvaluationsQuestionsVersionNameFrTemplate.ascx.designer.cs">
+      <DependentUpon>EvaluationsQuestionsVersionNameFrTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Evaluations\EvaluationsStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EvaluationsStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Evaluations\EvaluationsStrings.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EvaluationsStrings.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Funding\FundingStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FundingStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Funding\FundingStrings.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FundingStrings.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\HomeStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomeStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\HomeStrings.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomeStrings.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesGridBirthDateTemplate.ascx.cs">
+      <DependentUpon>AthletesGridBirthDateTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesGridBirthDateTemplate.ascx.designer.cs">
+      <DependentUpon>AthletesGridBirthDateTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsCompetitionDateTemplate.ascx.cs">
+      <DependentUpon>AthletesResultsCompetitionDateTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsCompetitionDateTemplate.ascx.designer.cs">
+      <DependentUpon>AthletesResultsCompetitionDateTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsCompetitionTemplate.ascx.cs">
+      <DependentUpon>AthletesResultsCompetitionTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsCompetitionTemplate.ascx.designer.cs">
+      <DependentUpon>AthletesResultsCompetitionTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsCountryTemplate.ascx.cs">
+      <DependentUpon>AthletesResultsCountryTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsCountryTemplate.ascx.designer.cs">
+      <DependentUpon>AthletesResultsCountryTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsDisciplineTemplate.ascx.cs">
+      <DependentUpon>AthletesResultsDisciplineTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsDisciplineTemplate.ascx.designer.cs">
+      <DependentUpon>AthletesResultsDisciplineTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsEventDateTemplate.ascx.cs">
+      <DependentUpon>AthletesResultsEventDateTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsEventDateTemplate.ascx.designer.cs">
+      <DependentUpon>AthletesResultsEventDateTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsEventTemplate.ascx.cs">
+      <DependentUpon>AthletesResultsEventTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsEventTemplate.ascx.designer.cs">
+      <DependentUpon>AthletesResultsEventTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsGenderTemplate.ascx.cs">
+      <DependentUpon>AthletesResultsGenderTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsGenderTemplate.ascx.designer.cs">
+      <DependentUpon>AthletesResultsGenderTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsLocationTemplate.ascx.cs">
+      <DependentUpon>AthletesResultsLocationTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsLocationTemplate.ascx.designer.cs">
+      <DependentUpon>AthletesResultsLocationTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsPerfTimeTemplate.ascx.cs">
+      <DependentUpon>AthletesResultsPerfTimeTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsPerfTimeTemplate.ascx.designer.cs">
+      <DependentUpon>AthletesResultsPerfTimeTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsSportsTemplate.ascx.cs">
+      <DependentUpon>AthletesResultsSportsTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesResultsSportsTemplate.ascx.designer.cs">
+      <DependentUpon>AthletesResultsSportsTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesSportsInfoYearIDTemplate.ascx.cs">
+      <DependentUpon>AthletesSportsInfoYearIDTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\AthletesSportsInfoYearIDTemplate.ascx.designer.cs">
+      <DependentUpon>AthletesSportsInfoYearIDTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\ISTMembersGridBirthDateTemplate.ascx.cs">
+      <DependentUpon>ISTMembersGridBirthDateTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\ISTMembersGridBirthDateTemplate.ascx.designer.cs">
+      <DependentUpon>ISTMembersGridBirthDateTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\NSOMembersGridBirthDateTemplate.ascx.cs">
+      <DependentUpon>NSOMembersGridBirthDateTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\EditorTemplates\NSOMembersGridBirthDateTemplate.ascx.designer.cs">
+      <DependentUpon>NSOMembersGridBirthDateTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\MaintenanceStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaintenanceStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\MaintenanceStrings.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaintenanceStrings.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reporting\ReportingStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportingStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reporting\ReportingStrings.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportingStrings.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Results\ResultsStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResultsStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Results\ResultsStrings.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResultsStrings.fr-CA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\SharedStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharedStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\SharedStrings.fr-CA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharedStrings.fr-CA.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\2010.3.1123\Black\editor.png" />
+    <Content Include="Content\2010.3.1123\Black\loading.gif" />
+    <Content Include="Content\2010.3.1123\Black\sprite.png" />
+    <Content Include="Content\2010.3.1123\Black\treeview-line.png" />
+    <Content Include="Content\2010.3.1123\Black\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1123\Black\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1123\Default\editor.png" />
+    <Content Include="Content\2010.3.1123\Default\loading.gif" />
+    <Content Include="Content\2010.3.1123\Default\sprite.png" />
+    <Content Include="Content\2010.3.1123\Default\treeview-line.png" />
+    <Content Include="Content\2010.3.1123\Default\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1123\Default\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1123\Forest\editor.png" />
+    <Content Include="Content\2010.3.1123\Forest\loading.gif" />
+    <Content Include="Content\2010.3.1123\Forest\sprite.png" />
+    <Content Include="Content\2010.3.1123\Forest\treeview-line.png" />
+    <Content Include="Content\2010.3.1123\Forest\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1123\Forest\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1123\Hay\editor.png" />
+    <Content Include="Content\2010.3.1123\Hay\loading.gif" />
+    <Content Include="Content\2010.3.1123\Hay\sprite.png" />
+    <Content Include="Content\2010.3.1123\Hay\treeview-line.png" />
+    <Content Include="Content\2010.3.1123\Hay\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1123\Hay\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1123\Office2007\editor.png" />
+    <Content Include="Content\2010.3.1123\Office2007\loading.gif" />
+    <Content Include="Content\2010.3.1123\Office2007\sprite.png" />
+    <Content Include="Content\2010.3.1123\Office2007\treeview-line.png" />
+    <Content Include="Content\2010.3.1123\Office2007\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1123\Office2007\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1123\Outlook\editor.png" />
+    <Content Include="Content\2010.3.1123\Outlook\loading.gif" />
+    <Content Include="Content\2010.3.1123\Outlook\sprite.png" />
+    <Content Include="Content\2010.3.1123\Outlook\treeview-line.png" />
+    <Content Include="Content\2010.3.1123\Outlook\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1123\Outlook\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1123\Simple\editor.png" />
+    <Content Include="Content\2010.3.1123\Simple\loading.gif" />
+    <Content Include="Content\2010.3.1123\Simple\sprite.png" />
+    <Content Include="Content\2010.3.1123\Simple\treeview-line.png" />
+    <Content Include="Content\2010.3.1123\Simple\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1123\Simple\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1123\Sitefinity\editor.png" />
+    <Content Include="Content\2010.3.1123\Sitefinity\loading.gif" />
+    <Content Include="Content\2010.3.1123\Sitefinity\sprite.png" />
+    <Content Include="Content\2010.3.1123\Sitefinity\treeview-line.png" />
+    <Content Include="Content\2010.3.1123\Sitefinity\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1123\Sitefinity\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1123\Sunset\editor.png" />
+    <Content Include="Content\2010.3.1123\Sunset\loading.gif" />
+    <Content Include="Content\2010.3.1123\Sunset\sprite.png" />
+    <Content Include="Content\2010.3.1123\Sunset\treeview-line.png" />
+    <Content Include="Content\2010.3.1123\Sunset\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1123\Sunset\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1123\telerik.black.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.common.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.default.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.forest.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.hay.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.office2007.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.outlook.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.rtl.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.simple.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.sitefinity.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.sunset.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.telerik.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.vista.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.web20.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.webblue.min.css" />
+    <Content Include="Content\2010.3.1123\telerik.windows7.min.css" />
+    <Content Include="Content\2010.3.1123\Telerik\editor.png" />
+    <Content Include="Content\2010.3.1123\Telerik\loading.gif" />
+    <Content Include="Content\2010.3.1123\Telerik\sprite.png" />
+    <Content Include="Content\2010.3.1123\Telerik\treeview-line.png" />
+    <Content Include="Content\2010.3.1123\Telerik\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1123\Telerik\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1123\Vista\editor.png" />
+    <Content Include="Content\2010.3.1123\Vista\loading.gif" />
+    <Content Include="Content\2010.3.1123\Vista\sprite.png" />
+    <Content Include="Content\2010.3.1123\Web20\editor.png" />
+    <Content Include="Content\2010.3.1123\Web20\loading.gif" />
+    <Content Include="Content\2010.3.1123\Web20\sprite.png" />
+    <Content Include="Content\2010.3.1123\Web20\treeview-line.png" />
+    <Content Include="Content\2010.3.1123\Web20\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1123\Web20\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1123\WebBlue\editor.png" />
+    <Content Include="Content\2010.3.1123\WebBlue\loading.gif" />
+    <Content Include="Content\2010.3.1123\WebBlue\sprite.png" />
+    <Content Include="Content\2010.3.1123\WebBlue\treeview-line.png" />
+    <Content Include="Content\2010.3.1123\WebBlue\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1123\WebBlue\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1123\Windows7\editor.png" />
+    <Content Include="Content\2010.3.1123\Windows7\loading.gif" />
+    <Content Include="Content\2010.3.1123\Windows7\sprite.png" />
+    <Content Include="Content\Images\ajax-loader.gif" />
+    <Content Include="Content\Images\Banner\sport000.jpg" />
+    <Content Include="Content\Images\Banner\sport001.jpg" />
+    <Content Include="Content\Images\Banner\sport002.jpg" />
+    <Content Include="Content\Images\Banner\sport003.jpg" />
+    <Content Include="Content\Images\Banner\sport004.jpg" />
+    <Content Include="Content\Images\Banner\sport005.jpg" />
+    <Content Include="Content\Images\Banner\sport006.jpg" />
+    <Content Include="Content\Images\Banner\sport007.jpg" />
+    <Content Include="Content\Images\Banner\sport008.jpg" />
+    <Content Include="Content\Images\Banner\sport009.jpg" />
+    <Content Include="Content\Images\Banner\sport010.jpg" />
+    <Content Include="Content\Images\Banner\sport011.jpg" />
+    <Content Include="Content\Images\Banner\sport012.jpg" />
+    <Content Include="Content\Images\Banner\sport013.jpg" />
+    <Content Include="Content\Images\Banner\sport014.jpg" />
+    <Content Include="Content\Images\Banner\sport015.jpg" />
+    <Content Include="Content\Images\Banner\sport016.jpg" />
+    <Content Include="Content\Images\Banner\sport017.jpg" />
+    <Content Include="Content\Images\Banner\sport018.jpg" />
+    <Content Include="Content\Images\Banner\sport019.jpg" />
+    <Content Include="Content\Images\Banner\sport020.jpg" />
+    <Content Include="Content\Images\Banner\sport021.jpg" />
+    <Content Include="Content\Images\Banner\sport022.jpg" />
+    <Content Include="Content\Images\Banner\sport023.jpg" />
+    <Content Include="Content\Images\Banner\sport024.jpg" />
+    <Content Include="Content\Images\Banner\sport025.jpg" />
+    <Content Include="Content\Images\Banner\sport026.jpg" />
+    <Content Include="Content\Images\Banner\sport027.jpg" />
+    <Content Include="Content\Images\Banner\sport028.jpg" />
+    <Content Include="Content\Images\Banner\sport029.jpg" />
+    <Content Include="Content\Images\Banner\sport030.jpg" />
+    <Content Include="Content\Images\Banner\sport031.jpg" />
+    <Content Include="Content\Images\Banner\sport032.jpg" />
+    <Content Include="Content\Images\Banner\sport033.jpg" />
+    <Content Include="Content\Images\Banner\sport034.jpg" />
+    <Content Include="Content\Images\Banner\sport035.jpg" />
+    <Content Include="Content\Images\bg_btmNav.gif" />
+    <Content Include="Content\Images\bg_footer.gif" />
+    <Content Include="Content\Images\bg_image.jpg" />
+    <Content Include="Content\Images\bg_tile.jpg" />
+    <Content Include="Content\Images\blank.gif" />
+    <Content Include="Content\Images\btm_mosaic.jpg" />
+    <Content Include="Content\Images\ExportExcelButton.gif" />
+    <Content Include="Content\Images\ideaca_logo_standard.png" />
+    <Content Include="Content\Images\leftbg_Item.gif" />
+    <Content Include="Content\Images\OTPSprite.gif" />
+    <Content Include="Content\Images\OTPSprite.png" />
+    <Content Include="Content\Images\sidenav_bgtile.gif" />
+    <Content Include="Content\Images\sidenav_bgtile_1000.gif" />
+    <Content Include="Content\Images\sidenav_bgtile_600.gif" />
+    <Content Include="Content\Images\sidenav_btm.gif" />
+    <Content Include="Content\Images\top_tile.gif" />
+    <Content Include="Content\Images\validation-error.png" />
+    <Content Include="Content\Site.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Reports\ReportViewer.aspx" />
+    <Content Include="Scripts\2010.3.1123\jquery-1.4.3.min.js" />
+    <Content Include="Scripts\2010.3.1123\jquery.validate.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.autocomplete.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.calendar.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.combobox.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.common.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.datepicker.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.datetimepicker.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.draganddrop.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.editor.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.grid.editing.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.grid.filtering.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.grid.grouping.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.grid.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.grid.reordering.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.grid.resizing.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.list.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.menu.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.panelbar.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.tabstrip.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.textbox.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.timepicker.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.treeview.min.js" />
+    <Content Include="Scripts\2010.3.1123\telerik.window.min.js" />
+    <Content Include="Scripts\RingScripts.js" />
+    <Content Include="Views\Evaluations\ActionItemStatusSelector.ascx" />
+    <Content Include="Views\Evaluations\EditorTemplates\EvaluationFormCurrentStatusTemplate.ascx" />
+    <Content Include="Views\Evaluations\EditorTemplates\EvaluationFormInitialStatusTemplate.ascx" />
+    <Content Include="Views\Evaluations\EditorTemplates\EvaluationsQuestionsQuestionSportTemplate.ascx" />
+    <Content Include="Views\Evaluations\EditorTemplates\EvaluationsQuestionsQuestionPhaseTemplate.ascx" />
+    <Content Include="Views\Evaluations\EditorTemplates\EvaluationsQuestionsVersionIDTemplate.ascx" />
+    <Content Include="Views\Evaluations\EditorTemplates\EvaluationsQuestionsVersionNameEnTemplate.ascx" />
+    <Content Include="Views\Evaluations\EditorTemplates\EvaluationsQuestionsVersionNameFrTemplate.ascx" />
+    <Content Include="Views\Evaluations\EditorTemplates\EvaluationsQuestionsVersionOrganizationTypeTemplate.ascx" />
+    <Content Include="Views\Evaluations\EditorTemplates\EvaluationsQuestionsVersionPhaseTemplate.ascx" />
+    <Content Include="Views\Evaluations\EvaluationForm.aspx" />
+    <Content Include="Views\Evaluations\EvaluationFormPillar.ascx" />
+    <Content Include="Views\Evaluations\Maintenance.aspx" />
+    <Content Include="Views\Funding\ActionItems.aspx" />
+    <Content Include="Views\Funding\ActionItemStatusSelector.ascx" />
+    <Content Include="Views\Funding\EditorTemplates\FundingCsc.ascx" />
+    <Content Include="Views\Funding\EditorTemplates\FundingNumber.ascx" />
+    <Content Include="Views\Funding\EditorTemplates\FundingPriority.ascx" />
+    <Content Include="Views\Funding\EditorTemplates\FundingRecurring.ascx" />
+    <Content Include="Views\Funding\EditorTemplates\FundingResource.ascx" />
+    <Content Include="Views\Funding\FundingAllocation.ascx" />
+    <Content Include="Views\Funding\FundingGrid.ascx" />
+    <Content Include="Views\Funding\FundingStatus.ascx" />
+    <Content Include="Views\Funding\Index.aspx" />
+    <Content Include="Views\Funding\Recommendation.aspx" />
+    <Content Include="Views\Funding\Requests.aspx" />
+    <Content Include="Views\Funding\RevisionActual.aspx" />
+    <Content Include="Views\Funding\Summary.aspx" />
+    <Content Include="Views\Home\Browser.aspx" />
+    <Content Include="Views\Home\NoScript.aspx" />
+    <Content Include="Views\Home\SignIn.aspx" />
+    <Content Include="Views\Maintenance\Athletes.aspx" />
+    <Content Include="Views\Maintenance\AthletesContactInfo.ascx" />
+    <Content Include="Views\Maintenance\AthletesDirectAthleteSupport.ascx" />
+    <Content Include="Views\Maintenance\AthletesGeneralInfo.ascx" />
+    <Content Include="Views\Maintenance\AthletesResults.ascx" />
+    <Content Include="Views\Maintenance\AthletesSportsInfo.ascx" />
+    <Content Include="Views\Maintenance\AthletesAffiliatesInfo.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesGridBirthDateTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesGridCategoryTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesResultsCompetitionDateTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesResultsCompetitionTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesResultsCountryTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesResultsDisciplineTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesResultsEventDateTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesResultsEventTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesResultsGenderTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesResultsLocationTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesResultsPerfTimeTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesResultsSportsTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesSportsInfoYearIDTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\ISTMembersGridBirthDateTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\NSOMembersGridBirthDateTemplate.ascx" />
+    <Content Include="Views\Maintenance\HTMLPage1.htm" />
+    <Content Include="Views\Maintenance\NSOMembersPoolInfo.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\NSOMembersGridResourceIdPoolTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\NSOMembersGridResourceIdAssignmentTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\ISTMembersGridResourceIdAssignmentTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\ISTMembersGridResourceIdPoolTemplate.ascx" />
+    <Content Include="Views\Maintenance\ISTMembersPoolInfo.ascx" />
+    <Content Include="Views\Maintenance\Other.aspx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesGridCoachResourcesTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesSportsInfoCoachResourcesTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\ISTMembersGridPrimaryCscTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\ISTMembersSportsInfoAllSportsTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\NSOMembersSportsInfoAllSportsTemplate.ascx" />
+    <Content Include="Views\Maintenance\NSOMembersSportsInfo.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\NSOMembersSportsInfoSportsTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\ISTMembersSportsInfoSportsTemplate.ascx" />
+    <Content Include="Views\Maintenance\ISTMembersSportsInfo.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\NSOMembersGridCountryTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\NSOMembersGridGenderTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\NSOMembersGridSpecialtyTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\ISTMembersGridCountryTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\ISTMembersGridGenderTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\ISTMembersGridSpecialtyTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\NSOMembersQualificationsInfoResourceQualificationTypeTemplate.ascx" />
+    <Content Include="Views\Maintenance\ISTMembersQualificationsInfo.ascx" />
+    <Content Include="Views\Maintenance\NSOMembersQualificationsInfo.ascx" />
+    <Content Include="Views\Maintenance\ISTMembersGeneralInfo.ascx" />
+    <Content Include="Views\Maintenance\ISTMembersContactInfo.ascx" />
+    <Content Include="Views\Maintenance\NSOMembersGeneralInfo.ascx" />
+    <Content Include="Views\Maintenance\NSOMembersContactInfo.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesGridGenderTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesGridCountryTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesGridSpecialtyTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesSportsInfoBenchmarkTierTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesSportsInfoBenchmarkTypeTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesAffiliateInfoYearFromTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesAffiliateInfoYearToTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesAffiliateInfoAffiliateTypeTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\SportGenderPlusNoneTemplate.ascx" />
+    <Content Include="Views\Maintenance\MaintainBenchmarks.aspx" />
+    <Content Include="Views\Maintenance\ISTMembers.aspx" />
+    <Content Include="Views\Maintenance\EditorTemplates\BenchmarksBenchmarkTierTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\BenchmarksBenchmarkTypeTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\SportHPATemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\SportNSOTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\SportRankingTemplate.ascx" />
+    <Content Include="Views\Maintenance\Index.aspx" />
+    <Content Include="Views\Maintenance\NSOMembers.aspx" />
+    <Content Include="Views\Maintenance\Resources.aspx" />
+    <Content Include="Views\Maintenance\MaintainSports.aspx" />
+    <Content Include="Views\Maintenance\Sports.aspx" />
+    <Content Include="Views\Maintenance\WhoAmI.aspx" />
+    <Content Include="Views\Reporting\DesignAnalysisSecurityInfo.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportFilterDisplayTemplate.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportGroupColumnFormatStringTemplate.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportSecuritySecurityGroupTemplate.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportFilterOperandTemplate.ascx" />
+    <Content Include="Views\Reporting\ReportRenderer.ascx" />
+    <Content Include="Views\Reporting\DesignAnalysisFiltersInfo.ascx" />
+    <Content Include="Views\Reporting\DesignAnalysisTestReportView.ascx" />
+    <Content Include="Views\Reporting\DesignAnalysisGroupingInfo.ascx" />
+    <Content Include="Views\Reporting\DesignAnalysis.aspx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportFilterFieldName_ENTemplate.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportFilterFieldName_FRTemplate.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportGroupColumnFieldSizeTemplate.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportGroupColumnAggregationTemplate.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportGroupColumnFieldName_ENTemplate.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportGroupColumnFieldName_FRTemplate.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportGroupingFieldName_FRTemplate.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportGroupingFieldName_ENTemplate.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportViewTemplate.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportCategoryTemplate.ascx" />
+    <Content Include="Views\Reporting\EditorTemplates\DesignAnalysisReportSportTemplate.ascx" />
+    <Content Include="Views\Reporting\Index.aspx" />
+    <Content Include="Views\Reporting\ReportParameters.ascx" />
+    <Content Include="Views\Reporting\StandardReports.aspx" />
+    <Content Include="Views\Results\EditorTemplates\LoadTemplatesSourceRowOffsetTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\ManageResultsStagingResourceNameTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\LoadTemplatesFieldNameTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\ManageResultsEventDateTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\ManageResultsBenchmarkTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\ManageResultsBirthDateTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\ManageResultsCountryTemplate.ascx" />
+    <Content Include="Views\Results\ResultStatusSelector.ascx" />
+    <Content Include="Views\Results\EditorTemplates\LoadTemplatesColumnFormatTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\LoadTemplatesSourceColumnTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\ManageResultsEventTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\ManageResultsGenderTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\ManageResultsPerformanceTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\ManageResultsPositionTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\ManageResultsTeamTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\ManageTeamResourceTemplate.ascx" />
+    <Content Include="Views\Results\Maintenance.aspx" />
+    <Content Include="Views\Results\EditorTemplates\LoadTemplatesTableTemplateTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\SummaryBenchmarkTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\SummaryCountryTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\SummaryDisciplineTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\SummaryEventTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\SummarySportTemplate.ascx" />
+    <Content Include="Views\Results\EditorTemplates\SummaryTypeTemplate.ascx" />
+    <Content Include="Views\Results\SummaryStatusSelector.ascx" />
+    <Content Include="Views\Shared\ActionItemEditor.ascx" />
+    <Content Include="Views\Shared\CommentEditor.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesSportsInfoSportsTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\ISTMembersQualificationsInfoResourceQualificationTypeTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesDirectAthleteSupportSupportCategoriesTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesDirectAthleteSupportSupportTypesTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesDirectAthletesSupportYearsTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesSportsInfoEventsTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesSportsInfoDisiplinesTemplate.ascx" />
+    <Content Include="Views\Maintenance\EditorTemplates\AthletesSportsInfoResourceClassTempate.ascx" />
+    <Content Include="Views\Shared\PleaseWait.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\DateTime.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\NullableBoolean.ascx" />
+    <Content Include="Views\Shared\JavaScriptCheck.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\ActionPriority.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\ActionStatus.ascx" />
+    <Content Include="Views\Shared\OTPAlert.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Currency.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Date.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Integer.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Number.ascx" />
+    <Content Include="Views\Shared\Summary.ascx" />
+    <Content Include="Views\Evaluations\ActionItems.aspx" />
+    <Content Include="Views\Evaluations\Index.aspx" />
+    <Content Include="Views\Evaluations\Questions.aspx" />
+    <Content Include="Views\Evaluations\Summary.aspx" />
+    <Content Include="Views\Results\Index.aspx" />
+    <Content Include="Views\Results\LoadResults.aspx" />
+    <Content Include="Views\Results\LoadTemplates.aspx" />
+    <Content Include="Views\Results\ManageResults.aspx" />
+    <Content Include="Views\Results\Summary.aspx" />
+    <Content Include="Views\Shared\CurrentUserName.ascx" />
+    <Content Include="Views\Shared\LanguageSelector.ascx" />
+    <Content Include="Views\Shared\NavMenu.ascx" />
+    <Content Include="Views\Shared\YearSelector.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.bg-BG.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.bg-BG.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.de-DE.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.de-DE.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.en-US.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.es-ES.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.es-ES.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.fr-FR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.fr-FR.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.pt-BR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.pt-BR.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.pt-PT.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.pt-PT.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\OTP.Ring.Business.csproj">
+      <Project>{D3062708-FB4A-42FC-A219-B6977D32A77F}</Project>
+      <Name>OTP.Ring.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\OTP.Ring.Common.csproj">
+      <Project>{5987E936-6B1D-4083-A035-684C261B6B8E}</Project>
+      <Name>OTP.Ring.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\OTP.Ring.Data.csproj">
+      <Project>{2BF349F1-4EEF-494D-A123-7DCAAEDA331C}</Project>
+      <Name>OTP.Ring.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\OTP.Ring.Models.csproj">
+      <Project>{5D9A6655-F68A-4130-951D-D30640D1CF6C}</Project>
+      <Name>OTP.Ring.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ring.Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.de-DE.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.de-DE.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\EditorLocalization.fr-FR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.fr-FR.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.bg-BG.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.bg-BG.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\EditorLocalization.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.en-US.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Fonts\71692__.eot" />
+    <None Include="Content\Fonts\71692__.ttf" />
+    <None Include="Content\Fonts\7169a__.eot" />
+    <None Include="Content\Fonts\7169a__.ttf" />
+    <None Include="Content\Fonts\7169b__.eot" />
+    <None Include="Content\Fonts\7169b__.ttf" />
+    <None Include="Content\Fonts\7169c__.eot" />
+    <None Include="Content\Fonts\7169c__.ttf" />
+    <None Include="Content\Fonts\7169d__.eot" />
+    <None Include="Content\Fonts\7169d__.ttf" />
+    <None Include="Content\Fonts\7169e__.eot" />
+    <None Include="Content\Fonts\7169e__.ttf" />
+    <None Include="Content\Fonts\myriadproregula.eot" />
+    <None Include="Content\Fonts\myriadproregula.ttf" />
+    <Content Include="App_GlobalResources\EditorLocalization.pl-PL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.pl-PL.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\EditorLocalization.pt-BR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.pt-BR.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\EditorLocalization.ru-RU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.ru-RU.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\EditorLocalization.uk-UA.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.uk-UA.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\GridLocalization.pl-PL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.pl-PL.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\GridLocalization.ru-RU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.ru-RU.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\GridLocalization.uk-UA.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.uk-UA.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Views\Maintenance\MaintenanceStrings.fr-CA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaintenanceStrings.fr-CA.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.fr-CA.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.fr-CA.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Evaluations\EvaluationsStrings.fr-CA.resx">
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EvaluationsStrings.fr-CA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Evaluations\EvaluationsStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EvaluationsStrings.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Funding\FundingStrings.fr-CA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>FundingStrings.fr-CA.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Funding\FundingStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>FundingStrings.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Home\HomeStrings.fr-CA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>HomeStrings.fr-CA.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Home\HomeStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>HomeStrings.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Maintenance\MaintenanceStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaintenanceStrings.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reporting\ReportingStrings.fr-CA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReportingStrings.fr-CA.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reporting\ReportingStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReportingStrings.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Results\ResultsStrings.fr-CA.resx">
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResultsStrings.fr-CA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Results\ResultsStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResultsStrings.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+    </EmbeddedResource>
+    <Content Include="App_GlobalResources\Sitemap.resx">
+      <CustomToolNamespace>Sitemap</CustomToolNamespace>
+    </Content>
+    <Content Include="App_GlobalResources\Sitemap.fr-CA.resx">
+      <CustomToolNamespace>Sitemap</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Views\Shared\SharedStrings.fr-CA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SharedStrings.fr-CA.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Shared\SharedStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SharedStrings.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Shared</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>64369</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/OTP.Ring.Web</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

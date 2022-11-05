@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Web;
+using System.IO;
+using System.Web.Caching;
+
+namespace OTP.Ring.Common
+{
+    public class RingHTMLHelper
+    {
+        public static string GetRandomHeaderImage()
+        {
+            System.Web.HttpContext context = System.Web.HttpContext.Current;
+            string virtualFolderPath = "/Content/Images/Banner/";
+            string absoluteFolderPath = context.Server.MapPath(virtualFolderPath);
+            string today = DateTime.Today.ToShortDateString();
+
+            Cache cache = context.Cache;
+            var images = cache[today + "Banner_images"] as List<string>;
+
+            // cache string array if it does not exist
+            if (images == null)
+            {
+                var di = new DirectoryInfo(absoluteFolderPath);
+                images = (from fi in di.GetFiles()
+                          select string.Format("{0}{1}", virtualFolderPath, fi.Name)).ToList();
+
+                // create cache dependency on image randomFolderName
+                cache.Insert(today + "Banner_images", images, new CacheDependency(absoluteFolderPath));
+            }
+
+            Random random = new Random();
+            int index = random.Next(images.Count);
+
+            var imgTag = string.Format("<img id=\"header_block\" src=\"{0}\" />", images[index]);
+            return imgTag;
+        }
+
+        public static string GetDeploymentId()
+        {
+            var id = DateTime.Now.Millisecond.ToString();
+            try
+            {
+                id = Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment.DeploymentId;
+            }
+            catch { }
+
+            return id;
+        }
+    }
+}

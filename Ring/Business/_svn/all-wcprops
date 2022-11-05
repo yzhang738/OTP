@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/repos/!svn/ver/5425/OTP/Ring/Application/trunk/Ring/Business
+END
+ResultsBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/3694/OTP/Ring/Application/trunk/Ring/Business/ResultsBL.cs
+END
+BusinessResource.resx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/2210/OTP/Ring/Application/trunk/Ring/Business/BusinessResource.resx
+END
+BusinessLocalization.resx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/!svn/ver/2531/OTP/Ring/Application/trunk/Ring/Business/BusinessLocalization.resx
+END
+SportBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/repos/!svn/ver/2799/OTP/Ring/Application/trunk/Ring/Business/SportBL.cs
+END
+OTP.Ring.Business.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/!svn/ver/2557/OTP/Ring/Application/trunk/Ring/Business/OTP.Ring.Business.csproj
+END
+ReportBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/!svn/ver/2900/OTP/Ring/Application/trunk/Ring/Business/ReportBL.cs
+END
+BusinessLocalization.fr-CA.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/!svn/ver/2469/OTP/Ring/Application/trunk/Ring/Business/BusinessLocalization.fr-CA.Designer.cs
+END
+UserBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/!svn/ver/2626/OTP/Ring/Application/trunk/Ring/Business/UserBL.cs
+END
+DecodeBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/!svn/ver/2626/OTP/Ring/Application/trunk/Ring/Business/DecodeBL.cs
+END
+BusinessResource.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/2210/OTP/Ring/Application/trunk/Ring/Business/BusinessResource.Designer.cs
+END
+BusinessLocalization.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/2497/OTP/Ring/Application/trunk/Ring/Business/BusinessLocalization.Designer.cs
+END
+CommentsBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/!svn/ver/2743/OTP/Ring/Application/trunk/Ring/Business/CommentsBL.cs
+END
+ResourceBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/!svn/ver/2903/OTP/Ring/Application/trunk/Ring/Business/ResourceBL.cs
+END
+BusinessLocalization.fr-CA.resx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/!svn/ver/2558/OTP/Ring/Application/trunk/Ring/Business/BusinessLocalization.fr-CA.resx
+END
+EvaluationsBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/6662/OTP/Ring/Application/trunk/Ring/Business/EvaluationsBL.cs
+END
+FundingBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/5425/OTP/Ring/Application/trunk/Ring/Business/FundingBL.cs
+END
+BenchmarkBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/2793/OTP/Ring/Application/trunk/Ring/Business/BenchmarkBL.cs
+END
+ActionItemBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/2801/OTP/Ring/Application/trunk/Ring/Business/ActionItemBL.cs
+END

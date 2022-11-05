@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="OTPAzure" schemaVersion="2014-06.2.4" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <WebRole name="OTP.Ring.Web" vmsize="Medium">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" />
+      <Setting name="debugLiveId" />
+      <Setting name="defaultCompetitionID" />
+      <Setting name="defaultCompetitionTypeID" />
+      <Setting name="defaultCountry" />
+      <Setting name="defaultCountryID" />
+      <Setting name="defaultHostCity" />
+      <Setting name="defaultSportID" />
+      <Setting name="defaultYear" />
+      <Setting name="loggingLevel" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+      <Setting name="ReportConnectionString" />
+      <Setting name="RingEntities" />
+      <Setting name="siteTheme" />
+      <Setting name="useDebugLiveId" />
+      <Setting name="wll_appid" />
+      <Setting name="wll_secret" />
+      <Setting name="wll_securityalgorithm" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" localPort="80" />
+    </Endpoints>
+    <Certificates />
+  </WebRole>
+</ServiceDefinition>

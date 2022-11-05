@@ -1,0 +1,600 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using OTP.Ring.Common;
+using System.Runtime.Caching;
+using OTP.Ring.Models;
+
+namespace OTP.Ring.Business
+{
+    public class DecodeBL : IDecodeBL
+    {
+        private CacheItemPolicy oneHourSlidingPolicy = new CacheItemPolicy() { SlidingExpiration = new TimeSpan(1, 0, 0) };
+        private bool _frenchLanguage = false;
+        private Data.Models.RingEntities _repository;
+
+        public DecodeBL(string connectionString)
+        {
+            _repository = new Data.Models.RingEntities(connectionString);
+
+            //NOTE: 1. Language should be ideally handled in presentation layer.
+            //      2. Deciding language code in BL constructor determines that all BL instances can only be PerCall instances.
+            //      3. Caching needs to be language specific
+            _frenchLanguage = System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName.ToUpper() == Constant.LanguageCode.French;
+        }
+
+        #region PUBLIC
+
+        public IEnumerable<Decode> GetDecodesByCategory(string categoryId)
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.Decode, _frenchLanguage, categoryId);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (IEnumerable<Decode>)cache.Get(cacheKey);
+            }
+            else
+            {
+                var decodes = (from d in this._repository.Decodes
+                        where d.DecodeCategoryID == categoryId
+                        orderby d.SortOrder
+                        select new Decode
+                        {
+                            Id = d.DecodeID,
+                            CategoryId = d.DecodeCategoryID,
+                            Name = _frenchLanguage ? d.DecodeID_FR : d.DecodeID_EN,
+                            Comment = d.Comments,
+                            SortOrder = d.SortOrder
+                        }).ToList();
+
+                cache.Add(cacheKey, decodes, oneHourSlidingPolicy);
+
+                return decodes;
+            }
+        }
+
+        public IEnumerable<Decode> GetOrganizationTypes()
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodeOrganizationType, _frenchLanguage, null);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (IEnumerable<Decode>)cache.Get(cacheKey);
+            }
+            else
+            {
+                var decodes = (from o in this._repository.OrganizationTypes
+                        select new Decode
+                        {
+                            Id = o.OrganizationTypeID,
+                            Name = _frenchLanguage ? o.Name_FR : o.Name_EN,
+                            Comment = o.Comments,
+                            CategoryId = "OrganizationType",
+                            SortOrder = 0
+                        }).ToList();
+
+                cache.Add(cacheKey, decodes, oneHourSlidingPolicy);
+
+                return decodes;
+            }
+        }
+
+        public IEnumerable<Decode> GetActionItemTypes()
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodeActionItemType, _frenchLanguage, null);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (IEnumerable<Decode>)cache.Get(cacheKey);
+            }
+            else
+            {
+                var decodes = (from a in this._repository.ActionItemTypes
+                        select new Decode
+                        {
+                            Id = a.ActionItemTypeID,
+                            Name = _frenchLanguage ? a.CategroyName_FR : a.CategoryName_EN,
+                            Comment = a.Comments,
+                            CategoryId = a.SourceName_EN,
+                            SortOrder = 0
+                        }).ToList();
+
+                cache.Add(cacheKey, decodes, oneHourSlidingPolicy);
+
+                return decodes;
+            }
+        }
+
+        public IEnumerable<Decode> GetBenchmarkTypes()
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodeBenchmarkType, _frenchLanguage, null);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (IEnumerable<Decode>)cache.Get(cacheKey);
+            }
+            else
+            {
+                var decodes = (from a in this._repository.BenchmarkTypes
+                               select new Decode
+                               {
+                                   IntId = a.BenchmarkTypeID,
+                                   Name = _frenchLanguage ? a.Name_FR : a.Name_EN,
+                                   Comment = a.Comments,
+                                   CategoryId = Constant.Cache.DecodeBenchmarkType,
+                                   SortOrder = 0
+                               }).ToList();
+
+                foreach (var decode in decodes)
+                {
+                    decode.Id = decode.IntId.ToString();    
+                }
+
+                cache.Add(cacheKey, decodes, oneHourSlidingPolicy);
+
+                return decodes;
+            }
+        }
+
+        public IEnumerable<Decode> GetCompetitionTypes()
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodeCompetitionType , _frenchLanguage, null);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (IEnumerable<Decode>)cache.Get(cacheKey);
+            }
+            else
+            {
+                var decodes = (from a in this._repository.CompetitionTypes
+                               select new Decode
+                               {
+                                   Id = a.CompetitionTypeID,
+                                   Name = _frenchLanguage ? a.Name_FR : a.Name_EN,
+                                   Comment = a.Comments,
+                                   CategoryId = Constant.Cache.DecodeCompetitionType,
+                                   SortOrder = 0
+                               }).ToList();
+
+                cache.Add(cacheKey, decodes, oneHourSlidingPolicy);
+
+                return decodes;
+            }
+        }
+
+        public IEnumerable<Decode> GetTeamTypes()
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodeTeamType, _frenchLanguage, null);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (IEnumerable<Decode>)cache.Get(cacheKey);
+            }
+            else
+            {
+                var decodes = (from a in this._repository.TeamTypes
+                               select new Decode
+                               {
+                                   Id = a.TeamTypeID ,
+                                   Name = _frenchLanguage ? a.Name_FR : a.Name_EN,
+                                   Comment = a.Comments,
+                                   CategoryId = Constant.Cache.DecodeTeamType,
+                                   SortOrder = 0
+                               }).ToList();
+
+                cache.Add(cacheKey, decodes, oneHourSlidingPolicy);
+
+                return decodes;
+            }
+        }
+
+        public IEnumerable<Decode> GetSpecialResultPositionTypes()
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodePositionType, _frenchLanguage, null);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (IEnumerable<Decode>)cache.Get(cacheKey);
+            }
+            else
+            {
+                var decodes = (from a in this._repository.ResultPositionMappings
+                               select new Decode
+                               {
+                                   IntId = a.ResultPositionDecode,
+                                   Id = a.ResultPositionValue,
+                                   Name = a.ResultPositionValue,
+                                   Comment = a.Comments,
+                                   CategoryId = Constant.Cache.DecodePositionType,
+                                   SortOrder = a.ResultPositionMappingID
+                               }).ToList();
+
+                cache.Add(cacheKey, decodes, oneHourSlidingPolicy);
+
+                return decodes;
+            }
+
+        }
+
+        public List<ListItem> GetAllYearsList()
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodeYear, null, null);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (List<ListItem>)cache.Get(cacheKey);
+            }
+            else
+            {
+                List<ListItem> years = null;
+
+                years = (from y in this._repository.Years
+                            where y.active == null || (bool)y.active
+                            orderby y.YearID
+                            select new ListItem
+                            {
+                                Id = y.YearID,
+                                Description = y.YearID
+                            }).ToList();
+
+                cache.Add(cacheKey, years, oneHourSlidingPolicy);
+
+                return years;
+            }
+        }
+
+        public List<ListItem> GetAllCountriesList()
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodeCountry, _frenchLanguage, null);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (List<ListItem>)cache.Get(cacheKey);
+            }
+            else
+            {
+                List<ListItem> countries = null;
+
+                countries = (from c in this._repository.Countries
+                                select new ListItem
+                                {
+                                    Id = c.CountryID,
+                                    Description = _frenchLanguage ? c.Name_FR : c.Name_EN
+                                }).OrderBy(c => c.Description).ToList();
+
+                cache.Add(cacheKey, countries, oneHourSlidingPolicy);
+
+                return countries;
+            }
+        }
+
+        public List<ListItem> GetAffiliateTypes()
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodeAffiliate, _frenchLanguage, null);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (List<ListItem>)cache.Get(cacheKey);
+            }
+            else
+            {
+                List<ListItem> types = null;
+
+                types = (from t in this._repository.AffiliateTypes
+                            select new ListItem
+                            {
+                                Id = t.AffiliateTypeID,
+                                Description = _frenchLanguage ? t.Name_FR : t.Name_EN
+                            }).ToList();
+
+                cache.Add(cacheKey, types, oneHourSlidingPolicy);
+
+                return types;
+            }
+        }
+
+        public List<ListItem> GetDirectAthleteSupportTypes()
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodeDirectAthleteSupportType, _frenchLanguage, null);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (List<ListItem>)cache.Get(cacheKey);
+            }
+            else
+            {
+                List<ListItem> types = new List<ListItem>();
+                types.Add(new ListItem { Id = null, Description = "Select a Type" });
+
+                types.AddRange((from t in this._repository.DirectAthleteSupportTypes
+                            select new ListItem
+                            {
+                                Id = t.DirectAthleteSupportTypeID,
+                                Description = _frenchLanguage ? t.Name_FR : t.Name_EN
+                            }).OrderBy(t => t.Description).ToList());
+
+                cache.Add(cacheKey, types, oneHourSlidingPolicy);
+
+                return types;
+            }
+        }
+
+        public List<ListItem> GetDirectAthleteSupportCategoriesByType(string directAthleteSupportTypeId)
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodDirectAthleteSupportCategory, _frenchLanguage, directAthleteSupportTypeId);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (List<ListItem>)cache.Get(cacheKey);
+            }
+            else
+            {
+                List<ListItem> categories = new List<ListItem>();
+                categories.Add(new ListItem { Id = null, Description = "Select a Type" });
+
+                categories.AddRange((from c in this._repository.DirectAthleteSupports
+                                where c.DirectAthleteSupportTypeID == directAthleteSupportTypeId
+                                select new ListItem
+                                {
+                                    Id = c.DirectAthleteSupportID,
+                                    Description = _frenchLanguage ? c.Name_FR : c.Name_EN
+                                }).OrderBy(t => t.Description).ToList());
+
+                cache.Add(cacheKey, categories, oneHourSlidingPolicy);
+
+                return categories;
+            }
+        }
+
+        public List<ListItem> GetGenders(bool includeNull)
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodeGender, _frenchLanguage, includeNull);
+            ObjectCache cache = MemoryCache.Default;
+
+            var genders = new List<ListItem>();
+
+            if (cache.Contains(cacheKey))
+            {
+                genders = (List<ListItem>)cache.Get(cacheKey);
+            }
+            else
+            {
+                genders = (from g in this._repository.Decodes
+                            where g.DecodeCategoryID == Constant.DecodeCategoryId.Gender
+                            orderby g.SortOrder
+                            select new ListItem
+                            {
+                                Id = g.DecodeID,
+                                Description = _frenchLanguage ? g.DecodeID_FR : g.DecodeID_EN
+                            }).ToList();
+
+                if (includeNull)
+                {
+                    genders.Insert(0, new ListItem { Id = null, Description = CommonLocalization.ListItem_NotSet });
+                }
+
+                cache.Add(cacheKey, genders, oneHourSlidingPolicy);
+            }
+
+            return genders;
+        }
+
+        public List<ListItem> GetHumanGenders(bool includeNull)
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodeHumanGender, _frenchLanguage, includeNull);
+            ObjectCache cache = MemoryCache.Default;
+
+            var genders = new List<ListItem>();
+
+            if (cache.Contains(cacheKey))
+            {
+                genders = (List<ListItem>)cache.Get(cacheKey);
+            }
+            else
+            {
+                genders = (from g in this._repository.Decodes
+                           where g.DecodeCategoryID == Constant.DecodeCategoryId.Gender && (g.DecodeID == Constant.Gender.Male || g.DecodeID == Constant.Gender.Female)
+                           orderby g.SortOrder
+                           select new ListItem
+                           {
+                               Id = g.DecodeID,
+                               Description = _frenchLanguage ? g.DecodeID_FR : g.DecodeID_EN
+                           }).ToList();
+
+                if (includeNull)
+                {
+                    genders.InsertNullListItem(_frenchLanguage);
+                }
+
+                cache.Add(cacheKey, genders, oneHourSlidingPolicy);
+            }
+
+            return genders;
+        }
+
+        public List<Organization> GetAllOrganizations()
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodeOrganization, _frenchLanguage, null);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (List<Organization>)cache.Get(cacheKey);
+            }
+            else
+            {
+                var organizations = (from o in this._repository.Organizations
+                                     select new Organization
+                                     {
+                                         Id = o.OrganizationID,
+                                         Type = o.OrganizationTypeID,
+                                         Name = _frenchLanguage ? o.Name_FR : o.Name_EN
+                                     }).ToList();
+
+                cache.Add(cacheKey, organizations, oneHourSlidingPolicy);
+
+                return organizations;
+            }
+        }
+
+        public List<Organization> GetAllOrganizationsByType(string organizationTypeId, bool includeNullItem = false)
+        {
+            string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.DecodeOrganizationByType, _frenchLanguage, organizationTypeId, includeNullItem);
+            ObjectCache cache = MemoryCache.Default;
+
+            if (cache.Contains(cacheKey))
+            {
+                return (List<Organization>)cache.Get(cacheKey);
+            }
+            else
+            {
+                var organizations = (from o in this._repository.Organizations
+                                    where o.OrganizationTypeID == organizationTypeId
+                                    select new Organization
+                                    {
+                                        Id = o.OrganizationID,
+                                        Type = o.OrganizationTypeID,
+                                        Name = _frenchLanguage ? o.Name_FR : o.Name_EN
+                                    }).ToList();
+
+                if (includeNullItem)
+                {
+                    organizations.Insert(0, new Organization { Id = null, Name = CommonLocalization.ListItem_NotSet });
+                }
+
+                cache.Add(cacheKey, organizations, oneHourSlidingPolicy);
+
+                return organizations;
+            }
+        }
+
+        public List<OTP.Ring.Data.Models.SecurityPage> GetAllPages()
+        {
+            return this._repository.SecurityPages.ToList();
+        }
+
+        public List<OTP.Ring.Models.ViewModel.SummaryListViewModel> GetSummaryPageList(string currentPageId, User user)
+        {
+            var securityPages = from groupPages in this._repository.SecurityGroupPages
+                                where groupPages.SecurityGroupProfileID == user.GroupProfileId
+                                    && groupPages.ReadAccess != Constant.AccessLevel.No
+                                select groupPages;
+
+            var allowedPages = (from pages in this._repository.SecurityPages
+                                where pages.Visible
+                                from securityPage in securityPages
+                                where (pages.SecurityPageID == securityPage.SecurityPageID
+                                    || (securityPage.SecurityPageID == Constant.PageId.HomeIndex && pages.SecurityPageID == pages.ParentSecurityPageID))
+                                    && securityPage.Recursive
+                                join children in this._repository.SecurityPages on pages.SecurityPageID equals children.ParentSecurityPageID
+                                join childrenChildren in this._repository.SecurityPages on children.SecurityPageID equals childrenChildren.ParentSecurityPageID
+                                select childrenChildren)
+                                .Union(
+                                    from pages in this._repository.SecurityPages
+                                    where pages.Visible
+                                    from securityPage in securityPages
+                                    where pages.SecurityPageID == securityPage.SecurityPageID
+                                        && !securityPage.Recursive
+                                    select pages
+                                );
+
+            var summaryPages = (from p in this._repository.SecurityPages
+                                where (p.ParentSecurityPageID == currentPageId
+                                    || (currentPageId == Constant.PageId.HomeIndex && p.SecurityPageID == p.ParentSecurityPageID))
+                                    && p.SecurityPageID != Constant.PageId.HomeIndex
+                                    && p.SecurityPageID != currentPageId
+                                    && p.Visible
+                                from a in allowedPages
+                                where p.SecurityPageID == a.SecurityPageID
+                                select new OTP.Ring.Models.ViewModel.SummaryListViewModel
+                                {
+                                    SecurityPageId = a.SecurityPageID,
+                                    Description = _frenchLanguage ? a.Description_FR : a.Description_EN,
+                                    HtmlStyleCode = a.StylingCode,
+                                    IconUrl = a.IconURL,
+                                    Name = _frenchLanguage ? a.Name_FR : a.Name_EN,
+                                    Order = a.Order,
+                                    URL = a.URL
+                                }).OrderBy(p => p.Order).ToList();
+
+            foreach (var page in summaryPages)
+            {
+                if (page.IconUrl == null)
+                {
+                    var parentPageId = page.SecurityPageId[0].ToString();
+                    page.IconUrl = (from p in this._repository.SecurityPages
+                                    where p.SecurityPageID == parentPageId
+                                    select p.IconURL).FirstOrDefault();
+                }
+            }
+
+            return summaryPages;
+        }
+        
+        public char[] GetColumnLetterArray(int numberofColumns)
+        {
+            var columnLetters = new char[numberofColumns];
+            //Build array of letters from A - ?
+            for (int i = 0; i < numberofColumns; i++)
+            {
+                columnLetters[i] = (char)(i + (int)('A'));
+            }
+
+            return columnLetters;
+        }
+
+        public List<ListItem> GetColumnFormatList(int downloadTemplateId, string fieldName)
+        {
+            var formats = new List<ListItem>();
+
+            var formatType = (from f in this._repository.TableTemplateFields
+                              from d in this._repository.DownloadTemplates
+                              where d.DownloadTemplateID == downloadTemplateId
+                              && f.TableTemplateID == d.TableTemplateID
+                              && f.FieldName == fieldName
+                              select f.FormatType).SingleOrDefault();
+
+            if (formatType != null)
+            {
+                formats = (from f in this._repository.Decodes
+                           where f.DecodeCategoryID == formatType
+                           select new ListItem
+                           {
+                               Id = f.DecodeID,
+                               Description = f.DecodeID
+                           }).ToList();
+            }
+
+            formats.InsertNullListItem(_frenchLanguage);
+
+            return formats;
+        }
+
+        #endregion
+
+        private OTP.Ring.Data.Models.SecurityPage GetTopLevelPage(OTP.Ring.Data.Models.SecurityPage page)
+        {
+            if (page.NodeLeafCode == Constant.NodeLeafCode.Node)
+            {
+                return page;
+            }
+            else
+            {
+                return GetTopLevelPage(page.ParentSecurityPage);
+            }
+        }
+    }
+}

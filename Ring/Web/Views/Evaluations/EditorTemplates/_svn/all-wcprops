@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/2391/OTP/Ring/Application/trunk/Ring/Web/Views/Evaluations/EditorTemplates
+END
+EvaluationFormInitialStatusTemplate.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repos/!svn/ver/2315/OTP/Ring/Application/trunk/Ring/Web/Views/Evaluations/EditorTemplates/EvaluationFormInitialStatusTemplate.ascx
+END
+EvaluationsQuestionsVersionPhaseTemplate.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/repos/!svn/ver/2391/OTP/Ring/Application/trunk/Ring/Web/Views/Evaluations/EditorTemplates/EvaluationsQuestionsVersionPhaseTemplate.ascx
+END
+EvaluationsQuestionsQuestionPhaseTemplate.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repos/!svn/ver/2391/OTP/Ring/Application/trunk/Ring/Web/Views/Evaluations/EditorTemplates/EvaluationsQuestionsQuestionPhaseTemplate.ascx
+END
+EvaluationFormCurrentStatusTemplate.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repos/!svn/ver/2315/OTP/Ring/Application/trunk/Ring/Web/Views/Evaluations/EditorTemplates/EvaluationFormCurrentStatusTemplate.ascx
+END
+EvaluationsQuestionsVersionOrganizationTypeTemplate.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repos/!svn/ver/2324/OTP/Ring/Application/trunk/Ring/Web/Views/Evaluations/EditorTemplates/EvaluationsQuestionsVersionOrganizationTypeTemplate.ascx
+END
+EvaluationsQuestionsQuestionSportTemplate.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repos/!svn/ver/2391/OTP/Ring/Application/trunk/Ring/Web/Views/Evaluations/EditorTemplates/EvaluationsQuestionsQuestionSportTemplate.ascx
+END

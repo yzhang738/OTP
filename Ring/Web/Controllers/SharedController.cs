@@ -1,0 +1,771 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using OTP.Ring.Business;
+using OTP.Ring.Common;
+using OTP.Ring.Models;
+using OTP.Ring.Models.ViewModel;
+
+namespace OTP.Ring.Web.Controllers
+{
+    public class SharedController : BaseController
+    {
+        private IDecodeBL _decodeBL;
+        private IFundingBL _fundingBL;
+        private IActionItemBL _actionItemBL;
+        private IUserBL _userBL;
+        private ISportBL _sportBL;
+        private ICommentsBL _commentsBL;
+        private IResourceBL _resourceBL;
+        private IBenchmarkBL _benchmarkBL;
+        private IReportBL _reportBL;
+        private IResultsBL _resultsBL;
+        private IEvaluationsBL _evaluationsBL;
+
+        public SharedController(IFundingBL fundingBL, IActionItemBL actionItemBL, IDecodeBL decodeBL, IUserBL userBL, ISportBL sportBL, ICommentsBL commentsBL, IResourceBL resourceBL, IBenchmarkBL benchmarkBL, IReportBL reportBL, IResultsBL resultsBL, IEvaluationsBL evaluationsBL)
+            : base(decodeBL, userBL, sportBL)
+        {
+            this._fundingBL = fundingBL;
+            this._actionItemBL = actionItemBL;
+            this._decodeBL = decodeBL;
+            this._userBL = userBL;
+            this._sportBL = sportBL;
+            this._commentsBL = commentsBL;
+            this._resourceBL = resourceBL;
+            this._benchmarkBL = benchmarkBL;
+            this._reportBL = reportBL;
+            this._resultsBL = resultsBL;
+            this._evaluationsBL = evaluationsBL;
+        }
+
+        public ActionResult MaintenanceFundingSaveComments(string comments, int referenceId, int id, string level, string actionName)
+        {
+            if (level == "B")
+            {
+                this._fundingBL.UpdateFundingBlockComment(id, referenceId, comments);
+            }
+            else if (level == "C")
+            {
+                this._fundingBL.UpdateFundingCategoryComment(id, referenceId, comments);
+            }
+            else if (level == "D")
+            {
+                this._fundingBL.UpdateFundingDetailComment(id, referenceId, comments);
+            }
+
+            return RedirectToAction(actionName, "Funding", new { id = id });
+        }
+
+        [AcceptVerbs(HttpVerbs.Post)]
+        public ActionResult CreateActionItem(FormCollection form)
+        {
+            string actionName = form.GetFormStringValue("actionName");
+            string controllerName = form.GetFormStringValue("controllerName");
+
+            ActionItem actionItem = new ActionItem();
+
+            if (TryUpdateModel(actionItem))
+            {
+                actionItem.Status = Constant.ActionItemStatus.New;
+                actionItem.UserId = this.CurrentUser.Id;
+
+                int result = this._actionItemBL.CreateActionItem(actionItem);
+            }
+            else
+            {
+                string errorMessage = "";
+                foreach (var item in ModelState.Values)
+                {
+                    foreach (var error in item.Errors)
+                    {
+                        errorMessage += error.ErrorMessage;
+                    }
+                }
+
+                TempData.Add("Errors", errorMessage);
+            }
+
+            return RedirectToAction(actionName, controllerName, new { id = actionItem.ReferenceId });
+        }
+
+        #region Dynamic List Ajax
+
+        [HttpPost]
+        public ActionResult CategoryAjax(string id)
+        {
+            List<ListItem> resourceClasses = new List<ListItem>() { new ListItem { Id = null, Description = Shared.SharedStrings.ListItem_Select } };
+            resourceClasses.AddRange(this._resourceBL.GetResourceClasses());
+
+            return new JsonResult
+            {
+                Data = new SelectList(resourceClasses, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult CoachResourcesAjax(string sportId, string id)
+        {
+            List<Decode> types = new List<Decode>() { new Decode { Id = null, IntId = 0, Name = Shared.SharedStrings.ListItem_Select } };
+            Decode dec = new Decode { Id = "0", IntId = 0, Name = Shared.SharedStrings.ListItem_NoCoachSelect };
+            types.Add(dec);
+            types.AddRange(this._resourceBL.GetCoachResources(sportId));
+
+            string coachId = this._decodeBL.GetCoachIdFromResources(id);
+
+            return new JsonResult
+            {
+                Data = new SelectList(types, "Id", "Name", coachId)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult CoachResourcesSportInfoAjax(string sportId, string id)
+        {
+            List<Decode> types = new List<Decode>() { new Decode { Id = null, IntId = 0, Name = Shared.SharedStrings.ListItem_Select } };
+            Decode dec = new Decode { Id = "0", IntId = 0, Name = Shared.SharedStrings.ListItem_NoCoachSelect };
+            types.Add(dec);
+            types.AddRange(this._resourceBL.GetCoachResources(sportId));
+
+            string coachId = this._decodeBL.GetCoachIdFromSportInfos(id);
+
+            return new JsonResult
+            {
+                Data = new SelectList(types, "Id", "Name", coachId)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult ResourceClassAjax(string id)
+        {
+            List<ListItem> resourceClasses = new List<ListItem>() { new ListItem { Id = null, Description = Shared.SharedStrings.ListItem_Select } };
+            resourceClasses.AddRange(this._resourceBL.GetResourceClasses());
+            //var resourceClasses = this._resourceBL.GetResourceClasses();
+
+            string category = this._decodeBL.GetCategoryFromSportInfos(id);
+
+            return new JsonResult
+            {
+                Data = new SelectList(resourceClasses, "Id", "Description", category)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult AllSportsUnderSportLevelAjax()
+        {
+            var list = this._sportBL.GetAllSportsUnderSportLevel();
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult AllSportsOnSportLevelAjax(string id)
+        {
+            var sports = this._sportBL.GetAllSportsOnSportLevel();
+
+            string sportId = this._decodeBL.GetSportIdFromSportInfos(id);
+
+            return new JsonResult
+            {
+                Data = new SelectList(sports, "Id", "Description", sportId)
+                //Data = new SelectList(sports, "Id", "Description", ExtensionMethods.GetConfigurationSetting("defaultSportID"))
+            };
+        }
+
+        [HttpPost]
+        public ActionResult AllSportsOnAddResultAjax(string id)
+        {
+            var sports = this._sportBL.GetAllSportsOnSportLevel(id);
+
+            return new JsonResult
+            {
+                Data = new SelectList(sports, "Id", "Description", ExtensionMethods.GetConfigurationSetting("defaultSportID"))
+            };
+        }
+
+        [HttpPost]
+        public ActionResult DisciplinesBySportAjax(string sportId, string id)
+        {
+            var sports = this._sportBL.GetDisciplinesBySport(sportId);
+
+            string disciplineId = this._decodeBL.GetDisciplineIdFromSportInfos(id);
+
+            return new JsonResult
+            {
+                Data = new SelectList(sports, "Id", "Description", disciplineId)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult EventsByDisciplineAjax(string sportId, string id)
+        {
+            var sports = this._sportBL.GetEventsByDiscipline(sportId);
+
+            string eventId = this._decodeBL.GetEventIdFromSportInfos(id);
+
+            return new JsonResult
+            {
+                Data = new SelectList(sports, "Id", "Description", eventId)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult ResultsEventsByDisciplineAjax(string disciplineId)
+        {
+            var sports = this._sportBL.GetResultsEventsByDiscipline(disciplineId);
+
+            return new JsonResult
+            {
+                Data = new SelectList(sports, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult DirectAthleteSupportTypesAjax(string directAthleteSupportTypeId)
+        {
+            var types = this._decodeBL.GetDirectAthleteSupportTypes();
+
+            return new JsonResult
+            {
+                Data = new SelectList(types, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult GetDirectAthleteSupportCategoriesByTypeAjax(string directAthleteSupportTypeId)
+        {
+            var categories = this._decodeBL.GetDirectAthleteSupportCategoriesByType(directAthleteSupportTypeId);
+
+            return new JsonResult
+            {
+                Data = new SelectList(categories, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult AllYearsAjax(string YearId)
+        {
+            var years = this._decodeBL.GetAllYearsList();
+
+            string currentYearID = this._decodeBL.GetCurrentYearID();
+
+            return new JsonResult
+            {
+                Data = new SelectList(years, "Id", "Description", currentYearID)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult ResourceQualificationTypeAjax(string resourceClassId)
+        {
+            var qualificationTypes = this._resourceBL.GetResourceQualificationTypes();
+
+            return new JsonResult
+            {
+                Data = new SelectList(qualificationTypes, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult BenchmarkTypeAjax(string benchmarkTypeId)
+        {
+            var benchmarkTypes = this._benchmarkBL.GetBenchmarkTypes();
+
+            return new JsonResult
+            {
+                Data = new SelectList(benchmarkTypes, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult AffiliateTypesAjax(string affiliateTypeId)
+        {
+            var affiliateTypes = this._decodeBL.GetAffiliateTypes();
+
+            return new JsonResult
+            {
+                Data = new SelectList(affiliateTypes, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult ResourceSpecialtyAjax(string resourceType)
+        {
+            var specialties = this._resourceBL.GetResourceSpecialties(resourceType, true);
+
+            return new JsonResult
+            {
+                Data = new SelectList(specialties, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult OrganizationCscAjax(string primaryCscId)
+        {
+            var orgs = this._decodeBL.GetAllOrganizationsByType(Constant.OrganizationTypeId.CSC, true);
+
+            return new JsonResult
+            {
+                Data = new SelectList(orgs, "Id", "Name")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult GenderAjax(string gender, bool includeNull)
+        {
+            var genders = this._decodeBL.GetHumanGenders(includeNull);
+
+            return new JsonResult
+            {
+                Data = new SelectList(genders, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult CountryAjax(string countryId)
+        {
+            var countries = this._decodeBL.GetAllCountriesList();
+
+            return new JsonResult
+            {
+                Data = new SelectList(countries, "Id", "Description", ExtensionMethods.GetConfigurationSetting("defaultCountry"))
+            };
+        }
+
+        [HttpPost]
+        public ActionResult AthleteResultsCountryAjax(string id)
+        {
+            var info = this._decodeBL.GetMostRecentOlympicGameInfo(id);
+
+            var countries = this._decodeBL.GetAllCountriesList();
+
+            return new JsonResult
+            {
+                Data = new SelectList(countries, "Id", "Description", info.CountryID)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult AthleteResultsCompetitionAjax(string id)
+        {
+            var info = this._decodeBL.GetMostRecentOlympicGameInfo(id);
+
+            ViewData["AthleteResultsCompetitionDate"] = info.CompetitionDate;
+
+            var competitions = this._decodeBL.GetAllCompetitionTypeList(id);
+
+            return new JsonResult
+            {
+                Data = new SelectList(competitions, "Id", "Description", info.CompetitionName)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult AthleteResultsLocationAjax(string id)
+        {
+            var info = this._decodeBL.GetMostRecentOlympicGameInfo(id);
+
+            var locations = this._decodeBL.GetAllHostCityList();
+
+            return new JsonResult
+            {
+                Data = new SelectList(locations, "Id", "Description", info.Location)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult ReportParameterAjax(string defaultID, string storedProcedureName, string procedureParams)
+        {
+            var list = this._reportBL.GetReportFilterData(storedProcedureName, procedureParams);
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description", defaultID)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult TableTemplateAjax(string tableTemplateId, bool resultsOnly)
+        {
+            var tableTemplates = this._resultsBL.GetTableTemplateList(resultsOnly);
+
+            return new JsonResult
+            {
+                Data = new SelectList(tableTemplates, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult SourceColumnLetterAjax(string sourceColumn, int sourceRowOffset, string downloadTemplateId)
+        {
+            var letters = this._resultsBL.GetTemplateMappingColumnLetterList(int.Parse(downloadTemplateId), sourceRowOffset, sourceColumn);
+
+            return new JsonResult
+            {
+                Data = new SelectList(letters, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult ColumnFormatAjax(int downloadTemplateId, string fieldName)
+        {
+            var formats = this._decodeBL.GetColumnFormatList(downloadTemplateId, fieldName);
+
+            return new JsonResult
+            {
+                Data = new SelectList(formats, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult OrganizationTypesAjax(string organizationType)
+        {
+            var list = this._decodeBL.GetOrganizationTypes();
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Name", Constant.OrganizationTypeId.NSO)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult EvaluationVersionPhasesAjax(string versionPhase)
+        {
+            var list = this._evaluationsBL.GetVersionPhasesList(versionPhase);
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult VersionIdAjax(string versionID)
+        {
+            var list = this._evaluationsBL.GetVersionIdList();
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description", Constant.VersionID.Version1)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult VersionNameENAjax(string versionID)
+        {
+            var list = this._evaluationsBL.GetVersionNameENList();
+
+            if (string.IsNullOrEmpty(versionID))
+            {
+                versionID = Constant.VersionID.Version1;
+            }
+            else
+            {
+                versionID = this._evaluationsBL.GetVersionID(versionID);            
+            }
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description", versionID)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult VersionNameFRAjax(string versionID)
+        {
+            var list = this._evaluationsBL.GetVersionNameFRList();
+
+            if (string.IsNullOrEmpty(versionID))
+            {
+                versionID = Constant.VersionID.Version1;
+            }
+            else
+            {
+                versionID = this._evaluationsBL.GetVersionID(versionID);
+            }
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description", versionID)
+            };
+        }
+
+        [HttpPost]
+        public ActionResult SetVersionNameEnAjax(string versionID)
+        {
+            var result = this._evaluationsBL.GetVersionNameEn(versionID);
+            return Json(result);
+        }
+
+        [HttpPost]
+        public ActionResult SetVersionNameFrAjax(string versionID)
+        {
+            var result = this._evaluationsBL.GetVersionNameFr(versionID);
+            return Json(result);
+        }
+
+        [HttpPost]
+        public ActionResult EvaluationStatusAjax()
+        {
+            List<Decode> types = new List<Decode>() { new Decode { Id = null, Name = Shared.SharedStrings.ListItem_Select } };
+            types.AddRange(this._decodeBL.GetDecodesByCategory(Constant.DecodeCategoryId.EvaluationStatus));
+
+            return new JsonResult
+            {
+                Data = new SelectList(types, "Id", "Name")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult EvaluationVersionQuestionPhasesAjax(string questionPhase)
+        {
+            var list = this._evaluationsBL.GetQuestionPhasesList(questionPhase);
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult EvaluationQuestionSportAjax(string sportId)
+        {
+            var list = this._sportBL.GetEvaluationQuestionSportList();
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult EvaluationCopyToYearAjax(string evaluationVersionId)
+        {
+            var years = this._evaluationsBL.GetCopyToYearsList(int.Parse(evaluationVersionId));
+
+            return new JsonResult
+            {
+                Data = new SelectList(years, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult EvaluationCopyToVersionAjax(string copyFromEvaluationVersionId)
+        {
+            var list = this._evaluationsBL.GetCopyToEvaluationVersionsList(int.Parse(copyFromEvaluationVersionId));
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult EvaluationAddSportIdAjax(string evaluationVersionId, int writeAccess)
+        {
+            List<Models.ListItem> list = new List<Models.ListItem>();
+
+            if (writeAccess != Constant.AccessLevel.No)
+            {
+                //Retrieve all sports don't have evaluation for the version
+                list = this._evaluationsBL.GetAddEvaluationSportList(int.Parse(evaluationVersionId));
+
+                if (writeAccess == Constant.AccessLevel.Assigned)
+                {
+                    //Retrieve all sports allowed based on permission
+                    var allPermittedSports = new Common.MenuHierarchy(this.AllSports, this.CurrentUser.Sports, null, null, this.CurrentLanguageCode(), false).FlatSportMenuItems;
+                    List<string> allPermittedSportIds = (from s in allPermittedSports select s.Id).ToList();
+
+                    list = (from l in list where allPermittedSportIds.Contains(l.Id) select l).ToList();
+                }
+            }
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult ReportViewListAjax(string reportId)
+        {
+            int? id = null;
+
+            if (!string.IsNullOrEmpty(reportId))
+            {
+                id = int.Parse(reportId);
+            }
+
+            var list = this._reportBL.GetReportViewList(id);
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult ReportSportAjax(string sportId)
+        {
+            string currentPageId = Constant.PageId.ReportingDesignAnalysis;
+            var menu = this.Menu(currentPageId).Menu;
+            List<RingMenuItem> appliedSports = menu.FlatSportMenuItems;
+
+            var list = this._sportBL.GetReportDesignSportList(appliedSports);
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult DecodeListAjax(string decodeCategoryId)
+        {
+            var list = this._decodeBL.GetDecodesByCategory(decodeCategoryId).ToList();
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Name")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult ReportCategoryAjax()
+        {
+            var list = this._decodeBL.GetDecodesByCategory(Constant.DecodeCategoryId.ReportCategory).ToList();
+
+            list = (from d in list
+                    where d.Id != Constant.ReportCategory.Template
+                    select d).ToList();
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Name")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult ReportAggregationAjax(int reportId, string columnFieldName_EN)
+        {
+            var list = this._reportBL.GetReportAggregationList(reportId, columnFieldName_EN);
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult ReportViewFieldsAjax(int reportId, bool includeNull)
+        {
+            var list = this._reportBL.GetReportViewFieldsList(reportId, includeNull);
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult SecurityGroupProfileAjax(int reportId, string securityUserProfileId)
+        {
+            var list = this._reportBL.GetSecurityGroupProfileList(reportId, securityUserProfileId);
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult ResourcePoolAssignmentAjax(int resourceId)
+        {
+            var list = this._resourceBL.GetResourcePoolAssignmentList(resourceId);
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult FormatStringAjax(int reportId, string columnFieldName_EN)
+        {
+            var list = this._reportBL.GetReportColumnFormatStringList(reportId, columnFieldName_EN);
+            
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult TemplateFieldNameAjax(int downloadTemplateId, string currentFieldName)
+        {
+            var list = this._resultsBL.GetTemplateFieldNameList(downloadTemplateId, currentFieldName);
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult ResultStagingResourceNameAjax(int resultStagingId, int? currentResourceId)
+        {
+            var list = this._resultsBL.GetResultStagingResourceNameList(resultStagingId, currentResourceId);
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        [HttpPost]
+        public ActionResult SourceRowNumberAjax()
+        {
+            var list = this._resultsBL.GetSourceRowNumberList();
+
+            return new JsonResult
+            {
+                Data = new SelectList(list, "Id", "Description")
+            };
+        }
+
+        #endregion Dynamic List Ajax
+
+        [AcceptVerbs(HttpVerbs.Get)]
+        public JsonResult GetComments(string tableName, string primaryKey)
+        {
+            var comments = this._commentsBL.GetComments(tableName, primaryKey);
+
+            return Json(comments, JsonRequestBehavior.AllowGet);
+        }
+
+        [AcceptVerbs(HttpVerbs.Post)]
+        public JsonResult UpdateComments(string tableName, string primaryKey, string comments)
+        {
+            this._commentsBL.UpdateComments(tableName, primaryKey, comments);
+            return null;
+        }
+
+        [AcceptVerbs(HttpVerbs.Post)]
+        public void LogJavascriptError(string message, string url, string lineNumber, string browser, string browserVersion)
+        {
+            string error = string.Format("Client Side Scripting Error:{0}{1} Version {2}{0}URL: {3}{0}Line #: {4}{0}Error Message: {5}",
+                Environment.NewLine,
+                browser,
+                browserVersion,
+                url,
+                lineNumber,
+                message);
+
+            Logger.LogError(error);
+        }
+    }
+}

@@ -1,0 +1,134 @@
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<MaintenanceEditableViewModel>" %>
+       <input type="hidden" id="tabResourceId" value="<%= ViewData["resourceId"] %>" />
+
+    <div class="groupbox_title_background gradientHToWhite">
+        <div class="groupbox_title" >
+            <%= ViewData["resourceName"] %>
+        </div>
+    </div>
+
+    <% if (ViewData["resourceId"] != null)
+       { %>
+        <%= Html.Telerik().Grid<MaintenanceAthletesSportsInfoViewModel>()
+            .Name("Sports")
+            .TableHtmlAttributes(new { style = "font-size:8pt;" })
+            .HtmlAttributes(new { style = "height:385px;width:987px;" })
+            .DataKeys(keys => keys.Add(s => s.ResourceSportId))
+            .ToolBar(toolbar =>
+                {
+                    if (Model.Editable) toolbar.Insert().ButtonType(GridButtonType.ImageAndText);
+                })
+            .DataBinding(dataBinding => dataBinding.Ajax()
+                .Select("AthletesSportsInfoAjax", "Maintenance")
+                .Insert("InsertAthletesSport", "Maintenance")
+                .Update("UpdateAthletesSport", "Maintenance")
+                .Delete("DeleteAthletesSport", "Maintenance")
+            )
+            .Pageable(paging => paging.PageSize(14))
+            .Scrollable(scrolling => scrolling.Height(326))
+            .Resizable(resize => resize.Columns(true))
+            .Sortable()
+            .Filterable()
+            .Columns(columns =>
+            {
+                columns.Bound(s => s.SportsId)
+                    .ClientTemplate("<#= SportName #>")
+                    .Width(140);
+                columns.Bound(s => s.DisciplineId)
+                    .ClientTemplate("<#= DisciplineName #>")
+                    .Width(140);
+                columns.Bound(s => s.EventId)
+                    .ClientTemplate("<#= EventName #>")
+                    .Width(140);
+                columns.Bound(s => s.ResourceClassId)
+                    .ClientTemplate("<#= ResourceClassName #>")
+                    .Width(140);
+                columns.Bound(s => s.EventCoachId)
+                    .ClientTemplate("<#= EventCoachName #>")
+                    .Width(140);
+                columns.Bound(s => s.SportTrackingRef)
+                    .Width(70);
+                columns.Bound(s => s.Benchmark)
+                    .ClientTemplate("<span class='<#= Benchmark ? \"t-update\" : \"t-delete\" #> t-icon'></span>")
+                    .Width(37)
+                    .HtmlAttributes(new { style = "text-align:center" });
+                columns.Bound(s => s.HasComments)
+                    .ClientTemplate("<span onclick=\"openCommentWindow('ResourceSport', '<#= ResourceSportId #>', '<#= EventName #>', '" + Model.Editable + "', 'true');\" class=\"comment sprite sprite-<#= HasComments ? \"note\" : \"note_none\" #>\"></span>")
+                    .Width(37)
+                    .Title("")
+                    .Filterable(false);
+                columns.Command(commands =>
+                {
+                    if (Model.Editable)
+                    {
+                        commands.Edit().ButtonType(GridButtonType.ImageAndText);
+                        commands.Delete().ButtonType(GridButtonType.ImageAndText);
+                    }
+                }).Width(95);
+                columns.Bound(s => s.ResourceSportId).Hidden(true);
+                columns.Bound(s => s.ResourceId).Hidden(true);
+            })
+            .ClientEvents(events => events.OnRowSelect("onAthleteGridRowSelect")
+                                .OnError("grid_OnError"))
+            .DetailView(ordersDetailView => ordersDetailView.ClientTemplate(
+                Html.Telerik().Grid<MaintenanceAthletesBenchmarkSportsViewModel>()
+                .Name("Benchmarks_<#= ResourceSportId #>")
+                .HtmlAttributes(new { Style = "width:882px" })
+                .DataKeys(keys => keys.Add(b => b.BenchmarkResourceId))
+                .ToolBar(toolbar =>
+                    {
+                        if (Model.Editable) toolbar.Insert().ButtonType(GridButtonType.ImageAndText);
+                    })
+                .ClientEvents(e => e.OnError("grid_OnError"))
+                .DataBinding(dataBinding => dataBinding.Ajax()
+                    .Select("AthletesBenchmarkSportsAjax", "Maintenance", new { resourceSportId = "<#= ResourceSportId #>" })
+                    .Insert("InsertAthletesBenchmark", "Maintenance", new { resourceSportId = "<#= ResourceSportId #>" })
+                    .Update("UpdateAthletesBenchmark", "Maintenance", new { resourceSportId = "<#= ResourceSportId #>" })
+                    .Delete("DeleteAthletesBenchmark", "Maintenance", new { resourceSportId = "<#= ResourceSportId #>" })
+                )
+                .Pageable()
+                .Sortable()
+                .Resizable(resize => resize.Columns(true))
+                .Filterable()
+                .Columns(columns =>
+                {
+                    columns.Bound(b => b.BenchmarkTypeId)
+                        .ClientTemplate("<#= BenchmarkTypeName #>")
+                        .Width(180);
+                    columns.Bound(b => b.BenchmarkTierId)
+                        .ClientTemplate("<#= BenchmarkTierName #>")
+                        .Width(180);
+                    columns.Bound(b => b.NSOValue)
+                        .Width(180);
+                    columns.Bound(b => b.OTPValue)
+                        .Width(180);
+                    columns.Bound(b => b.HasComments)
+                        .ClientTemplate("<span onclick=\"openCommentWindow('BenchmarkResource', '<#= BenchmarkResourceId #>', '<#= BenchmarkTierName #>', '" + Model.Editable + "', 'true');\" class=\"comment sprite sprite-<#= HasComments ? \"note\" : \"note_none\" #>\"></span>")
+                        .Width(37)
+                        .Title("")
+                        .Filterable(false);
+                    columns.Command(commands =>
+                    {
+                        if (Model.Editable)
+                        {
+                            commands.Edit().ButtonType(GridButtonType.ImageAndText);
+                            commands.Delete().ButtonType(GridButtonType.ImageAndText);
+                        }
+                    })
+                        .Width(95);
+                })
+                .ToHtmlString()
+            )
+            )
+
+                    %>
+
+            <br />
+            <br />
+            <div class="clear"></div>
+
+    <% } %>
+    
+
+
+           

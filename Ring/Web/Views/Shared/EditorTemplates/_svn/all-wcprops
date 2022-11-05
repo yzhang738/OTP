@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/!svn/ver/2446/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/EditorTemplates
+END
+Number.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repos/!svn/ver/1763/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/EditorTemplates/Number.ascx
+END
+Currency.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/!svn/ver/2099/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/EditorTemplates/Currency.ascx
+END
+DateTime.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repos/!svn/ver/2446/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/EditorTemplates/DateTime.ascx
+END
+Date.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/!svn/ver/2446/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/EditorTemplates/Date.ascx
+END
+Integer.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/!svn/ver/1820/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/EditorTemplates/Integer.ascx
+END
+NullableBoolean.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repos/!svn/ver/2409/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/EditorTemplates/NullableBoolean.ascx
+END
+ActionPriority.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repos/!svn/ver/2334/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/EditorTemplates/ActionPriority.ascx
+END
+ActionStatus.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repos/!svn/ver/2334/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/EditorTemplates/ActionStatus.ascx
+END

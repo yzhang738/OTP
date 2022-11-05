@@ -1,0 +1,68 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<HomeSignInViewModel>" %>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="HeadContent" runat="server">
+    <% Html.RenderPartial("~/Views/Shared/JavaScriptCheck.ascx"); %>
+</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+	<%: Shared.HomeStrings.SignIn_Title %>
+</asp:Content>
+
+<asp:Content ID="Content7" ContentPlaceHolderID="HeaderImage" runat="server">
+    <%= RingHTMLHelper.GetRandomHeaderImage() %>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+         <table width="90%" style="HEIGHT: 100%" border="0">
+			<tr>
+                <td>
+					<br/>
+				</td>
+			</tr>
+			<tr>
+				<td align="center"><%: Shared.HomeStrings.SignIn_Line1 %></td>
+			</tr>
+			<tr>
+                <td>
+					<br/>
+				</td>
+			</tr>
+            <tr>
+				<td align="center"><%: Shared.HomeStrings.SignIn_Line2 %></td>
+			</tr>
+			<tr>
+                <td>
+					<br/>
+				</td>
+			</tr>
+            <tr>
+				<td align="center">
+
+                    <%= string.Format(Shared.HomeStrings.SignIn_Line3,
+                            "<iframe name='WebAuthControl' src='http://login.live.com/controls/WebAuthButton.htm?appid="
+                            + Model.AppId + "&context=main' width='66px' marginwidth='0' marginheight='0' frameborder='0' scrolling='no' height='20px'></iframe>",
+                            "<a href='http://www.ownthepodium2010.com/About/contact.aspx' target='_blank'>",
+                            "</a>") %>
+				</td>
+			</tr>
+			<tr>
+                <td>
+					<br/>
+				</td>
+			</tr>
+			<tr>
+                <td align="center"><%:Shared.HomeStrings.SignIn_Statement %></td>
+			</tr>
+        </table>
+
+</asp:Content>
+
+<asp:Content ID="Content5" ContentPlaceHolderID="InfoBar" runat="server">
+    <% Html.RenderPartial("~/Views/Shared/LanguageSelector.ascx", Model.CurrentLanguageCode); %> &nbsp;|&nbsp;
+    <% Html.RenderPartial("~/Views/Shared/CurrentUserName.ascx", Model.CurrentUserName); %>
+</asp:Content>
+
+<asp:Content ID="Content6" ContentPlaceHolderID="MenuContent" runat="server">
+    <% Html.RenderPartial("~/Views/Shared/NavMenu.ascx", Model.Menu); %>
+</asp:Content>

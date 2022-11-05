@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/repos/!svn/ver/2968/OTP/Ring/Application/trunk/Ring/Common
+END
+EvaluationPillar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/EvaluationPillar.cs
+END
+FundingDetail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/FundingDetail.cs
+END
+CommonLocalization.resx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/2759/OTP/Ring/Application/trunk/Ring/Common/CommonLocalization.resx
+END
+Logger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repos/!svn/ver/2968/OTP/Ring/Application/trunk/Ring/Common/Logger.cs
+END
+LocalizedDisplayNameAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/LocalizedDisplayNameAttribute.cs
+END
+Decode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/Decode.cs
+END
+CommonLocalization.fr-CA.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/!svn/ver/2347/OTP/Ring/Application/trunk/Ring/Common/CommonLocalization.fr-CA.Designer.cs
+END
+Constant.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/!svn/ver/2716/OTP/Ring/Application/trunk/Ring/Common/Constant.cs
+END
+FundingCategoryType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/FundingCategoryType.cs
+END
+Competition.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/Competition.cs
+END
+SportDetail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/SportDetail.cs
+END
+FundingTotal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/FundingTotal.cs
+END
+ActionItemType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/ActionItemType.cs
+END
+FundingAllocation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/FundingAllocation.cs
+END
+Organization.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/Organization.cs
+END
+ActionLocation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/ActionLocation.cs
+END
+FundingBlockType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/FundingBlockType.cs
+END
+GenderValidator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/GenderValidator.cs
+END
+Page.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/Page.cs
+END
+TeamMember.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/TeamMember.cs
+END
+User.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/User.cs
+END
+OTP.Ring.Common.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/!svn/ver/2636/OTP/Ring/Application/trunk/Ring/Common/OTP.Ring.Common.csproj
+END
+RingHTMLHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/2745/OTP/Ring/Application/trunk/Ring/Common/RingHTMLHelper.cs
+END
+FundingBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/FundingBase.cs
+END
+Team.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/Team.cs
+END
+GenderAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/GenderAttribute.cs
+END
+FundingCategory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/FundingCategory.cs
+END
+Funding.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/Funding.cs
+END
+ActionItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/!svn/ver/2801/OTP/Ring/Application/trunk/Ring/Common/ActionItem.cs
+END
+CompetitionEvent.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/CompetitionEvent.cs
+END
+EvaluationQuestion.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/EvaluationQuestion.cs
+END
+CommonLocalization.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/2759/OTP/Ring/Application/trunk/Ring/Common/CommonLocalization.Designer.cs
+END
+EvaluationBestPractice.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/EvaluationBestPractice.cs
+END
+ExtensionMethods.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/ExtensionMethods.cs
+END
+MenuHierarchy.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/MenuHierarchy.cs
+END
+RingMenuItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/RingMenuItem.cs
+END
+CommonLocalization.fr-CA.resx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/!svn/ver/2759/OTP/Ring/Application/trunk/Ring/Common/CommonLocalization.fr-CA.resx
+END
+FundingBlock.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/FundingBlock.cs
+END
+Evaluation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/Evaluation.cs
+END
+FundingSummary.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/FundingSummary.cs
+END
+HtmlStyleAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Common/HtmlStyleAttribute.cs
+END

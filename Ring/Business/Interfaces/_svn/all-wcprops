@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/repos/!svn/ver/3328/OTP/Ring/Application/trunk/Ring/Business/Interfaces
+END
+ICommentsBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/!svn/ver/2256/OTP/Ring/Application/trunk/Ring/Business/Interfaces/ICommentsBL.cs
+END
+IResourceBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/!svn/ver/2903/OTP/Ring/Application/trunk/Ring/Business/Interfaces/IResourceBL.cs
+END
+ISportBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/!svn/ver/2587/OTP/Ring/Application/trunk/Ring/Business/Interfaces/ISportBL.cs
+END
+IBenchmarkBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/!svn/ver/2256/OTP/Ring/Application/trunk/Ring/Business/Interfaces/IBenchmarkBL.cs
+END
+IEvaluationsBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/2469/OTP/Ring/Application/trunk/Ring/Business/Interfaces/IEvaluationsBL.cs
+END
+IFundingBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/!svn/ver/3328/OTP/Ring/Application/trunk/Ring/Business/Interfaces/IFundingBL.cs
+END
+IReportBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/!svn/ver/2900/OTP/Ring/Application/trunk/Ring/Business/Interfaces/IReportBL.cs
+END
+IActionItemBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/!svn/ver/2390/OTP/Ring/Application/trunk/Ring/Business/Interfaces/IActionItemBL.cs
+END
+IUserBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/2602/OTP/Ring/Application/trunk/Ring/Business/Interfaces/IUserBL.cs
+END
+IResultsBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/!svn/ver/2643/OTP/Ring/Application/trunk/Ring/Business/Interfaces/IResultsBL.cs
+END
+IDecodeBL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/!svn/ver/2626/OTP/Ring/Application/trunk/Ring/Business/Interfaces/IDecodeBL.cs
+END

@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{FBDC44F8-8D06-49AF-A9C2-13DE67A29326}"
+	ProjectSection(SolutionItems) = preProject
+		Ring\lib\AspProviders.dll = Ring\lib\AspProviders.dll
+		Ring\lib\AspProviders.pdb = Ring\lib\AspProviders.pdb
+		Ring\lib\Elmah.dll = Ring\lib\Elmah.dll
+		Ring\lib\Ionic.Zip.dll = Ring\lib\Ionic.Zip.dll
+		Ring\lib\Ionic_Utils_Zip_license.txt = Ring\lib\Ionic_Utils_Zip_license.txt
+		Ring\lib\Microsoft.ReportViewer.Common.dll = Ring\lib\Microsoft.ReportViewer.Common.dll
+		Ring\lib\Microsoft.ReportViewer.DataVisualization.dll = Ring\lib\Microsoft.ReportViewer.DataVisualization.dll
+		Ring\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll = Ring\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll
+		Ring\lib\Microsoft.ReportViewer.WebForms.dll = Ring\lib\Microsoft.ReportViewer.WebForms.dll
+		Ring\lib\Moq.dll = Ring\lib\Moq.dll
+		Ring\lib\MvcSiteMapProvider.dll = Ring\lib\MvcSiteMapProvider.dll
+		Ring\lib\Ninject.dll = Ring\lib\Ninject.dll
+		Ring\lib\NPOI License.txt = Ring\lib\NPOI License.txt
+		Ring\lib\NPOI.dll = Ring\lib\NPOI.dll
+		Ring\lib\Telerik.Web.Mvc.dll = Ring\lib\Telerik.Web.Mvc.dll
+		Ring\lib\Telerik.Web.Mvc.xml = Ring\lib\Telerik.Web.Mvc.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTP.Ring.Business", "Ring\Business\OTP.Ring.Business.csproj", "{D3062708-FB4A-42FC-A219-B6977D32A77F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTP.Ring.Common", "Ring\Common\OTP.Ring.Common.csproj", "{5987E936-6B1D-4083-A035-684C261B6B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTP.Ring.Data", "Ring\Data\OTP.Ring.Data.csproj", "{2BF349F1-4EEF-494D-A123-7DCAAEDA331C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTP.Ring.Models", "Ring\Models\OTP.Ring.Models.csproj", "{5D9A6655-F68A-4130-951D-D30640D1CF6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTP.Ring.Web", "Ring\Web\OTP.Ring.Web.csproj", "{046108DD-AB33-4ECD-94E1-FB757642904E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTP.RingTests", "Ring\Tests\OTP.RingTests.csproj", "{DCF277C2-270F-4806-B2F6-8F757713D21A}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "OTPAzure", "Ring\OTPAzure\OTPAzure.ccproj", "{A51F6382-FA7B-42AC-B01D-5DCBBA0053FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3062708-FB4A-42FC-A219-B6977D32A77F}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{D3062708-FB4A-42FC-A219-B6977D32A77F}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{D3062708-FB4A-42FC-A219-B6977D32A77F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3062708-FB4A-42FC-A219-B6977D32A77F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5987E936-6B1D-4083-A035-684C261B6B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5987E936-6B1D-4083-A035-684C261B6B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5987E936-6B1D-4083-A035-684C261B6B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5987E936-6B1D-4083-A035-684C261B6B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF349F1-4EEF-494D-A123-7DCAAEDA331C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF349F1-4EEF-494D-A123-7DCAAEDA331C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF349F1-4EEF-494D-A123-7DCAAEDA331C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF349F1-4EEF-494D-A123-7DCAAEDA331C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D9A6655-F68A-4130-951D-D30640D1CF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D9A6655-F68A-4130-951D-D30640D1CF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D9A6655-F68A-4130-951D-D30640D1CF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D9A6655-F68A-4130-951D-D30640D1CF6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{046108DD-AB33-4ECD-94E1-FB757642904E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{046108DD-AB33-4ECD-94E1-FB757642904E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{046108DD-AB33-4ECD-94E1-FB757642904E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{046108DD-AB33-4ECD-94E1-FB757642904E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCF277C2-270F-4806-B2F6-8F757713D21A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCF277C2-270F-4806-B2F6-8F757713D21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCF277C2-270F-4806-B2F6-8F757713D21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCF277C2-270F-4806-B2F6-8F757713D21A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A51F6382-FA7B-42AC-B01D-5DCBBA0053FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51F6382-FA7B-42AC-B01D-5DCBBA0053FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51F6382-FA7B-42AC-B01D-5DCBBA0053FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51F6382-FA7B-42AC-B01D-5DCBBA0053FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

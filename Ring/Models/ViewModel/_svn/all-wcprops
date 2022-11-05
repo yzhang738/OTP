@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel
+END
+YearSelectionViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/YearSelectionViewModel.cs
+END
+NavMenuViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/NavMenuViewModel.cs
+END
+SummaryListViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/SummaryListViewModel.cs
+END
+BaseViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/BaseViewModel.cs
+END

@@ -1,0 +1,67 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.ComponentModel;
+using OTP.Ring.Data.Models;
+using System.Runtime.Serialization;
+using System.ComponentModel.DataAnnotations;
+using OTP.Ring.Common;
+
+namespace OTP.Ring.Models.ViewModel
+{
+    [Serializable]
+    [KnownType(typeof(MaintenanceISTMembersGridViewModel))]
+    public class MaintenanceISTMembersGridViewModel
+    {
+        [ReadOnly(true)]
+        [DisplayName("ID")]
+        [LocalizedDisplayName(typeof(MaintenanceISTMembersLocalization), "Title_ID")]
+        public int ResourceId { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceISTMembersLocalization), "Title_TBD")]
+        public bool TBD { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceISTMembersLocalization), "Title_Pooled")]
+        public bool Pooled { get; set; }
+
+        [DisplayName("Country")]
+        [UIHint("ISTMembersGridCountryTemplate")]
+        [LocalizedDisplayName(typeof(MaintenanceISTMembersLocalization), "Title_CountryId")]
+        public string CountryId { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceISTMembersLocalization), "Title_CountryName")]
+        public string CountryName { get; set; }
+
+        [UIHint("ISTMembersGridSpecialtyTemplate")]
+        [LocalizedDisplayName(typeof(MaintenanceISTMembersLocalization), "Title_ResourceSpecialtyId")]
+        public string ResourceSpecialtyId { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceISTMembersLocalization), "Title_ResourceSpecialtyName")]
+        public string ResourceSpecialtyName { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(MaintenanceISTMembersLocalization), ErrorMessageResourceName = "Error_Required_FirstName")]
+        [LocalizedDisplayName(typeof(MaintenanceISTMembersLocalization), "Title_FirstName")]
+        public string FirstName { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(MaintenanceISTMembersLocalization), ErrorMessageResourceName = "Error_Required_LastName")]
+        [LocalizedDisplayName(typeof(MaintenanceISTMembersLocalization), "Title_LastName")]
+        public string LastName { get; set; }
+
+        [UIHint("ISTMembersGridGenderTemplate")]
+        [LocalizedDisplayName(typeof(MaintenanceISTMembersLocalization), "Title_GenderId")]
+        public string GenderId { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceISTMembersLocalization), "Title_GenderName")]
+        public string GenderName { get; set; }
+
+        [UIHint("ISTMembersGridPrimaryCscTemplate")]
+        [LocalizedDisplayName(typeof(MaintenanceISTMembersLocalization), "Title_PrimaryCscIdLong")]
+        public string PrimaryCscId { get; set; }
+
+        [LocalizedDisplayName(typeof(MaintenanceISTMembersLocalization), "Title_PrimaryCscName")]
+        public string PrimaryCscName { get; set; }
+
+        public string AssignSportId { get; set; }
+    }
+}

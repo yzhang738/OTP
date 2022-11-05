@@ -1,0 +1,344 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+using OTP.Ring.Business;
+using OTP.Ring.Web.Utility;
+using OTP.Ring.Common;
+using OTP.Ring.Models.ViewModel;
+using OTP.Ring.Data.Models;
+using System.Text.RegularExpressions;
+using System.Runtime.Caching;
+using System.IO;
+
+namespace OTP.Ring.Web.Controllers
+{
+    public class BaseController : Controller 
+    {
+        private Common.MenuHierarchy _menu;
+        private User _currentUser;
+        private YearSelectionViewModel _olympicYears;
+
+        private IDecodeBL _decodeBL;
+        private IUserBL _userBL;
+        private ISportBL _sportBL;
+
+        public BaseController(IDecodeBL decodeBL, IUserBL userBL, ISportBL sportBL)
+        {
+            this._decodeBL = decodeBL;
+            this._userBL = userBL;
+            this._sportBL = sportBL;
+        }
+
+        internal NavMenuViewModel Menu(string pageId)
+        {
+            bool isGuest = this.CurrentUser.GroupProfileId == Constant.SecurityGroupProfile.Public;
+
+            if (this._menu == null)
+            {
+                this._menu = new Common.MenuHierarchy(this.AllSports, this.CurrentUser.Sports, this.AllPages, this.CurrentUser.Pages, this.CurrentLanguageCode(), isGuest);
+                this._menu.SelectedSport = this.SelectedSport();
+                this._menu.SelectedPage = pageId;
+            }
+
+            return new NavMenuViewModel() { Menu = this._menu, ShowPageMenu = true, ShowSportMenu = !isGuest };
+        }
+
+        internal User CurrentUser
+        {
+            get
+            {
+                if (this._currentUser == null)
+                {
+                    var liveId = LoadCookieData();
+                    if(liveId.ToLower() == "guest" && bool.Parse(ExtensionMethods.GetConfigurationSetting("useDebugLiveId")))
+                    {
+                        liveId = ExtensionMethods.GetConfigurationSetting("debugLiveId");
+                    }
+                    
+                    this._currentUser = this._userBL.GetUserByLiveId(liveId);
+                }
+
+                return this._currentUser;
+            }
+        }
+
+        internal List<SecurityPage> AllPages
+        {
+            get
+            {
+                string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.BaseControlAllPages, null, null);
+                ObjectCache cache = MemoryCache.Default;
+
+                if (cache.Contains(cacheKey))
+                {
+                    return (List<SecurityPage>)cache.Get(cacheKey);
+                }
+                else
+                {
+                    var allPages = this._decodeBL.GetAllPages();
+
+                    cache.Add(cacheKey, allPages, new CacheItemPolicy() { SlidingExpiration = new TimeSpan(1, 0, 0) });
+
+                    return allPages;
+                }
+            }
+        }
+
+        internal List<Sport> AllSports
+        {
+            get
+            {
+                string cacheKey = string.Format(Constant.Cache.KeyTemplate, Constant.Cache.BaseControlAllSports, null, null);
+                ObjectCache cache = MemoryCache.Default;
+
+                if (cache.Contains(cacheKey))
+                {
+                    return (List<Sport>)cache.Get(cacheKey);
+                }
+                else
+                {
+                    var allSports = this._sportBL.GetAllSportsToSportLevel();
+
+                    cache.Add(cacheKey, allSports, new CacheItemPolicy() { SlidingExpiration = new TimeSpan(1, 0, 0) });
+
+                    return allSports;
+                }
+            }
+        }
+
+        internal YearSelectionViewModel OlympicYears(string year = null)
+        {
+            if (this._olympicYears == null)
+            {
+                this._olympicYears = new YearSelectionViewModel();
+                this._olympicYears.OlympicYears = this._decodeBL.GetAllYearsList().Select(a => a.Id).ToList();
+            }
+
+            var selectedYear = this.SelectedYear();
+            if (!string.IsNullOrEmpty(year)) selectedYear = year;
+
+            this._olympicYears.SelectedYearIndex = this._olympicYears.OlympicYears.IndexOf(selectedYear);
+
+            return this._olympicYears;
+        }
+
+        private string GetId(string token)
+        {
+            return new WindowsLiveLogin(true).ProcessToken(token).Id;
+        }
+
+        private string LoadCookieData()
+        {
+            if (Request != null)
+            {
+                var cookie = Request.Cookies["webauthtoken"];
+
+                if (cookie != null && !string.IsNullOrEmpty(cookie.Value))
+                {
+                    return GetId(cookie.Value);
+                }
+            }
+
+            return "guest";
+        }
+
+        internal bool ValidateUserOnPage(string pageId)
+        {
+            return (this.Menu(pageId).Menu.ReadAccess != Constant.AccessLevel.No);
+        }
+
+        internal ActionResult RedirectToUserHomePage()
+        {
+            var actionLocation = this._userBL.GetPageActionLocation(this.CurrentUser.HomePageId);
+            return RedirectToAction( actionLocation.Action, actionLocation.Controller);
+        }
+
+        internal bool ValidateSportOnPage(string pageId, string sportId)
+        {
+            NavMenuViewModel menu = this.Menu(pageId);
+
+            bool valid = false;
+            if (menu.Menu.ReadAccess == Constant.AccessLevel.All)
+            {
+                valid = true;
+            }
+            else if (menu.Menu.ReadAccess == Constant.AccessLevel.Assigned) 
+            {
+                valid = (from s in menu.Menu.FlatSportMenuItems where s.Id == sportId select s).Any();
+            }
+
+            return valid;
+        }
+
+        internal string CurrentLanguageCode()
+        {
+            return System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName.ToUpper();
+        }
+
+        internal string CurrentUserName()
+        {
+            return this.CurrentUser.FirstName + " " + this.CurrentUser.LastName;
+        }
+
+        internal string SelectedSport()
+        {
+            var cookie = Request.Cookies["ck_sport"];
+            if (cookie != null)
+            {
+                return cookie.Value;
+            }
+            return OTP.Ring.Common.Constant.SportId.All;
+        }
+
+        internal string SelectedYear()
+        {
+            var selectedYear = ExtensionMethods.GetConfigurationSetting("defaultYear");
+            var cookie = Request.Cookies["ck_year"];
+
+            if (cookie != null)
+            {
+                //Get selected year
+                selectedYear = Regex.Replace(cookie.Value, "%2F", "/");
+            }
+
+            return selectedYear;
+        }
+
+		internal void SetSelectedYear(string year)
+		{
+			var cookie = Request.Cookies["ck_year"];
+			if(cookie != null)
+			{
+				cookie.Value = Regex.Replace(year, "/", "%2F"); 
+				
+			}
+		}
+
+        internal string SelectedActionItemStatus()
+        {
+            var cookie = Request.Cookies["ck_ais"];
+            if (cookie != null)
+            {
+                return cookie.Value;
+            }
+            return "O";
+        }
+
+        internal List<SummaryListViewModel> GetSummaryPageList(string currentPageId)
+        {
+            return this._decodeBL.GetSummaryPageList(currentPageId, CurrentUser);
+        }
+
+        internal bool IsPagePermitted(List<RingMenuItem> allPermittedPages, string pageId)
+        {
+            if (allPermittedPages == null) return false;
+
+            foreach (var page in allPermittedPages)
+            {
+                if (page.Id == pageId)
+                {
+                    return true;
+                }
+                else
+                {
+                    if (IsPagePermitted(page.ChildItems, pageId))
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        internal IList<Models.ListItem> GetSelectedPermittedSports(SportDetail selectedSport, List<RingMenuItem> allPermittedSports)
+        {
+            List<Models.ListItem> selectedPermittedSports = new List<Models.ListItem>();
+
+            if (selectedSport == null) return selectedPermittedSports;
+
+            if (selectedSport.Level == Constant.SportLevelId.Sport)
+            {
+                selectedPermittedSports.Add(new Models.ListItem { Id = selectedSport.Id, Description = selectedSport.Name });
+            }
+            else
+            {
+                bool go = false;
+
+                foreach (var levelAll in allPermittedSports)
+                {
+                    if (selectedSport.Level == Constant.SportLevelId.All) go = true;
+
+                    foreach (var levelOlympic in levelAll.ChildItems)
+                    {
+                        if (selectedSport.Level == Constant.SportLevelId.Olympic)
+                        {
+                            go = levelOlympic.Id == selectedSport.Id;
+                        }
+
+                        foreach (var levelSeason in levelOlympic.ChildItems)
+                        {
+                            if (selectedSport.Level == Constant.SportLevelId.Season)
+                            {
+                                go = levelSeason.Id == selectedSport.Id;
+                            }
+
+                            if (go) selectedPermittedSports.AddRange((from c in levelSeason.ChildItems select new Models.ListItem { Id = c.Id, Description = c.Name }).ToList());
+                        }
+
+                        if (selectedSport.Level == Constant.SportLevelId.Olympic) go = false;
+                    }
+
+                    go = false;
+                }
+            }
+
+            selectedPermittedSports.Sort();
+
+            return selectedPermittedSports;
+        }
+
+        protected override void OnActionExecuted(ActionExecutedContext filterContext)
+        {
+            if (TempData["ModelState"] != null && !ModelState.Equals(TempData["ModelState"]))
+                ModelState.Merge((ModelStateDictionary)TempData["ModelState"]);
+
+            base.OnActionExecuted(filterContext);
+        }
+
+        protected string RenderPartialViewToString()
+        {
+            return RenderPartialViewToString(null, null);
+        }
+
+        protected string RenderPartialViewToString(string viewName)
+        {
+            return RenderPartialViewToString(viewName, null);
+        }
+
+        protected string RenderPartialViewToString(object model)
+        {
+            return RenderPartialViewToString(null, model);
+        }
+
+        protected string RenderPartialViewToString(string viewName, object model)
+        {
+            if (string.IsNullOrEmpty(viewName))
+                viewName = ControllerContext.RouteData.GetRequiredString("action");
+
+            ViewData.Model = model;
+
+            using (StringWriter sw = new StringWriter())
+            {
+                ViewEngineResult viewResult = ViewEngines.Engines.FindPartialView(ControllerContext, viewName);
+                ViewContext viewContext = new ViewContext(ControllerContext, viewResult.View, ViewData, TempData, sw);
+                viewResult.View.Render(viewContext, sw);
+
+                return sw.GetStringBuilder().ToString();
+            }
+        }
+    }
+}

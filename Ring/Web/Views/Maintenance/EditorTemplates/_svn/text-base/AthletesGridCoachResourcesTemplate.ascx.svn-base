@@ -1,0 +1,29 @@
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<int?>" %>
+
+<script type="text/javascript">
+    function onPersonalCoachLoad() {
+        var combo = $(this).data('tDropDownList');
+        combo.reload();
+    }
+
+    function onPersonalCoachBound() {
+        var editor = $(this).data('tDropDownList');
+        var tr = $(this).closest('tr:has(form)');
+        var dataItem = tr.closest('.t-grid').data('tGrid').dataItem(tr);
+
+        if (dataItem) {
+            var isNewRow = ($(this).closest('.t-grid-new-row').length == 1);
+            if (!isNewRow) editor.value(dataItem.PersonalCoachId);
+        }
+    }
+</script>
+
+<%=         
+    Html.Telerik().DropDownList()
+        .Name("PersonalCoachId")
+        .DataBinding(binding => binding.Ajax().Select("CoachResourcesAjax", "Shared"))
+        .HtmlAttributes(new { style = "font-size:8pt;" })
+        .ClientEvents(events => events
+        .OnLoad("onPersonalCoachLoad")
+        .OnDataBound("onPersonalCoachBound"))
+%>

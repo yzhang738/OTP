@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations
+END
+EvaluationsLocalization.resx
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repos/!svn/ver/2347/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationsLocalization.resx
+END
+EvaluationsQuestionsViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationsQuestionsViewModel.cs
+END
+EvaluationsSummaryViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repos/!svn/ver/6662/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationsSummaryViewModel.cs
+END
+EvaluationsQuestionsEvaluationVersionGridViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationsQuestionsEvaluationVersionGridViewModel.cs
+END
+EvaluationPillarViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationPillarViewModel.cs
+END
+EvaluationsLocalization.fr-CA.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repos/!svn/ver/2347/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationsLocalization.fr-CA.Designer.cs
+END
+EvaluationsSummaryGridViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationsSummaryGridViewModel.cs
+END
+EvaluationsSummaryOverallQuestionsGridViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationsSummaryOverallQuestionsGridViewModel.cs
+END
+EvaluationStatusChangeViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationStatusChangeViewModel.cs
+END
+EvaluationsIndexViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationsIndexViewModel.cs
+END
+EvaluationsQuestionsEvaluationPillarQuestionsGridViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationsQuestionsEvaluationPillarQuestionsGridViewModel.cs
+END
+EvaluationActionItemViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationActionItemViewModel.cs
+END
+EvaluationsLocalization.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repos/!svn/ver/2347/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationsLocalization.Designer.cs
+END
+EvaluationsLocalization.fr-CA.resx
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repos/!svn/ver/2435/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationsLocalization.fr-CA.resx
+END
+EvaluationsQuestionsEvaluationPillarsGridViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationsQuestionsEvaluationPillarsGridViewModel.cs
+END
+EvaluationFormViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationFormViewModel.cs
+END
+EvaluationsMaintenanceViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Evaluations/EvaluationsMaintenanceViewModel.cs
+END

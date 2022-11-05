@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Maintenance/Benchmarks
+END
+MaintenanceBenchmarksLocalization.fr-CA.resx
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repos/!svn/ver/2435/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Maintenance/Benchmarks/MaintenanceBenchmarksLocalization.fr-CA.resx
+END
+MaintenanceBenchmarksViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Maintenance/Benchmarks/MaintenanceBenchmarksViewModel.cs
+END
+MaintenanceBenchmarksLocalization.fr-CA.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/repos/!svn/ver/2347/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Maintenance/Benchmarks/MaintenanceBenchmarksLocalization.fr-CA.Designer.cs
+END
+MaintenanceBenchmarksInsertBenchmarkTierViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Maintenance/Benchmarks/MaintenanceBenchmarksInsertBenchmarkTierViewModel.cs
+END
+MaintenanceBenchmarksGridSportBenchmarkViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Maintenance/Benchmarks/MaintenanceBenchmarksGridSportBenchmarkViewModel.cs
+END
+MaintenanceBenchmarksLocalization.resx
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repos/!svn/ver/2347/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Maintenance/Benchmarks/MaintenanceBenchmarksLocalization.resx
+END
+MaintenanceBenchmarksLocalization.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repos/!svn/ver/2347/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Maintenance/Benchmarks/MaintenanceBenchmarksLocalization.Designer.cs
+END
+MaintenanceBenchmarksGridSportViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repos/!svn/ver/2791/OTP/Ring/Application/trunk/Ring/Models/ViewModel/Maintenance/Benchmarks/MaintenanceBenchmarksGridSportViewModel.cs
+END

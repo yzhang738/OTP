@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/repos/!svn/ver/2720/OTP/Ring/Application/trunk/Ring/Web/Views/Home
+END
+Index.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/!svn/ver/2602/OTP/Ring/Application/trunk/Ring/Web/Views/Home/Index.aspx
+END
+SignIn.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/!svn/ver/2393/OTP/Ring/Application/trunk/Ring/Web/Views/Home/SignIn.aspx
+END
+HomeStrings.resx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/!svn/ver/2435/OTP/Ring/Application/trunk/Ring/Web/Views/Home/HomeStrings.resx
+END
+HomeStrings.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/!svn/ver/2435/OTP/Ring/Application/trunk/Ring/Web/Views/Home/HomeStrings.Designer.cs
+END
+HomeStrings.fr-CA.resx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/2531/OTP/Ring/Application/trunk/Ring/Web/Views/Home/HomeStrings.fr-CA.resx
+END
+NoScript.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/2393/OTP/Ring/Application/trunk/Ring/Web/Views/Home/NoScript.aspx
+END
+HomeStrings.fr-CA.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repos/!svn/ver/2353/OTP/Ring/Application/trunk/Ring/Web/Views/Home/HomeStrings.fr-CA.Designer.cs
+END
+Browser.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repos/!svn/ver/2720/OTP/Ring/Application/trunk/Ring/Web/Views/Home/Browser.aspx
+END

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repos/!svn/ver/2963/OTP/Ring/Application/trunk/Ring/Web/Views/Shared
+END
+CurrentUserName.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/1963/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/CurrentUserName.ascx
+END
+LanguageSelector.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/!svn/ver/1827/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/LanguageSelector.ascx
+END
+SharedStrings.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repos/!svn/ver/2963/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/SharedStrings.Designer.cs
+END
+SharedStrings.fr-CA.resx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/!svn/ver/2963/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/SharedStrings.fr-CA.resx
+END
+OTPAlert.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/!svn/ver/2363/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/OTPAlert.ascx
+END
+Summary.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/!svn/ver/2363/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/Summary.ascx
+END
+PleaseWait.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/!svn/ver/2643/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/PleaseWait.ascx
+END
+YearSelector.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/!svn/ver/2907/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/YearSelector.ascx
+END
+Site.Master
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/!svn/ver/2963/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/Site.Master
+END
+SharedStrings.resx
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/!svn/ver/2963/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/SharedStrings.resx
+END
+ActionItemEditor.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/!svn/ver/2759/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/ActionItemEditor.ascx
+END
+JavaScriptCheck.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/!svn/ver/2393/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/JavaScriptCheck.ascx
+END
+NavMenu.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/!svn/ver/2906/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/NavMenu.ascx
+END
+CommentEditor.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/!svn/ver/2443/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/CommentEditor.ascx
+END
+SharedStrings.fr-CA.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/!svn/ver/1873/OTP/Ring/Application/trunk/Ring/Web/Views/Shared/SharedStrings.fr-CA.Designer.cs
+END

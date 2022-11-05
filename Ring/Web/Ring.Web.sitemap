@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-2.0" enableLocalization="true">
+	<mvcSiteMapNode title="$Resources:Sitemap, Home" controller="Home" action="Index" changeFrequency="Always" updatePriority="Normal">
+		<mvcSiteMapNode title="$Resources:Sitemap, SignIn" controller="Home" action="SignIn" />
+    <mvcSiteMapNode title="$Resources:Sitemap, WhoAmI" controller="Maintenance" action="WhoAmI" />
+		
+		<mvcSiteMapNode title="$Resources:Sitemap, Funding" controller="Funding" action="Index" changeFrequency="Always" updatePriority="Normal">
+			<mvcSiteMapNode title="$Resources:Sitemap, ActionItems" controller="Funding" action="ActionItems" />
+			<mvcSiteMapNode title="$Resources:Sitemap, Recommendation" controller="Funding" action="Recommendation" />
+			<mvcSiteMapNode title="$Resources:Sitemap, Requests" controller="Funding" action="Requests" />
+			<mvcSiteMapNode title="$Resources:Sitemap, RevisionsActuals" controller="Funding" action="RevisionActual" />
+			<mvcSiteMapNode title="$Resources:Sitemap, Tracking" controller="Funding" action="Tracking" />
+			<mvcSiteMapNode title="$Resources:Sitemap, Summary" controller="Funding" action="Summary" />
+		</mvcSiteMapNode>
+
+		<mvcSiteMapNode title="$Resources:Sitemap, Maintenance" controller="Maintenance" action="Index" changeFrequency="Always" updatePriority="Normal">
+			<mvcSiteMapNode title="$Resources:Sitemap, Resources" controller="Maintenance" action="Resources">
+				<mvcSiteMapNode title="$Resources:Sitemap, MaintainAthletes" controller="Maintenance" action="Athletes" />
+				<mvcSiteMapNode title="$Resources:Sitemap, MaintainISTMembers" controller="Maintenance" action="ISTMembers" />
+				<mvcSiteMapNode title="$Resources:Sitemap, MaintainNSOMembers" controller="Maintenance" action="NSOMembers" />
+			</mvcSiteMapNode>
+			<mvcSiteMapNode title="$Resources:Sitemap, Sports" controller="Maintenance" action="Sports">
+				<mvcSiteMapNode title="$Resources:Sitemap, MaintainSports" controller="Maintenance" action="MaintainSports" />
+				<mvcSiteMapNode title="$Resources:Sitemap, MaintainBenchmarks" controller="Maintenance" action="MaintainBenchmarks" />
+			</mvcSiteMapNode>
+
+      <mvcSiteMapNode title="$Resources:Sitemap, Other" controller="Maintenance" action="Other">
+        <mvcSiteMapNode title="$Resources:Sitemap, Questions" controller="Evaluations" action="Questions" />
+        <mvcSiteMapNode title="$Resources:Sitemap, LoadTemplates" controller="Results" action="LoadTemplates" />
+      </mvcSiteMapNode>
+		</mvcSiteMapNode>
+
+		<mvcSiteMapNode title="$Resources:Sitemap, Reporting" controller="Reporting" action="Index" changeFrequency="Always" updatePriority="Normal">
+			<mvcSiteMapNode title="$Resources:Sitemap, AdHocAnalysis" controller="Reporting" action="DesignAnalysis" />
+			<mvcSiteMapNode title="$Resources:Sitemap, StandardReports" controller="Reporting" action="StandardReports" />
+		</mvcSiteMapNode>
+		
+		<mvcSiteMapNode title="$Resources:Sitemap, Evaluations" controller="Evaluations" action="Index" changeFrequency="Always" updatePriority="Normal">
+			<mvcSiteMapNode title="$Resources:Sitemap, ActionItems" controller="Evaluations" action="ActionItems" />
+      <mvcSiteMapNode title="$Resources:Sitemap, EvaluationMaintenance" controller="Evaluations" action="Maintenance">
+        <mvcSiteMapNode title="$Resources:Sitemap, Questions" controller="Evaluations" action="Questions" />
+      </mvcSiteMapNode>
+			<mvcSiteMapNode title="$Resources:Sitemap, Summary" controller="Evaluations" action="Summary" />
+			<mvcSiteMapNode title="$Resources:Sitemap, EvaluationForm" controller="Evaluations" action="EvaluationForm" />
+		</mvcSiteMapNode>
+
+		<mvcSiteMapNode title="$Resources:Sitemap, Results" controller="Results" action="Index" changeFrequency="Always" updatePriority="Normal">
+			<mvcSiteMapNode title="$Resources:Sitemap, LoadResults" controller="Results" action="LoadResults" />
+			<mvcSiteMapNode title="$Resources:Sitemap, ManageResults" controller="Results" action="ManageResults" />
+			<mvcSiteMapNode title="$Resources:Sitemap, Summary" controller="Results" action="Summary" />
+			<mvcSiteMapNode title="$Resources:Sitemap, ResultsMaintenance" controller="Results" action="Maintenance">
+				<mvcSiteMapNode title="$Resources:Sitemap, LoadTemplates" controller="Results" action="LoadTemplates" />
+			</mvcSiteMapNode>
+		</mvcSiteMapNode>
+
+	</mvcSiteMapNode>
+</mvcSiteMap>
